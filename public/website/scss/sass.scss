@@ -1,0 +1,6 @@
+@for $i from 1 through 25 {
+    .col-sm-4.col-xs-6.wow.animate__.animate__backInUp.animated:nth-of-type(#{$i}) {
+     /* animation-delay: (.1s*$i)!important; */
+     animation-duration:(.2s*$i) !important;
+    }
+  }

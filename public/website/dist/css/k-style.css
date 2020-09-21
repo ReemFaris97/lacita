@@ -1,0 +1,580 @@
+/*|||||||||||||||||||||||||||||||| Start Static-page-Style ||||||||||||||||||||||||||||||*/
+section.static-page {
+    background-image: url(../img/static.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: 0;
+}
+.but-back {
+    background: #FFF;
+    color: #333;
+    font-size: 38px;
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+    border-radius: 50%;
+    transition: .5s all;
+}
+.but-back:hover {
+    background: #B7202B;
+    color: #FFF;
+}
+.static-page-titel span {
+    content: " ";
+    position: absolute;
+    width: 240px;
+    height: 45px;
+    background-image: linear-gradient(90deg, #9A0836, #B7202B);
+    right: 30%;
+    top: 16px;
+    z-index: 0;
+    transform: skew(-25deg);
+}
+.static-page-titel {
+    color: #FFF;
+    margin-bottom: 150px;
+    margin-right: 0;
+    margin-top: 0;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    z-index: 4;
+}
+.static-page-titel h1 {
+    position: relative;
+    font-size: 59px;
+    margin: 0;
+    font-weight: 900;
+}
+section.static-page .right-div form {
+    padding: 25px;
+    margin-top: 0;
+    display: inline-block;
+    width: 100%;
+    margin-right: 60px;
+    padding-top: 0;
+}
+section.static-page .right-div {
+    padding: 30px;
+    display: inline-block;
+}
+section.static-page .right-div form .static-page-input {
+    width: 100%;
+    padding: 8px 25px;
+    border-radius: 40px;
+    background: #333;
+    border: 1.5px solid transparent;
+    font-size: 18px;
+    color: #FFF;
+    margin-bottom: 25px;
+    transition: .5s all;
+}
+section.static-page .right-div form .static-page-input:focus {
+    border-color: #B7202B
+}
+section.static-page .right-div form label {
+    width: 100%;
+    color: #FFF;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.reset-password {
+    font-size: 22px;
+    float: left;
+    color: #AAA;
+}
+.reset-password:hover {
+    color: #B7202B
+}
+.but-submit {
+    padding: 4px 45px 13px;
+    font-size: 23px;
+    font-weight: 600;
+    border-radius: 50px;
+    margin: 40px auto;
+    display: inline-block;
+    height: auto;
+    background-color: #B7202B;
+}
+.link-footer {
+    color: #FFF;
+    display: inline-block;
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 40px;
+    transition: .5s all;
+}
+.link-footer2 {
+    font-size: 20px;
+    color: #FFF;
+    padding: 0px 30px;
+    transition: .5s all;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.link-footer2 a {
+    color: #B7202B
+}
+/*|||||||||||||||||||||||||||||||| End Static-page-Style ||||||||||||||||||||||||||||||*/
+/*|||||||||||||||||||||||||||||||| Start Register-page-Style ||||||||||||||||||||||||||||||*/
+.register a.but-back {
+    position: absolute;
+    top: 60px;
+}
+.static-page.register .right-div form {
+    margin-top: 30px;
+    margin-right: 80px;
+}
+.register input.but-submit.btn-hvr {
+    background-color: transparent;
+    border: 3px solid #B7202B;
+    padding: 10px 55px 20px;
+}
+.register input.but-submit.btn-hvr:hover {
+    animation: anim-moema-1 0.3s forwards;
+    color: #fff;
+    background-color: #1D262C;
+    border-color: #1D262C;
+}
+/*|||||||||||||||||||||||||||||||| End Register-page-Style ||||||||||||||||||||||||||||||*/
+/*|||||||||||||||||||||||||||||||| Start Reset-password-page-Style ||||||||||||||||||||||||||||||*/
+section.static-page .right-div form p {
+    color: #808284;
+    font-size: 24px;
+    margin-bottom: 100px;
+    font-weight: 600;
+    width: 75%;
+}
+a.replay {
+    float: left;
+    margin: 35px 0px;
+    font-size: 20px;
+    color: #CCC;
+}
+/*|||||||||||||||||||||||||||||||| End Reset-password-page-Style ||||||||||||||||||||||||||||||*/
+/*|||||||||||||||||||||||||||||||| Start login-page-Style ||||||||||||||||||||||||||||||*/
+section.static-page.login .right-div a.btn-hvr.but-register {
+    background: transparent;
+    float: left;
+    border: 2px solid #41956F;
+}
+section.static-page.login .right-div .btn-hvr {
+    display: inline-block;
+    padding: 5px 37px 10px;
+    font-size: 26px;
+    height: auto;
+    border: 2px solid #41956F;
+    border-radius: 40px;
+}
+.padding-0-k {
+    padding: 0px
+}
+section.static-page.login .right-div .static-page-titel {
+    margin: 0 0 75px;
+}
+section.static-page.login .right-div .static-page-titel span {
+    right: 30%;
+    top: 45px;
+    width: 225px;
+    height: 45px;
+    transform: skew(-25deg);
+}
+section.static-page.login .static-page-titel h1 {
+    position: relative;
+    font-size: 95px;
+    margin: 0;
+}
+section.static-page.login .right-div a.btn-hvr.but-register:hover {
+    background-color: #333;
+    border-color: transparent;
+}
+section.static-page.login .right-div p {
+    color: #CCC;
+    font-size: 26px;
+    position: relative;
+    z-index: 2;
+    font-weight: 600;
+}
+section.static-page.login .right-div {
+    padding: 50px 70px 30px 0px;
+    width: 100%;
+}
+.text-k {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 100px;
+    border-radius: 15px;
+}
+.text-k .top-k,
+.text-k .bottom-k {
+    position: absolute;
+    display: inline-block;
+    width: 230px;
+    height: 45px;
+    background-image: linear-gradient(90deg, #9A0836, #41956F);
+    right: 25%;
+    z-index: 1;
+    transform: skew(-25deg);
+}
+.text-k .bottom-k {
+    top: 85px;
+    right: 70px;
+}
+a.logo-login img {
+    width: 100%;
+    height: 100%;
+}
+a.logo-login {
+    display: inline-block;
+    height: 180px;
+    width: 130px;
+    margin-bottom: 70px;
+}
+/*|||||||||||||||||||||||||||||||| End login-page-Style ||||||||||||||||||||||||||||||*/
+/*|||||||||||||||||||||||||||||||| Start Check-box-Style ||||||||||||||||||||||||||||||*/
+.container-checkbox2 {
+    display: inline-block;
+}
+.container-checkbox2 input[type=checkbox] + label {
+    display: block;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 24px !important;
+}
+.container-checkbox2 input[type=checkbox] {
+    display: none;
+}
+.container-checkbox2 input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 2px solid #ddd;
+    border-radius: 0px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 10px;
+    display: initial;
+    vertical-align: middle;
+    color: transparent;
+    transition: all 0.2s;
+}
+.container-checkbox2 input[type=checkbox] + label:active:before {
+    transform: scale(0);
+}
+.container-checkbox2 input[type=checkbox]:checked + label:before {
+    background-color: #B7202B;
+    border-color: #B7202B;
+    color: #fff;
+}
+.link-footer2 a {
+    margin-right: 6px;
+}
+.about-us .text-k {
+    font-weight: 600;
+    color: #000;
+    font-size: 21px;
+    line-height: 1.7;
+    padding: 50px 0px;
+}
+/*|||||||||||||||||||||||||||||||| End Check-box-Style ||||||||||||||||||||||||||||||*/
+@media (max-width: 1500px) {
+    section.static-page .right-div form {
+        padding: 15px;
+        padding-top: 0;
+    }
+    section.static-page.login .right-div .btn-hvr {
+        padding: 4px 34px 10px;
+    }
+    section.static-page.login .static-page-titel h1 {
+        font-size: 70px;
+    }
+    section.static-page.login .right-div .static-page-titel {
+        margin: 0 0 60px;
+    }
+    section.static-page.login .right-div .static-page-titel span {
+        top: 30px;
+    }
+    .but-back {
+        margin-right: 0;
+    }
+    section.static-page.login .right-div {
+        padding: 40px 30px 30px 0px;
+    }
+}
+@media (max-width: 1199px) {
+    section.static-page.login .right-div {
+        padding: 30px 15px;
+    }
+    section.static-page .right-div {
+        padding-left: 50px;
+        background: rgba(0, 0, 0, .6);
+        height: 100vh;
+    }
+    section.static-page.register .right-div {
+        display: inline-flex;
+        min-height: 100vh
+    }
+    section.static-page.code-pass .right-div {
+        height: 100vh;
+    }
+    .link-footer2 a {
+        color: #ccc;
+    }
+    section.static-page.login .but-back {
+        margin-right: 15px;
+    }
+    section.static-page .static-page-titel {
+        margin-right: 0px;
+    }
+    section.static-page.login .static-page-titel {
+        margin-right: 90px;
+    }
+    section.static-page .static-page-titel span {
+        right: 15%;
+        width: 200px;
+        top: 2px;
+    }
+    .static-page-titel h1 {
+        font-size: 45px;
+    }
+    section.static-page.code-pass .static-page-titel h1 {
+        font-size: 55px;
+    }
+    section.static-page.code-pass .static-page-titel span {
+        right: 25%;
+        top: 15px;
+        height: 50px;
+    }
+    section.static-page .right-div form p {
+        font-size: 25px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    a.replay {
+        font-size: 22px;
+        position: absolute;
+        left: 20px;
+        top: -7px;
+        margin: 0;
+    }
+    .link-footer2 {
+        font-size: 18px;
+        color: #FFF;
+        padding: 0px 15px;
+    }
+     section.static-page.login .right-div p {
+        width: 75%;
+    }
+}
+@media (max-width: 991px) {
+    .register input.but-submit.btn-hvr {
+        padding: 7px 50px 10px;
+    }
+    section.static-page.login .right-div p {
+        width: 100%;
+    }
+    section.static-page.login .right-div .btn-hvr {
+        float: right;
+    }
+    .register a.but-back {
+        top: 20px;
+    }
+    .static-page.register .right-div form {
+        margin: auto;
+        margin-bottom: 60px;
+        margin-top: 0px;
+        width: 75%;
+    }
+    .link-footer2 a {
+        color: #B7202B;
+    }
+    section.static-page.login .text-k {
+        background: rgba(0, 0, 0, .6);
+        padding: 15px;
+    }
+    .text-k .bottom-k {
+        top: 63px;
+        right: 10%;
+    }
+    section.static-page.login .right-div .static-page-titel span {
+    right: 50%;
+    left: unset;
+    width: 150px;
+}
+    section.static-page .right-div {
+        width: 100%;
+        text-align: center;
+        height: 100vh;
+    }
+    section.static-page.register .right-div {
+        height: auto;
+    }
+    section.static-page .right-div form {
+        width: 75%;
+        margin: 0px;
+    }
+    a.but-back {
+        position: absolute;
+        margin-right: 45px;
+        width: 60px;
+        height: 60px;
+    }
+    section.static-page .right-div form label {
+        text-align: right;
+        font-size: 19px;
+    }
+    .container-checkbox2 {
+        display: inline-block;
+        float: right;
+    }
+    section.static-page .static-page-titel h1 {
+        font-size: 38px;
+    }
+    section.static-page .static-page-titel {
+        margin-bottom: 100px;
+    }
+    section.static-page .static-page-titel span {
+        right: 40%;
+        height: 50px;
+    }
+    .link-footer {
+        margin-top: 23px;
+    }
+    section.static-page .but-submit {
+        margin: 25px auto;
+        float: right;
+        padding: 5px 45px 15px;
+        font-size: 22px;
+    }
+    section.static-page .right-div form .static-page-input {
+        padding: 10px 25px;
+    }
+    .margin-t-k {
+        margin-top: -15px;
+    }
+    section.static-page .right-div form p {
+        font-size: 26px;
+        margin: 80px auto;
+    }
+    .link-footer2 {
+        font-size: 18px;
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+        left: 0;
+    }
+   
+}
+@media (max-width: 767px) {
+    .static-page.register .right-div form {
+        width: 100%;
+    }
+    section.static-page.login .right-div {
+        padding: 20px 0px 30px 0px;
+    }
+    section.static-page.login .right-div .static-page-titel span {
+        top: 20px;
+    }
+    section.static-page.login .right-div .static-page-titel {
+        margin: 0 0 50px;
+    }
+    section.static-page.login .static-page-titel h1 {
+        font-size: 70px;
+    }
+    section.static-page.login .text-k {
+        margin-bottom: 100px;
+    }
+    section.static-page.login .right-div .btn-hvr {
+        padding: 4px 30px 10px;
+    }
+    section.static-page.login a.logo-login {
+        height: 150px;
+        width: 90px;
+        margin-bottom: 30px;
+    }
+    section.static-page .right-div form {
+        width: 100%;
+    }
+    section.static-page .right-div form {
+        padding: 0;
+    }
+    a.but-back {
+        margin: 0;
+        top: 15px;
+        width: 50px;
+        height: 50px;
+        font-size: 35px;
+        right: 30px;
+    }
+    section.static-page .static-page-titel {
+        margin-bottom: 50px;
+        margin-top: 70px;
+    }
+    section.static-page .static-page-titel h1 {
+        font-size: 40px;
+    }
+    section.static-page .static-page-titel span {
+        top: 7px;
+        width: 160px;
+    }
+    .reset-password {
+        font-size: 17px;
+    }
+    .container-checkbox2 input[type=checkbox] + label {
+        padding: 0;
+        font-size: 21px !important;
+    }
+    .container-checkbox2 input[type=checkbox] + label:before {
+        width: 25px;
+        height: 25px;
+    }
+    section.static-page .but-submit {
+        margin: 30px auto;
+        float: none;
+        margin-top: 40px;
+    }
+    section.static-page .right-div {
+        padding: 0;
+    }
+    section.static-page .right-div form p {
+        font-size: 18px;
+        margin-bottom: 50px;
+        width: 100%;
+        padding: 0px 15px;
+    }
+}
+@media (max-width: 600px) {
+    section.static-page.login .text-k .bottom-k {
+        top: 90px;
+    }
+    section.static-page.login .right-div p {
+        font-size: 23px;
+    }
+    section.static-page.login .right-div .static-page-titel {
+        margin: 0 0 35px;
+    }
+    section.static-page.login .right-div .static-page-titel span {
+        top: 12px;
+    }
+    section.static-page.login .static-page-titel h1 {
+        font-size: 50px;
+    }
+}
+@media (max-width: 500px) {
+    section.static-page.login .right-div .btn-hvr {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    section.static-page.login .text-k .top-k,
+    section.static-page.login .text-k .bottom-k {
+        width: 190px;
+    }
+}

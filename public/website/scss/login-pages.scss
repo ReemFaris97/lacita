@@ -1,0 +1,327 @@
+@import "first";
+.modal-backdrop {
+    background-color: #8a8a8a;
+    z-index: 991040;
+}
+.modal {
+    z-index: 105099999;
+}
+.log_modal {
+    padding: 0 !important;
+    .modal-dialog {
+        margin: 0;
+        right: 10%;
+    }
+    .modal-content{
+        @include boxShadowOne(0px 0px 12px 1px white);
+        border-radius: 30px;
+        border: 0;
+        top: 10px;
+        max-width: calc(100% - 20px);
+        margin: 0 auto;
+    }
+}
+.modal_inner {
+    height: calc(100vh - 20px);
+    overflow: hidden;
+    background-image: url("../dist/img/side-menu.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    .form-box {
+        @include dis-flex;
+        @include flex-dir-column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        min-width: 600px;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 0 50px;
+        height: 100%;
+        max-height: 100%;
+        overflow-y: auto;
+        .box-right {
+            & > * {
+                margin: 0 0 8px 0;
+            }
+            .login-logo {
+                display: block;
+                max-width: 100px;
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    -o-object-fit: contain;
+                       object-fit: contain;
+                }
+            }
+            p {
+                .red {
+                    color: $third-color;
+                    font-family: 'Almarai-Bold';
+                    font-size: 17px;
+                    background-color: transparent;
+                    &:hover,
+                    &:focus {
+                        color: $secondary-color;
+                    }
+                }
+            }
+            h4 {
+                font-family: "Almarai-ExtraBold";
+            }
+        }
+    }
+}
+/********* form login ****************/
+.logForm {
+    position: relative;
+    z-index: 9;
+    .form-group {
+        position: relative;
+        margin: 1.3em auto;
+        max-width: 300px;
+    }
+    .my_lbl {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            border: 0.2em solid #b9b9b9;
+        }
+        &::before {
+            left: 0;
+            right: 50%;
+            border-right: 0;
+            border-radius: 20px 0 0 20px;
+        }
+        &::after {
+            left: 50%;
+            right: 0;
+            border-left: 0;
+            border-radius: 0 20px 20px 0;
+        }
+    }
+    .my_inpt {
+        width: 100%;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        outline: none;
+    }
+    .my_span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        color: #b9b9b9;
+    }
+    .my_inpt,
+    .my_span {
+        font-family: "Almarai-Bold";
+        margin: 0;
+        border: 0;
+        text-align: center;
+        color: $primary-color;
+        background: none;
+        padding: 1em 0.5em;
+    }
+    .my_span,
+    .my_lbl::before,
+    .my_lbl::after {
+        -webkit-transition: -webkit-transform 0.2s ease-out;
+        transition: -webkit-transform 0.2s ease-out;
+        -o-transition: transform 0.2s ease-out;
+        transition: transform 0.2s ease-out;
+        transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+    }
+    .my_inpt:-webkit-autofill,
+    .my_inpt:-webkit-autofill:hover,
+    .my_inpt:-webkit-autofill:focus,
+    .my_inpt:-webkit-autofill:active {
+        -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+        -webkit-transition-delay: 9999s;
+    }
+    .my_inpt:focus,
+    .my_inpt:valid,
+    .my_inpt:invalid {
+        & + .my_lbl .my_span {
+            -webkit-transform: translateY(2em) scale(0.8);
+                -ms-transform: translateY(2em) scale(0.8);
+                    transform: translateY(2em) scale(0.8);
+            color: $primary-color;
+        }
+        & + .my_lbl::before {
+            -webkit-transform: translateX(-1em);
+                -ms-transform: translateX(-1em);
+                    transform: translateX(-1em);
+            border-color: $primary-color;
+        }
+        & + .my_lbl::after {
+            -webkit-transform: translateX(1em);
+                -ms-transform: translateX(1em);
+                    transform: translateX(1em);
+            border-color: $primary-color;
+        }
+    }
+    .my_inpt:invalid {
+        & + .my_lbl .my_span {
+            color: $third-color !important;
+        }
+    }
+}
+/******* input type checkbox  ********/
+[type="checkbox"] {
+    height: 26px;
+    left: 0;
+    opacity: 0; 
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    & + label {
+        cursor: pointer;
+        padding: 0;
+        position: relative;
+    } 
+    & + label:before {
+        background-color: #fff;
+        border: 2px solid $secondary-color;
+        content: '';
+        display: inline-block;
+        height: 24px;
+        margin-left: 12px;
+        pointer-events: none;
+        vertical-align: middle;
+        width: 24px;
+        @include rTransition(all 0.3s ease-in-out);
+    } 
+    &:hover + label:before {
+        border-color: $third-color;
+    }
+    &:focus + label:before {
+        border-color: $third-color;
+        -webkit-box-shadow: 0 0 0 2px $third-color;
+                box-shadow: 0 0 0 2px $third-color;
+    }
+    &:checked + label:after {
+        color: $third-color;
+        content: '✓';
+        display: block;
+        font-size: 20px;
+        height: 18px;
+        right: 5px;
+        pointer-events: none;
+        position: absolute;
+        top: -2px;
+        width: 18px;
+        z-index: 10;
+    }
+} 
+/****/
+.forgot{
+    background-color: transparent;
+    color: $primary-color;
+    border: 0;
+    &:hover , &:focus{
+        color: $third-color;
+    }
+}
+/******* Confirmation Code Modal  ********/
+.modal{
+    .modal-title {
+        font-size: 19px;
+        font-family: 'Almarai-Bold';
+    }
+    button.close {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        opacity: .8;
+        color: #ffffff;
+        background-color: $secondary-color;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        line-height: 35px;
+        font-size: 18px;
+        z-index: 99;
+        &:hover, &:focus{
+            opacity: 1;
+        }
+    }
+    .btn-hvr {
+        margin: 40px auto 0 auto;
+        width: 100%;
+        max-width: 300px;
+        border-radius: 30px;
+        overflow: hidden;
+        height: 50px;
+    }
+}
+/************ confirm code ****************/
+$char-w: 1ch;
+$gap: .5*$char-w;
+$n-char: 4;
+$in-w: $n-char*($char-w + $gap);
+.spinInput{
+    display: block;
+	margin: 2em auto;
+	border: none;
+	padding: 0;
+	width: $in-w;
+	background: repeating-linear-gradient(90deg, 
+		$primary-color 0, $primary-color $char-w, 
+		transparent 0, transparent $char-w + $gap) 
+		0 100%/ #{$in-w - $gap} 2px no-repeat;
+        font-family: 'Almarai-ExtraBold';
+        letter-spacing: $gap;
+        font-size: 22px;
+	&:focus {
+		outline: none;
+		color: $third-color;
+	}
+}
+/************* Responsive ***********/
+@media (max-width: 991px) {
+    .log_modal {
+        .modal-dialog {
+            margin: 0 auto;
+            right: 0;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .modal_inner {
+        .form-box {
+            min-width: 100%;
+            padding: 20px;
+            .box-right {
+                .login-logo {
+                    display: block;
+                    max-width: 70px;
+                }
+                h4{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
