@@ -8,7 +8,7 @@
         <div class="modal_inner">
             <div class="form-box">
                 <div class="box-right">
-                    <a href="{{url('/')}}" class="login-logo"><img src="{{asset('website/dist/img/logo.png')}}" alt="حوافل">
+                    <a href="{{url('/')}}" class="login-logo"><img src="{{asset('website/dist/img/logo.png')}}" alt="Fresha">
                     </a>
                     <p>
                          لديك حساب بالفعل ؟

@@ -25,7 +25,7 @@ b {
 .body-over {
     overflow-y: hidden !important;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 13px;
 }
 ::-webkit-scrollbar-track {
@@ -33,12 +33,12 @@ b {
     background-color: #fff;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #1D463D;
+    background-color: #037AFF;
     outline: 1px solid #fff;
     border-radius: 0;
-}
+} */
 ::-moz-selection {
-    background: #1D463D;
+    background: #037AFF;
     color: #fff;
 }
 ::selection {
@@ -60,10 +60,10 @@ body {
     font-size: 14px;
 /*    letter-spacing: 0.2px;*/
     line-height: 1.6;
-    color: #000000;
+    color: #101928;
     overflow-x: hidden !important;
     overflow-y: hidden;
-    direction: rtl !important;
+    direction: ltr !important;
 }
 .bg-white{
     background-color: #fff;
@@ -176,12 +176,12 @@ a {
             align-items: center;
 }
 .fifty-r {
-    float: right;
+    float: left;
     max-width: 50%;
     overflow: hidden;
 }
 .fifty-l {
-    float: left;
+    float: right;
     max-width: 50%;
     overflow: hidden;
 }
@@ -289,20 +289,20 @@ input[type=number]::-webkit-outer-spin-button {
 .col-sm-11,
 .col-md-11,
 .col-lg-11 {
-    float: right !important;
+    float: left !important;
 }
 .col-xs-pull-8 {
-    left: 66.66666667%;
+    right: 66.66666667%;
 }
 .col-xs-push-4 {
-    right: 33.33333333%;
+    left: 33.33333333%;
 }
 /********************************** Start LOADER *****************************/
 .loader {
     position: fixed;
     top: 0;
-    left: 0;
     right: 0;
+    left: 0;
     margin: 0 auto;
     width: 100vw;
     height: 100vh;
@@ -317,7 +317,7 @@ input[type=number]::-webkit-outer-spin-button {
     align-items: center;
     background-color: #ffffff;
     z-index: 999999999999;
-    direction: ltr;
+    direction: rtl;
 }
 .loader svg {
     background-color: #ffffff;
@@ -356,7 +356,7 @@ input[type=number]::-webkit-outer-spin-button {
   .shape:nth-child(4) {
     cy: 150;
     cx: 150;
-    fill: #1D463D;
+    fill: #037AFF;
     -webkit-animation: movein 3s ease infinite alternate;
             animation: movein 3s ease infinite alternate;
   }
@@ -364,14 +364,14 @@ input[type=number]::-webkit-outer-spin-button {
 /*Spin the svg so all the dots spin*/
 @-webkit-keyframes spin {
     to {
-      -webkit-transform: rotate(1turn);
-              transform: rotate(1turn);
+      -webkit-transform: rotate(-1turn);
+              transform: rotate(-1turn);
     }
   }
 @keyframes spin {
     to {
-      -webkit-transform: rotate(1turn);
-              transform: rotate(1turn);
+      -webkit-transform: rotate(-1turn);
+              transform: rotate(-1turn);
     }
   }
   
@@ -485,7 +485,7 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-backface-visibility:hidden;
           backface-visibility:hidden;
   margin: 0 !important;
-    float: left;
+    float: right;
   }
   .search-form .form-group.sb-search-open {
     height: 60px;
@@ -494,7 +494,7 @@ input[type=number]::-webkit-outer-spin-button {
   .search-form .form-group input.form-control{
     position:absolute;
     top:0;
-    right:0;
+    left:0;
     opacity: 0;
     width:100%;
     height:60px;
@@ -522,7 +522,7 @@ input[type=number]::-webkit-outer-spin-button {
     width:60px;
     height:60px;
     position:absolute;
-    left:0;
+    right:0;
     top:0;
 }
   .search-form .form-group.sb-search-open .form-control-submit{
@@ -549,7 +549,7 @@ input[type=number]::-webkit-outer-spin-button {
       }
       .search-form .form-group.sb-search-open input.form-control{
         width: 300px;
-        padding-left: 60px;
+        padding-right: 60px;
         z-index: 9;
         opacity: 1;
     }
@@ -607,20 +607,20 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .side-menu{
     position: fixed;
-    left: 0;
+    right: 0;
     height: calc(100vh - 40px);
     width: 350px;
     top: 20px;
-    border-radius: 0 20px 20px 0;
-    -webkit-box-shadow: 6px 0 12px 0px rgba(234,234,234,1);
-            box-shadow: 6px 0 12px 0px rgba(234,234,234,1);
+    border-radius: 20px 0 0 20px;
+    -webkit-box-shadow: -6px 0 12px 0px rgba(234,234,234,1);
+            box-shadow: -6px 0 12px 0px rgba(234,234,234,1);
     z-index: 999;
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-    -webkit-transform: translateX(-100%);
-        -ms-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
     opacity: 0;
     background-color: #fff;
     line-height: normal;
@@ -637,7 +637,7 @@ input[type=number]::-webkit-outer-spin-button {
     line-height: 56px;
     width: 56px;
     top: calc(50% - 28px);
-    right: -28px;
+    left: -28px;
     color: #000000;
     font-size: 25px;
     z-index: 9;
@@ -658,8 +658,8 @@ input[type=number]::-webkit-outer-spin-button {
 .side-menu .fixed-li{
     position: absolute;
     bottom: 0;
-    right: 0;
     left: 0;
+    right: 0;
     margin: 0 auto;
     height: 60px;
     width: 100%;
@@ -670,7 +670,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 16px;
     font-family: 'Almarai-ExtraBold';
     line-height: 1px !important;
-    border-radius: 0 0 20px 0;
+    border-radius: 0 0 0 20px;
     z-index: 9;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -690,7 +690,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .side-menu .fixed-li:hover . .side-menu .fixed-li:focus{
     color: #fff !important;
-    background-color: #1D463D !important;
+    background-color: #037AFF !important;
 }
 
 .side-menu li h4 {
@@ -721,7 +721,7 @@ input[type=number]::-webkit-outer-spin-button {
 span.bell {
     color: #F9A392;
     font-size: 23px;
-    padding: 0 0 0 10px;
+    padding: 0 10px 0 0;
 }
 .notify {
     display: -ms-inline-grid;
@@ -788,7 +788,7 @@ span.bell {
 /************* Sign Up/In side menu *************/
 .welcomee{
     font-family: 'Almarai-ExtraBold';
-    color: #1D463D;
+    color: #037AFF;
 }
 .pink_a{
     font-family: 'Almarai-Bold';
@@ -810,15 +810,15 @@ span.bell {
 }
 .log_anchors .btn-hvr:last-child{
     margin: 14px auto 0 auto;
-    border-color: #1D463D;
-    color: #1D463D;
+    border-color: #037AFF;
+    color: #037AFF;
 }
 .log_anchors .btn-hvr:last-child::after{
     background-color: #ffffff;
 }
 .log_anchors .btn-hvr:last-child:hover , .log_anchors .btn-hvr:last-child:focus{
-    background-color: #1D463D;
-    border-color: #1D463D;
+    background-color: #037AFF;
+    border-color: #037AFF;
     color: #ffffff;
 }
 /************* cart side menu *************/
@@ -844,7 +844,7 @@ span.bell {
 .remove_item{
     color: #000000 !important;
     position: absolute;
-    right: 0;
+    left: 0;
 }
 .quantity_in{
     background-color: #F9A392;
@@ -885,9 +885,9 @@ span.bell {
     height: 30px;
     line-height: 30px;
     z-index: 999;
-    right: 0;
+    left: 0;
     display: none;
-    background-color: #1D463D;
+    background-color: #037AFF;
 }
 div#nav-icon1:before {
     background: -o-radial-gradient(circle, rgb(156, 5, 16) 44%, rgb(207, 30, 67) 100%);
@@ -897,9 +897,9 @@ div#nav-icon1:before {
     position: absolute;
     height: 2px;
     width: 20px;
-    left: 0;
-    margin: 0 auto;
     right: 0;
+    margin: 0 auto;
+    left: 0;
     background: #fff;
         border-radius: 30px;
     opacity: 1;
@@ -926,15 +926,15 @@ div#nav-icon1:before {
     background: #9c0510;
 }
 #nav-icon1.open span:nth-child(1) {
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    top: 15px;
-}
-#nav-icon1.open span:nth-child(2) {
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
+    top: 15px;
+}
+#nav-icon1.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
         top: 15px;
 }
 #nav-icon1.open {
@@ -948,8 +948,8 @@ div#nav-icon1:before {
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
     right: 0;
+    left: 0;
     bottom: 0;
     border-radius: 50%;
     background-color: #7F8591;
@@ -1016,11 +1016,11 @@ div#nav-icon1:before {
 }
 .navy ul.nav li a::before{
     top: 0;
-    left: 0;
+    right: 0;
 }
 .navy ul.nav li a::after{
     bottom: 0;
-    right: 0;
+    left: 0;
 }
 .navy ul.nav li a.active::before , .navy ul.nav li a.active::after,.navy ul.nav li a:hover::before , .navy ul.nav li a:hover::after,.navy ul.nav li a:focus::before , .navy ul.nav li a:focus::after{
     width: 50%;
@@ -1058,8 +1058,8 @@ footer:after{
     width: 100%;
     height: 100%;
     position: absolute;
-    right: 0;
     left: 0;
+    right: 0;
     margin: 0 auto;
     top: 0;
 }
@@ -1068,7 +1068,7 @@ footer:after{
     position: relative;
     z-index: 9;
     background-image: url("../img/feather.png"), url("../img/grass-tall.png");
-    background-position: right top, left bottom;
+    background-position: left top, right bottom;
     background-repeat: no-repeat, no-repeat;
     background-size:300px,150px;
     padding: 60px 0 40px 0;
@@ -1087,7 +1087,7 @@ footer:after{
 .f-title{
     font-family: 'Almarai-ExtraBold';
     margin: 0 0 16px 0;
-    color: #1D463D;
+    color: #037AFF;
 }
 .flex-r.foot1 p {
     margin: 0 0 16px 0;
@@ -1102,8 +1102,8 @@ footer li a , footer p{
 }
 footer .btn-hvr {
     max-width: 190px;
-    margin-right: 0;
     margin-left: 0;
+    margin-right: 0;
 }
 footer .btn-hvr::after {
     background: #ec6a60;
@@ -1112,7 +1112,7 @@ footer .btn-hvr:hover::after {
     height: 100%;
 }
 /* footer .btn-hvr:hover, footer .btn-hvr:focus {
-    color: #1D463D;
+    color: #037AFF;
 } */
 /******************* End Footer **************************/
 /*******************Start copyright  **************************/
@@ -1120,8 +1120,11 @@ footer .btn-hvr:hover::after {
     padding: 10px 0;
     text-transform: capitalize;
     text-align: center;
-    color: #fff;
-    background-color: #1d463d;
+    color: #7c7e7c;
+    font-size: 15px;
+    
+}
+.footer .copyright{
     position: relative;
     z-index: 9;
 }
@@ -1140,14 +1143,14 @@ footer li a:hover , footer li a:focus , .copyright a:hover, .copyright a:focus{
 #scroll-top {
    display: none;
     position: fixed;
-    left: 20px;
+    right: 20px;
     bottom: 20px;
     width: 50px;
     height: 50px;
     line-height: 50px;
     z-index: 9;
     cursor: pointer;
-    background: #1D463D;
+    background: #037AFF;
     font-size: 24px;
     color: #fff;
     text-align: center;
@@ -1218,7 +1221,7 @@ footer li a:hover , footer li a:focus , .copyright a:hover, .copyright a:focus{
         display: none
     }
     b.caret {
-        margin-right: 2px;
+        margin-left: 2px;
     }
     .display-xs,
     #nav-icon1 {
@@ -1290,11 +1293,11 @@ display: flex;
     opacity: 1;
     margin: 0;
     padding: 0 !important;
-    background-color: #1D463D;
+    background-color: #037AFF;
     top: 0;
     bottom: 0;
-    left: auto;
-    right: 0;
+    right: auto;
+    left: 0;
     position: fixed;
     z-index: 1000020;
     height: 100%;
@@ -1306,14 +1309,14 @@ display: flex;
     -o-transition: all .6s ease;
     transition: all .6s ease;
     border-top: none;
-    right: -100%;
-    float: right;
+    left: -100%;
+    float: left;
     }
     .navy:after{
         content: "";
         position: absolute;
-        left: 0;
         right: 0;
+        left: 0;
         margin: 0 auto;
         width: 100%;
         border-bottom: 1px solid #EAEFE8;
@@ -1321,7 +1324,7 @@ display: flex;
     bottom: 36px;
     }
     .back-nav {
-       right: 0
+       left: 0
     }
     .body-mob .nav-right{
             position: fixed;
@@ -1332,8 +1335,8 @@ display: flex;
 /*    background-color: #EAEFE8;*/
     background-color: #fff;
     height: 120px;
-            right: 0;
-    left: 0;
+            left: 0;
+    right: 0;
     margin: 0 auto;
     display: -webkit-box !important;
         display: -ms-flexbox !important;
@@ -1348,11 +1351,11 @@ width: 106px;
     }
     .navy ul.nav {
        position: absolute;
-    right: 50%;
+    left: 50%;
     top: 58%;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
-    transform: translate(50%, -50%);
+    transform: translate(-50%, -50%);
     opacity: 1;
     width: 100%;
     display: block;
@@ -1368,8 +1371,8 @@ width: 106px;
         border: 0 !important;
     }
     .navy ul.nav > li:after {
-        right: 0;
-        left: auto;
+        left: 0;
+        right: auto;
         margin: 0;
         bottom: 0;
         width: 0%;
@@ -1389,7 +1392,7 @@ width: 106px;
         color: #fff;
         font-size: 18px;
         line-height: 3;
-        text-align: right;
+        text-align: left;
         position: relative;
         padding: 0 12px;
         width: -webkit-max-content;
@@ -1462,7 +1465,7 @@ width: 106px;
         font-size: 16px;
     }
     .notify {
-        padding-right: 5px;
+        padding-left: 5px;
     }
     .side-menu li h4 {
         font-size: 14px;

@@ -1,5 +1,5 @@
 @extends('site.layout')
-@section('title' , 'حوافل || تعديل الحساب الشخصى')
+@section('title' , 'Fresha || تعديل الحساب الشخصى')
 @section('styles')
 <link rel="stylesheet" href="{{asset('website/dist/css/filepond-plugin/filepond-plugin-image-preview.min.css')}}">
 <link rel="stylesheet" href="{{asset('website/dist/css/filepond-plugin/filepond.min.css')}}">

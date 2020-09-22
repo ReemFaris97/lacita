@@ -1,5 +1,5 @@
 @extends('site.layout')
-@section('title' , 'حوافل || الرئيسية')
+@section('title' , 'Fresha || الرئيسية')
 @section('styles')
 <link rel="stylesheet" href="{{asset('website/dist/css/a-style.css')}}">
 <link rel="stylesheet" href="{{asset('website/scss/first.css')}}">
@@ -15,7 +15,7 @@
 <header class="my-header">
     <img src="{{asset('website/dist/img/asset1.png')}}">
     <div class="container head-txt">
-        <p class="wow animate__animated animate__fadeInDownBig">حوافل للعناية بالبشرة</p>
+        <p class="wow animate__animated animate__fadeInDownBig">Fresha للعناية بالبشرة</p>
         <h2>منتجات</h2>
         <h2> صنعت من</h2>
         <h3 class="wow animate__animated animate__fadeInRightBig">مكونات طبيعية للعناية ببشرتك</h3>

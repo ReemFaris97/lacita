@@ -1,5 +1,5 @@
 @extends('site.layout')
-@section('title' , 'حوافل || تقييم الحجز')
+@section('title' , 'Fresha || تقييم الحجز')
 @section('styles')
 <link rel="stylesheet" href="{{asset('website/scss/profile.css')}}">
 @endsection

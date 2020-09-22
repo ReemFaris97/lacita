@@ -23,15 +23,14 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('website/dist/img/favicon/favicon-16x16.png')}}">
     <link rel="manifest" href="{{asset('website/dist/img/favicon/manifest.json')}}">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{asset('website/dist/img/favicon//ms-icon-144x144.png')}}">
+    <meta name="theme-color" content="#037AFF">
     <!------ End generated favicon ----->
     <link rel="stylesheet" href="{{asset('website/dist/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('website/dist/css/animate.css')}}">
     <link rel="stylesheet" href="{{asset('website/dist/css/fontawesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('website/dist/css/button.css')}}">
     <link rel="stylesheet" href="{{asset('website/dist/css/main.css')}}">
-    <link rel="stylesheet" href="{{asset('website/scss/login-pages.css')}}">
     <link rel="stylesheet" href="{{asset('website/scss/first.css')}}">
     @yield('styles')
     <!-- /////////////////////|||||||End Layout |||||||||||||||||||| -->
@@ -458,13 +457,6 @@
 
 
 
-    <!-- /////////////////////||||||||||||||||||||||||||||| Start Modals |||||||||||||||||||||||||||| -->
-    @include('site.modals.sign-in-modal')
-    @include('site.modals.sign-up-modal')
-    @include('site.modals.forgot-pass-modal')
-    @include('site.modals.confirm-code-modal')
-    @include('site.modals.set-pass-modal')
-    <!-- /////////////////////||||||||||||||||||||||||||||| End Modals |||||||||||||||||||||||||||| -->
 
 
     <!-- /////////////////////||||||||||||||||||||||||||||| Start Script |||||||||||||||||||||||||||| -->
@@ -528,29 +520,6 @@
         $(".remove_item").click(function() {
             $(this).parent(".cart_item").fadeOut(300);
         });
-    </script>
-    <!---- local storage remember me ---->
-    <script>
-        const rmCheck = document.getElementById("rememberMe"),
-            emailInput = document.getElementById("number_phone");
-
-        if (localStorage.checkbox && localStorage.checkbox !== "") {
-            rmCheck.setAttribute("checked", "checked");
-            emailInput.value = localStorage.username;
-        } else {
-            rmCheck.removeAttribute("checked");
-            emailInput.value = "";
-        }
-
-        function lsRememberMe() {
-            if (rmCheck.checked && emailInput.value !== "") {
-                localStorage.username = emailInput.value;
-                localStorage.checkbox = rmCheck.value;
-            } else {
-                localStorage.username = "";
-                localStorage.checkbox = "";
-            }
-        }
     </script>
     <!------- confirm code ----------->
     <script>

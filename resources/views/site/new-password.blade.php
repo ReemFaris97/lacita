@@ -1,5 +1,5 @@
 @extends('site.layout')
-@section('title' , 'حوافل || إعادة تعيين كلمة المرور')
+@section('title' , 'Fresha || إعادة تعيين كلمة المرور')
 @section('styles')
 <link rel="stylesheet" href="{{asset('website/scss/login-pages.css')}}">
 @endsection
@@ -24,7 +24,7 @@
    <div class="container">
       <div class="form-box">
       <div class="box-right">
-      <a href="{{url('/')}}" class="login-logo"><img src="{{asset('website/dist/img/logo.png')}}" alt="حوافل">
+      <a href="{{url('/')}}" class="login-logo"><img src="{{asset('website/dist/img/logo.png')}}" alt="Fresha">
       </a>
                <p>
             ليس لديك حساب ؟

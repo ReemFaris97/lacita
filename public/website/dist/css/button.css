@@ -8,7 +8,7 @@
   text-transform: uppercase;
   font-size: 16px;
   text-decoration: none;
-  border: 2px solid #1D463D;
+  border: 2px solid #037AFF;
   color: #ffffff;
   position: relative;
   text-align: center;
@@ -17,7 +17,7 @@
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   background-color: #F9A392;
@@ -32,11 +32,11 @@
 .btn-hvr::after{
   content: "";
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #1D463D;
+  background-color: #037AFF;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -97,7 +97,7 @@
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
     height: 100%;
 /*    background-color: #FF003D;*/
@@ -166,7 +166,7 @@ ul.social  li .icon-snap:before {
              justify-content: center
     }
     .social-buttons .social-margin {
-      margin-right: 15px;
+      margin-left: 15px;
     }
     .social-buttons a,
     .social-buttons a:hover,
@@ -231,7 +231,7 @@ ul.social  li .icon-snap:before {
     }
     .social-buttons .social-icon.instagram {
       font-size: 22px;
-      padding-left: 2px;
+      padding-right: 2px;
       border-color: #eed3f1;
       background: -o-radial-gradient(33% 100%, circle, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
       background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);

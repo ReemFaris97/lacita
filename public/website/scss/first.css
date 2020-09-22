@@ -33,7 +33,7 @@ a.categoryhref, .fleximgfav .nameprodfav, .fleximgfav b {
 .btn-icon {
   font-size: 20px;
   background-color: #fff;
-  color: #1d463d;
+  color: #037AFF;
   width: 40px;
   height: calc(100% - 6px);
   line-height: 47px;
@@ -62,10 +62,10 @@ a.categoryhref, .fleximgfav .nameprodfav, .fleximgfav b {
 
 .my-header .head-txt {
   position: absolute;
-  right: 50%;
+  left: 50%;
   top: 50%;
-  -webkit-transform: translate(50%, -50%);
-  transform: translate(50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .my-header .head-txt p {
@@ -149,7 +149,7 @@ a.categoryhref, .fleximgfav .nameprodfav, .fleximgfav b {
 
 .about-us .shapes {
   position: relative;
-  margin: 0 0 0 60px;
+  margin: 0 60px 0 0;
 }
 
 .about-us .shapes img:nth-child(1) {
@@ -169,18 +169,18 @@ a.categoryhref, .fleximgfav .nameprodfav, .fleximgfav b {
 
 .about-us .shapes img:nth-child(2) {
   top: -95px;
-  right: 36px;
+  left: 36px;
 }
 
 .about-us .shapes img:nth-child(3) {
   bottom: -95px;
-  left: -36px;
+  right: -36px;
 }
 
 .about-us .about-left h3 img {
   -o-object-fit: contain;
   object-fit: contain;
-  margin: 0 8px 0 0;
+  margin: 0 0 0 8px;
 }
 
 .about-us .about-left h3:first-of-type {
@@ -192,7 +192,7 @@ a.categoryhref, .fleximgfav .nameprodfav, .fleximgfav b {
 }
 
 .about-us .about-left p:first-of-type {
-  border-right: 5px solid #f9a392;
+  border-left: 5px solid #037AFF;
   margin: 20px 0;
   padding: 20px;
 }
@@ -213,7 +213,7 @@ a.categoryhref, .fleximgfav .nameprodfav, .fleximgfav b {
 
 .buttons_cont .btn-flex {
   min-width: 170px;
-  color: #000000;
+  color: #101928;
   border-color: #ffffff;
 }
 
@@ -222,27 +222,27 @@ a.categoryhref, .fleximgfav .nameprodfav, .fleximgfav b {
 }
 
 .buttons_cont .btn-flex .btn-icon {
-  background-color: #f9a392;
+  background-color: #037AFF;
   color: #ffffff;
 }
 
 .buttons_cont .btn-flex:hover, .buttons_cont .btn-flex:focus {
   color: #ffffff;
-  border-color: #f9a392;
+  border-color: #037AFF;
 }
 
 .buttons_cont .btn-flex:hover .btn-icon, .buttons_cont .btn-flex:focus .btn-icon {
   background-color: #ffffff;
-  color: #f9a392;
+  color: #037AFF;
 }
 
 .buttons_cont .btn-flex:last-of-type .btn-icon {
   background-color: transparent;
-  color: #000000;
+  color: #101928;
   width: unset;
   height: unset;
   line-height: unset;
-  margin: 0 0 0 6px;
+  margin: 0 6px 0 0;
 }
 
 .buttons_cont .btn-flex:last-of-type:hover .btn-icon, .buttons_cont .btn-flex:last-of-type:focus .btn-icon {
@@ -270,7 +270,7 @@ a.categoryhref, .fleximgfav .nameprodfav, .fleximgfav b {
 }
 
 .fleximgfav img {
-  margin-left: 0;
+  margin-right: 0;
   max-width: 100%;
   width: auto;
   -o-object-fit: contain;
@@ -287,7 +287,7 @@ a.categoryhref, .fleximgfav .nameprodfav, .fleximgfav b {
 }
 
 .fleximgfav .nameprodfav:hover, .fleximgfav .nameprodfav:focus {
-  color: #f9a392;
+  color: #037AFF;
 }
 
 .recents .fleximgfav {
@@ -295,9 +295,9 @@ a.categoryhref, .fleximgfav .nameprodfav, .fleximgfav b {
 }
 
 .recents .fleximgfav .flex.flexadd {
-  left: 0;
-  position: absolute;
   right: 0;
+  position: absolute;
+  left: 0;
   top: 8px;
   margin: 0 auto;
   -ms-flex-pack: distribute;
@@ -438,14 +438,14 @@ input.form-control.inputsubscribe::placeholder {
 }
 
 .columns_r .box-wrapper .box .box_dis {
-  background-color: #f9a392;
+  background-color: #037AFF;
   color: #ffffff;
   padding: 6px;
   font-size: 16px;
   position: absolute;
-  left: 6px;
+  right: 6px;
   top: 6px;
-  direction: ltr;
+  direction: rtl;
 }
 
 .columns_r .box-wrapper .box .box_img {
@@ -477,7 +477,7 @@ input.form-control.inputsubscribe::placeholder {
 }
 
 .columns_r .box-wrapper .box:hover, .columns_r .box-wrapper .box:focus {
-  color: #f9a392;
+  color: #037AFF;
   -webkit-animation: pulse 1s;
   animation: pulse 1s;
   -webkit-box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
@@ -491,7 +491,7 @@ input.form-control.inputsubscribe::placeholder {
 
 .columns_r .box-wrapper:nth-child(-n + 2) .box_dis {
   background-color: #ffffff;
-  color: #f9a392;
+  color: #037AFF;
 }
 
 .columns_r .box-wrapper:nth-child(1) {
@@ -523,11 +523,11 @@ input.form-control.inputsubscribe::placeholder {
 }
 
 .columns_r .box-wrapper:nth-child(1) .box .box_img:hover {
-  color: #000000 !important;
+  color: #101928 !important;
 }
 
 .columns_r .box-wrapper:nth-child(1) .box .box_img:hover .box_desc {
-  color: #000000 !important;
+  color: #101928 !important;
 }
 
 .columns_r .box-wrapper:nth-child(1) .box .box_desc {
@@ -559,7 +559,7 @@ input.form-control.inputsubscribe::placeholder {
 
 .columns_r .box-wrapper .box.three {
   height: 400px;
-  background-color: #f9a392;
+  background-color: #037AFF;
 }
 
 /************* End offers and sale section ************/
@@ -596,7 +596,7 @@ input.form-control.inputsubscribe::placeholder {
     padding: 50px 0;
   }
   .about-us .shapes {
-    margin: 0 0 0 20px;
+    margin: 0 20px 0 0;
   }
   .about-us .shapes img:nth-child(1) {
     height: 400px;
@@ -607,11 +607,11 @@ input.form-control.inputsubscribe::placeholder {
   }
   .about-us .shapes img:nth-child(2) {
     top: -45px;
-    right: 20px;
+    left: 20px;
   }
   .about-us .shapes img:nth-child(3) {
     bottom: -45px;
-    left: -20px;
+    right: -20px;
   }
 }
 

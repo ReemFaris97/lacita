@@ -17,6 +17,26 @@ Route::get('/', function () {
     return view('site.home');
 });
 /****/
+/***** Login Forms ****/
+Route::get('/sign-in', function () {
+    return view('site.login.sign-in');
+});
+Route::get('/sign-up', function () {
+    return view('site.login.sign-up');
+});
+Route::get('/sign_mobile', function () {
+    return view('site.login.sign_mobile');
+});
+Route::get('/forget-password', function () {
+    return view('site.login.forget-password');
+});
+Route::get('/confirmation-code', function () {
+    return view('site.login.confirmation-code');
+});
+Route::get('/new-password', function () {
+    return view('site.login.new-password');
+});
+/**********************/
 Route::get('/contact-us', function () {
     return view('site.contact-us');
 });
@@ -117,21 +137,6 @@ Route::get('/booking-done', function () {
 });
 
 
-/***** Login Forms ****/
-Route::get('/sign-in', function () {
-    return view('site.sign-in');
-});
-Route::get('/sign-up', function () {
-    return view('site.sign-up');
-});
-Route::get('/forget-password', function () {
-    return view('site.forget-password');
-});
-Route::get('/confirmation-code', function () {
-    return view('site.confirmation-code');
-});
-Route::get('/new-password', function () {
-    return view('site.new-password');
-});
+
 
 
