@@ -521,14 +521,7 @@
             $(this).parent(".cart_item").fadeOut(300);
         });
     </script>
-    <!------- confirm code ----------->
-    <script>
-            $(document).ready(function() {
-                $('#confirmCodeModal').on('shown.bs.modal', function() {
-                    $('.spinInput').trigger('focus');
-                });
-            });
-    </script>
+  
     @yield('scripts')
     <!-- /////////////////////||||||||||||||||||||||||||||| End Script |||||||||||||||||||||||||||| -->
 </body>

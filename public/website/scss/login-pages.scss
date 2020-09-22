@@ -80,7 +80,7 @@
         h2 {
             font-family: "Almarai-ExtraBold";
             margin: 0 0 14px 0;
-            text-transform: math-auto;
+            text-transform: capitalize;
         }
         .big_btn {
             border-radius: 4px;
@@ -90,7 +90,7 @@
             background-color: $primary-color;
             color: #fff;
             font-size: 18px;
-            text-transform: math-auto;
+            text-transform: capitalize;
             margin-bottom: 24px;
             height: 50px;
             line-height: 50px;
@@ -272,40 +272,11 @@ label .forgot{
 .m-b-15{
     margin-bottom: 15px;
 }
-/******* Confirmation Code Modal  ********/
-.modal {
-    .modal-title {
-        font-size: 19px;
-        font-family: "Almarai-Bold";
-    }
-    button.close {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        opacity: 0.8;
-        color: #ffffff;
-        background-color: $secondary-color;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        line-height: 35px;
-        font-size: 18px;
-        z-index: 99;
-        &:hover,
-        &:focus {
-            opacity: 1;
-        }
-    }
-    .btn-hvr {
-        margin: 40px auto 0 auto;
-        width: 100%;
-        max-width: 300px;
-        border-radius: 30px;
-        overflow: hidden;
-        height: 50px;
-    }
+/************ confirm code .blade****************/
+.grey_p{
+    color: $grey-color;
+    font-size: 15px;
 }
-/************ confirm code ****************/
 $char-w: 1ch;
 $gap: 0.5 * $char-w;
 $n-char: 4;

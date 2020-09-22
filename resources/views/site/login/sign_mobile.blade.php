@@ -65,7 +65,7 @@
                     </div>
                     </div>
 
-                    <button type="submit" href="{{url('/')}}" class="big_btn">sign up</button>
+                    <button type="submit" class="big_btn">sign up</button>
                 </form>
                 <div class="have_ac">
                     <p>Already have an account?</p>

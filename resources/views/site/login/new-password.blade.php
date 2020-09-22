@@ -1,5 +1,5 @@
 @extends('site.layout')
-@section('title' , 'Fresha || Forgot password')
+@section('title' , 'Fresha || Reset password')
 @section('styles')
 <link rel="stylesheet" href="{{asset('website/scss/login-pages.css')}}">
 @endsection
@@ -15,19 +15,20 @@
                 <a href="{{url('/')}}" class="to_site"><i class="fas fa-arrow-left"></i></a>
             </div>
             <div class="form-box">
-                <h2>Forgot password?</h2>
+                <h2>Reset Your Password</h2>
                 <p class="grey_p">
-                Enter your registered mobile number and we'll send you a secure code to setup a new password.
-                </p>
-                <form class="logForm" action="{{url('confirmation-code')}}">
+                   It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout
+                  </p>
+                <form class="logForm" action="{{url('/')}}">
                   <div class="form-group">
-                     <label>mobile number</label>
-                     <input type="nnumber" class="form-control">
+                      <label>Your password</label>
+                     <input type="password" placeholder="enter your password" class="form-control">
                   </div>
-                  <div class="have_ac m-b-15">
-                         <a href="{{url('sign-in')}}">Back to login</a>
-                </div>
-                  <button type="submit" class="big_btn">reset Password</button>
+                  <div class="form-group">
+                      <label>Re-enter Your password</label>
+                     <input type="password" placeholder="enter your password" class="form-control">
+                  </div>
+                  <button type="submit" class="big_btn">Save</button>
                </form>
             </div>
             <div class="form-box">

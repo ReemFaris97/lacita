@@ -31,10 +31,10 @@
                            <!--- local storage remember me -->
                               <input type="checkbox" id="rememberMe"> <label for="rememberMe">remember me</label>
                           </div>
-                          <a href="{{url('forget-pass')}}" class="forgot">Forget password?</a>
+                          <a href="{{url('forgot-pass')}}" class="forgot">Forget password?</a>
                     </div>
                     
-                  <button type="submit" href="{{url('/')}}" class="big_btn">Log In</button>
+                  <button type="submit" class="big_btn">Log In</button>
                </form>
                 <div class="have_ac">
                     <p>Don't have a booker account?</p>
