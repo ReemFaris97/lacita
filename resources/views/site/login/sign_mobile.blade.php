@@ -34,7 +34,7 @@
                     <div class="col-xs-6">
                         <div class="form-group">
                             <label>mobile number</label>
-                            <input type="number" class="form-control">
+                            <input type="number" class="form-control padd_left">
                             <div class="slct_n">
                             <select class="select-2">
                                 <option>+20</option>

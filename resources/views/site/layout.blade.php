@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="{{asset('website/dist/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('website/dist/css/animate.css')}}">
     <link rel="stylesheet" href="{{asset('website/dist/css/fontawesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('website/dist/css/combobox.css')}}">
     <link rel="stylesheet" href="{{asset('website/dist/css/button.css')}}">
     <link rel="stylesheet" href="{{asset('website/dist/css/main.css')}}">
     <link rel="stylesheet" href="{{asset('website/scss/first.css')}}">
@@ -37,7 +38,6 @@
 </head>
 
 <body>
-    <div class="body-overlay"></div>
     <!-- Start Loading-Page -->
     <div class="loader">
         <svg width="200" height="200" id="svg">
@@ -55,126 +55,399 @@
             <div class="row">
 
                 <div class="col-md-2 col-sm-2 col-xs-7">
-                    <div class="nav-right">
-                        <div id="nav-icon1">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+                    <div class="nav_logo">
                         <a href="{{url('/')}}" class="logo-nav">
                             <img src="{{asset('website/dist/img/logo.png')}}">
                         </a>
                     </div>
                 </div>
 
-                <div class="col-md-7 col-sm-6 col-xs-0">
-                    <div class="navy">
-                        <ul class="nav cf" id="ul1">
-                            <li><a href="{{url('/')}}" class="active">الرئيسية</a></li>
-                            <li><a href="{{url('categories')}}">الأقسام</a></li>
-                            <li><a href="{{url('my_orders')}}">الطلبات</a></li>
-                            <li><a href="{{url('favourites')}}">المفضلة</a></li>
-                            <li><a href="{{url('multimedia')}}">مكتبة الصور والفيديوهات</a></li>
-                        </ul>
+                <div class="col-md-6 col-sm-5 col-xs-2">
+                    <div class="center_nav view_box new_btn">
+                                <a href="javascript:void(0)" class="icon_mob">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                        <!-- /////////////////////||||||||||| Start Searchbar |||||||||||||||||||| -->
+                                <div class="nav_mob">
+                                <a href="javascript:void(0)" id="icon_close">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                                    <div class="menu_mob">
+                            <div class="combobox combobox-list">
+                                <div class="group">
+                                    <span class="srch_i"><i class="fas fa-search"></i></span>
+                                    <input id="cb1-input" class="cb_edit" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="cb1-listbox" placeholder="Search for a service or venue">
+                                    <button id="cb1-button" tabindex="-1" aria-label="Open">
+                                        <i class="fas fa-sort-down"></i>
+                                    </button>
+                                </div>
+                                <!----- drop common search suggestions here -------->
+                                <ul id="cb1-listbox" role="listbox" aria-label="States">
+                                    <li id="lb1-al" role="option">
+                                        Alabama
+                                    </li>
+                                    <li id="lb1-ak" role="option">
+                                        Alaska
+                                    </li>
+                                    <li id="lb1-as" role="option">
+                                        American Samoa
+                                    </li>
+                                    <li id="lb1-az" role="option">
+                                        Arizona
+                                    </li>
+                                    <li id="lb1-ar" role="option">
+                                        Arkansas
+                                    </li>
+                                    <li id="lb1-ca" role="option">
+                                        California
+                                    </li>
+                                    <li id="lb1-co" role="option">
+                                        Colorado
+                                    </li>
+                                    <li id="lb1-ct" role="option">
+                                        Connecticut
+                                    </li>
+                                    <li id="lb1-de" role="option">
+                                        Delaware
+                                    </li>
+                                    <li id="lb1-dc" role="option">
+                                        District of Columbia
+                                    </li>
+                                    <li id="lb1-fl" role="option">
+                                        Florida
+                                    </li>
+                                    <li id="lb1-ga" role="option">
+                                        Georgia
+                                    </li>
+                                    <li id="lb1-gm" role="option">
+                                        Guam
+                                    </li>
+                                    <li id="lb1-hi" role="option">
+                                        Hawaii
+                                    </li>
+                                    <li id="lb1-id" role="option">
+                                        Idaho
+                                    </li>
+                                    <li id="lb1-il" role="option">
+                                        Illinois
+                                    </li>
+                                    <li id="lb1-in" role="option">
+                                        Indiana
+                                    </li>
+                                    <li id="lb1-ia" role="option">
+                                        Iowa
+                                    </li>
+                                    <li id="lb1-ks" role="option">
+                                        Kansas
+                                    </li>
+                                    <li id="lb1-ky" role="option">
+                                        Kentucky
+                                    </li>
+                                    <li id="lb1-la" role="option">
+                                        Louisiana
+                                    </li>
+                                    <li id="lb1-me" role="option">
+                                        Maine
+                                    </li>
+                                    <li id="lb1-md" role="option">
+                                        Maryland
+                                    </li>
+                                    <li id="lb1-ma" role="option">
+                                        Massachusetts
+                                    </li>
+                                    <li id="lb1-mi" role="option">
+                                        Michigan
+                                    </li>
+                                    <li id="lb1-mn" role="option">
+                                        Minnesota
+                                    </li>
+                                    <li id="lb1-ms" role="option">
+                                        Mississippi
+                                    </li>
+                                    <li id="lb1-mo" role="option">
+                                        Missouri
+                                    </li>
+                                    <li id="lb1-mt" role="option">
+                                        Montana
+                                    </li>
+                                    <li id="lb1-ne" role="option">
+                                        Nebraska
+                                    </li>
+                                    <li id="lb1-nv" role="option">
+                                        Nevada
+                                    </li>
+                                    <li id="lb1-nh" role="option">
+                                        New Hampshire
+                                    </li>
+                                    <li id="lb1-nj" role="option">
+                                        New Jersey
+                                    </li>
+                                    <li id="lb1-nm" role="option">
+                                        New Mexico
+                                    </li>
+                                    <li id="lb1-ny" role="option">
+                                        New York
+                                    </li>
+                                    <li id="lb1-nc" role="option">
+                                        North Carolina
+                                    </li>
+                                    <li id="lb1-nd" role="option">
+                                        North Dakota
+                                    </li>
+                                    <li id="lb1-mp" role="option">
+                                        Northern Marianas Islands
+                                    </li>
+                                    <li id="lb1-oh" role="option">
+                                        Ohio
+                                    </li>
+                                    <li id="lb1-ok" role="option">
+                                        Oklahoma
+                                    </li>
+                                    <li id="lb1-or" role="option">
+                                        Oregon
+                                    </li>
+                                    <li id="lb1-pa" role="option">
+                                        Pennsylvania
+                                    </li>
+                                    <li id="lb1-pr" role="option">
+                                        Puerto Rico
+                                    </li>
+                                    <li id="lb1-ri" role="option">
+                                        Rhode Island
+                                    </li>
+                                    <li id="lb1-sc" role="option">
+                                        South Carolina
+                                    </li>
+                                    <li id="lb1-sd" role="option">
+                                        South Dakota
+                                    </li>
+                                    <li id="lb1-tn" role="option">
+                                        Tennessee
+                                    </li>
+                                    <li id="lb1-tx" role="option">
+                                        Texas
+                                    </li>
+                                    <li id="lb1-ut" role="option">
+                                        Utah
+                                    </li>
+                                    <li id="lb1-ve" role="option">
+                                        Vermont
+                                    </li>
+                                    <li id="lb1-va" role="option">
+                                        Virginia
+                                    </li>
+                                    <li id="lb1-vi" role="option">
+                                        Virgin Islands
+                                    </li>
+                                    <li id="lb1-wa" role="option">
+                                        Washington
+                                    </li>
+                                    <li id="lb1-wv" role="option">
+                                        West Virginia
+                                    </li>
+                                    <li id="lb1-wi" role="option">
+                                        Wisconsin
+                                    </li>
+                                    <li id="lb1-wy" role="option">
+                                        Wyoming
+                                    </li>
+                                </ul>
+                            </div>
+                            <span class="in_btw">in</span>
+                            <!---- location search --->
+                            <div class="combobox combobox-list">
+                                <div class="group">
+                                    <span class="srch_i"><i class="fas fa-search"></i></span>
+                                    <input id="cb2-input" class="cb_edit" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="cb2-listbox" placeholder="Search for a location">
+                                    <button id="cb1-button" tabindex="-1" aria-label="Open">
+                                        <i class="fas fa-sort-down"></i>
+                                    </button>
+                                </div>
+                                <!----- drop common search suggestions here -------->
+                                <ul id="cb2-listbox" role="listbox" aria-label="States">
+                                    <li id="lb1-al" role="option">
+                                        Alabama
+                                    </li>
+                                    <li id="lb1-ak" role="option">
+                                        Alaska
+                                    </li>
+                                    <li id="lb1-as" role="option">
+                                        American Samoa
+                                    </li>
+                                    <li id="lb1-az" role="option">
+                                        Arizona
+                                    </li>
+                                    <li id="lb1-ar" role="option">
+                                        Arkansas
+                                    </li>
+                                    <li id="lb1-ca" role="option">
+                                        California
+                                    </li>
+                                    <li id="lb1-co" role="option">
+                                        Colorado
+                                    </li>
+                                    <li id="lb1-ct" role="option">
+                                        Connecticut
+                                    </li>
+                                    <li id="lb1-de" role="option">
+                                        Delaware
+                                    </li>
+                                    <li id="lb1-dc" role="option">
+                                        District of Columbia
+                                    </li>
+                                    <li id="lb1-fl" role="option">
+                                        Florida
+                                    </li>
+                                    <li id="lb1-ga" role="option">
+                                        Georgia
+                                    </li>
+                                    <li id="lb1-gm" role="option">
+                                        Guam
+                                    </li>
+                                    <li id="lb1-hi" role="option">
+                                        Hawaii
+                                    </li>
+                                    <li id="lb1-id" role="option">
+                                        Idaho
+                                    </li>
+                                    <li id="lb1-il" role="option">
+                                        Illinois
+                                    </li>
+                                    <li id="lb1-in" role="option">
+                                        Indiana
+                                    </li>
+                                    <li id="lb1-ia" role="option">
+                                        Iowa
+                                    </li>
+                                    <li id="lb1-ks" role="option">
+                                        Kansas
+                                    </li>
+                                    <li id="lb1-ky" role="option">
+                                        Kentucky
+                                    </li>
+                                    <li id="lb1-la" role="option">
+                                        Louisiana
+                                    </li>
+                                    <li id="lb1-me" role="option">
+                                        Maine
+                                    </li>
+                                    <li id="lb1-md" role="option">
+                                        Maryland
+                                    </li>
+                                    <li id="lb1-ma" role="option">
+                                        Massachusetts
+                                    </li>
+                                    <li id="lb1-mi" role="option">
+                                        Michigan
+                                    </li>
+                                    <li id="lb1-mn" role="option">
+                                        Minnesota
+                                    </li>
+                                    <li id="lb1-ms" role="option">
+                                        Mississippi
+                                    </li>
+                                    <li id="lb1-mo" role="option">
+                                        Missouri
+                                    </li>
+                                    <li id="lb1-mt" role="option">
+                                        Montana
+                                    </li>
+                                    <li id="lb1-ne" role="option">
+                                        Nebraska
+                                    </li>
+                                    <li id="lb1-nv" role="option">
+                                        Nevada
+                                    </li>
+                                    <li id="lb1-nh" role="option">
+                                        New Hampshire
+                                    </li>
+                                    <li id="lb1-nj" role="option">
+                                        New Jersey
+                                    </li>
+                                    <li id="lb1-nm" role="option">
+                                        New Mexico
+                                    </li>
+                                    <li id="lb1-ny" role="option">
+                                        New York
+                                    </li>
+                                    <li id="lb1-nc" role="option">
+                                        North Carolina
+                                    </li>
+                                    <li id="lb1-nd" role="option">
+                                        North Dakota
+                                    </li>
+                                    <li id="lb1-mp" role="option">
+                                        Northern Marianas Islands
+                                    </li>
+                                    <li id="lb1-oh" role="option">
+                                        Ohio
+                                    </li>
+                                    <li id="lb1-ok" role="option">
+                                        Oklahoma
+                                    </li>
+                                    <li id="lb1-or" role="option">
+                                        Oregon
+                                    </li>
+                                    <li id="lb1-pa" role="option">
+                                        Pennsylvania
+                                    </li>
+                                    <li id="lb1-pr" role="option">
+                                        Puerto Rico
+                                    </li>
+                                    <li id="lb1-ri" role="option">
+                                        Rhode Island
+                                    </li>
+                                    <li id="lb1-sc" role="option">
+                                        South Carolina
+                                    </li>
+                                    <li id="lb1-sd" role="option">
+                                        South Dakota
+                                    </li>
+                                    <li id="lb1-tn" role="option">
+                                        Tennessee
+                                    </li>
+                                    <li id="lb1-tx" role="option">
+                                        Texas
+                                    </li>
+                                    <li id="lb1-ut" role="option">
+                                        Utah
+                                    </li>
+                                    <li id="lb1-ve" role="option">
+                                        Vermont
+                                    </li>
+                                    <li id="lb1-va" role="option">
+                                        Virginia
+                                    </li>
+                                    <li id="lb1-vi" role="option">
+                                        Virgin Islands
+                                    </li>
+                                    <li id="lb1-wa" role="option">
+                                        Washington
+                                    </li>
+                                    <li id="lb1-wv" role="option">
+                                        West Virginia
+                                    </li>
+                                    <li id="lb1-wi" role="option">
+                                        Wisconsin
+                                    </li>
+                                    <li id="lb1-wy" role="option">
+                                        Wyoming
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                            </div>
+                        <!-- /////////////////////||||||||||| End Searchbar |||||||||||||||||||| -->
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-4 col-xs-5">
+                <div class="col-md-4 col-sm-5 col-xs-3">
 
                     <ul class="nav-tools">
 
-                        <!-- /////////////////////||||||||||| Start Searchbar |||||||||||||||||||| -->
-                        <li>
-                            <form action="{{url('products')}}" method="GET" class="search-form" role="search">
-                                <div class="form-group" id="search">
-                                    <input type="text" class="form-control" placeholder="بحث">
-                                    <button type="submit" class="form-control form-control-submit">بحث</button>
-                                    <span class="nav-icon"> <i class="fas fa-search"></i></span>
-                                </div>
-                            </form>
-                        </li>
-                        <!-- /////////////////////||||||||||| End Searchbar |||||||||||||||||||| -->
-
-                        <!-- /////////////////////||||||||||| Start Nav Cart |||||||||||||||||||| -->
-                        <li>
-                            <a href="javascript:void(0)" class="menu-toggle">
-                                <span class="nav-icon"> <i class="fas fa-shopping-cart"></i></span>
-                            </a>
-                            <div class="side-menu notifi-menu">
-                                <button type="button" class="nav-icon close-menu"><i class="fas fa-times"></i></button>
-                               <div class="fixed-li">
-                                   <a href="{{url('cart')}}" class="btn-hvr"><span class="z-span">عرض السلة</span></a>
-                               </div>
-                                <ul>
-                                    <li>
-                                        <div class="flexx cart_item">
-                                            <button class="nav-icon remove_item"> <i class="far fa-trash-alt"></i> </button>
-                                            <span class="bell">
-                                                <img src="{{asset('website/dist/img/asset8.png')}}">
-                                            </span>
-                                            <div class="notify">
-                                                <h4>مجموعة الصابون الطبيعى</h4>
-                                                <p>140 ريال سعودى</p>
-                                                <p> الكمية : <span class="quantity_in">3</span></p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="flexx cart_item">
-                                            <button class="nav-icon remove_item"> <i class="far fa-trash-alt"></i> </button>
-                                            <span class="bell">
-                                                <img src="{{asset('website/dist/img/asset6.png')}}">
-                                            </span>
-                                            <div class="notify">
-                                                <h4>زيت الأرغان الأصلى</h4>
-                                                <p>140 ريال سعودى</p>
-                                                <p> الكمية : <span class="quantity_in">7</span></p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="flexx cart_item">
-                                            <button class="nav-icon remove_item"> <i class="far fa-trash-alt"></i> </button>
-                                            <span class="bell">
-                                                <img src="{{asset('website/dist/img/asset8.png')}}">
-                                            </span>
-                                            <div class="notify">
-                                                <h4>مجموعة الصابون الطبيعى</h4>
-                                                <p>140 ريال سعودى</p>
-                                                <p> الكمية : <span class="quantity_in">3</span></p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="flexx cart_item">
-                                            <button class="nav-icon remove_item"> <i class="far fa-trash-alt"></i> </button>
-                                            <span class="bell">
-                                                <img src="{{asset('website/dist/img/asset6.png')}}">
-                                            </span>
-                                            <div class="notify">
-                                                <h4>زيت الأرغان الأصلى</h4>
-                                                <p>140 ريال سعودى</p>
-                                                <p> الكمية : <span class="quantity_in">7</span></p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <div class="lock">
-                                        <img src="{{asset('website/dist/img/lock.png')}}">
-                                        <p>
-                                            من فضلك قم بتسجيل الدخول لكى يتم عملية الشراء والدفع وأكثر
-                                        </p>
-
-                                        <button type="button" class="btn-hvr" data-toggle="modal" data-target="#signUpModal">
-                                            <span class="z-span">تسجيل جديد </span></button>
-                                    </div>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- /////////////////////||||||||||| End Nav Cart |||||||||||||||||||| -->
-
                         <!----------------********************** show this if user logged in ***************------------------------------>
                         <!-- /////////////////////||||||||||| Start Nav Profile  |||||||||||||||||||| -->
-                        <li>
+                        <!-- <li>
                             <a href="javascript:void(0)" class="menu-toggle">
                                 <span class="nav-icon"><i class="far fa-user"></i></span>
                             </a>
@@ -213,165 +486,33 @@
                                     </ul>
                                 </div>
                             </div>
-                        </li>
+                        </li> -->
                         <!-- /////////////////////||||||||||| End Nav Profile  |||||||||||||||||||| -->
 
                         <!----------------********************** show this if user NOT logged in ***************------------------------------>
                         <!-- /////////////////////||||||||||| Start Sign up/In Links  |||||||||||||||||||| -->
-                        <!-- <li>
-                            <a href="javascript:void(0)" class="menu-toggle">
-                                <span class="nav-icon"><i class="fas fa-user-plus"></i></span>
-                            </a>
-                            <div class="side-menu flexx pro-menu">
-                                <div>
-                                    <button type="button" class="nav-icon close-menu"><i class="fas fa-times"></i></button>
-                                    <img src="{{asset('website/dist/img/logo.png')}}">
-                                    <h3 class="welcomee">أهلا بك ...</h3>
-                                    <p>كل ما تحتاجه ستجده فى متجرنا</p>
-                                    <a href="{{url('categories')}}" class="pink_a">تسوق الان</a>
-                                    <div class="log_anchors">
-                                        <button type="button" class="btn-hvr" data-toggle="modal" data-target="#signInModal">
-                                            <span class="z-span">تسجيل دخول </span>
-                                        </button>
-                                        <button type="button" class="btn-hvr" data-toggle="modal" data-target="#signUpModal">
-                                            <span class="z-span">تسجيل جديد </span>
-                                        </button>
-                                    </div>
+                        <li class="hidden-xs"><a href="#">For Partners</a></li>
+                        <li class="hidden-xs"><a href="{{url('sign-up')}}">sign up</a></li>
+                        <li class="hidden-xs"><a href="{{url('sign-in')}}">sign in</a></li>
+                        <li class="dropdown view_box">
+                            <a href="javascript:void(0)" id="mob_view" class="icon_mob">
+                                <div id="nav-icon1">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
                                 </div>
-                            </div>
-                        </li> -->
-                        <!-- /////////////////////||||||||||| End Sign up/In Links  |||||||||||||||||||| -->
-
-                        <!-- /////////////////////||||||||||| Start Nav Notifications  |||||||||||||||||||| -->
-                        <li>
-                            <a href="javascript:void(0)" class="menu-toggle">
-                                <span class="nav-icon"><i class="far fa-bell"></i></span>
                             </a>
-                            <div class="side-menu notifi-menu">
-                                <button type="button" class="nav-icon close-menu"><i class="fas fa-times"></i></button>
-                                <div class="fixed-li">
-                                   <a href="{{url('notifications')}}" class="btn-hvr"><span class="z-span">كل الإشعارات</span></a>
-                               </div>
-                                <ul>
-                                    <li>
-                                        <a href="{{url('my-profile')}}" class="flexx">
-                                            <span class="bell"><i class="fas fa-bell"></i></span>
-                                            <div class="notify">
-                                                <h4>إشعار جديد</h4>
-                                                <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{url('my-profile')}}" class="flexx">
-                                            <span class="bell"><i class="fas fa-bell"></i></span>
-                                            <div class="notify">
-                                                <h4>إشعار جديد</h4>
-                                                <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{url('my-profile')}}" class="flexx">
-                                            <span class="bell"><i class="fas fa-bell"></i></span>
-                                            <div class="notify">
-                                                <h4>إشعار جديد إشعار جديد إشعار جديد إشعار جديد إشعار جديدإشعار جديدإشعار جديد</h4>
-                                                <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="{{url('my-profile')}}" class="flexx">
-                                            <span class="bell"><i class="fas fa-bell"></i></span>
-                                            <div class="notify">
-                                                <h4>إشعار جديد</h4>
-                                                <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="{{url('my-profile')}}" class="flexx">
-                                            <span class="bell"><i class="fas fa-bell"></i></span>
-                                            <div class="notify">
-                                                <h4>إشعار جديد</h4>
-                                                <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="{{url('my-profile')}}" class="flexx">
-                                            <span class="bell"><i class="fas fa-bell"></i></span>
-                                            <div class="notify">
-                                                <h4>إشعار جديد</h4>
-                                                <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
-                                            </div>
-                                        </a>
-
-                                    </li>
-                                    <li>
-                                        <a href="{{url('my-profile')}}" class="flexx">
-                                            <span class="bell"><i class="fas fa-bell"></i></span>
-                                            <div class="notify">
-                                                <h4>إشعار جديد</h4>
-                                                <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{url('my-profile')}}" class="flexx">
-                                            <span class="bell"><i class="fas fa-bell"></i></span>
-                                            <div class="notify">
-                                                <h4>إشعار جديد</h4>
-                                                <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{url('my-profile')}}" class="flexx">
-                                            <span class="bell"><i class="fas fa-bell"></i></span>
-                                            <div class="notify">
-                                                <h4>إشعار جديد</h4>
-                                                <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{url('my-profile')}}" class="flexx">
-                                            <span class="bell"><i class="fas fa-bell"></i></span>
-                                            <div class="notify">
-                                                <h4>إشعار جديد</h4>
-                                                <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="{{url('my-profile')}}" class="flexx">
-                                            <span class="bell"><i class="fas fa-bell"></i></span>
-                                            <div class="notify">
-                                                <h4>إشعار جديد</h4>
-                                                <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
-                                            </div>
-                                        </a>
-
-                                    </li>
-                                    <li>
-                                        <a href="{{url('my-profile')}}" class="flexx">
-                                            <span class="bell"><i class="fas fa-bell"></i></span>
-                                            <div class="notify">
-                                                <h4>إشعار جديد</h4>
-                                                <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
-                                            </div>
-                                        </a>
-                                    </li>
+                            <div class="nav_mob">
+                                <ul class="dropdown-menu menu_mob">
+                                    <li><a href="{{url('sign-up')}}" class="display-xs">sign up</a></li>
+                                    <li><a href="{{url('sign-in')}}" class="display-xs">sign in</a></li>
+                                    <li><a href="#" class="display-xs">For Partners</a></li>
+                                    <li><a href="{{url('contact-us')}}">customer support</a></li>
+                                    <li><a href="#">عربى</a></li>
                                 </ul>
                             </div>
                         </li>
-                        <!-- /////////////////////||||||||||| End Nav Notifications  |||||||||||||||||||| -->
-
+                        <!-- /////////////////////||||||||||| End Sign up/In Links  |||||||||||||||||||| -->
                     </ul>
                 </div>
             </div>
@@ -463,6 +604,16 @@
     <script src="{{asset('website/dist/js/jquery-2.1.4.min.js')}}"></script>
     <script src="{{asset('website/dist/js/bootstrap.min.js')}}"></script>
     <script src="{{asset('website/dist/js/fontawesome.min.js')}}"></script>
+    <script>
+  window.FontAwesomeConfig = {
+    searchPseudoElements: true
+  }
+</script>
+    <!--- start combo box search -->
+    <script src="{{asset('website/dist/js/combobox-list.js')}}"></script>
+    <script src="{{asset('website/dist/js/listbox.js')}}"></script>
+    <script src="{{asset('website/dist/js/listboxOption.js')}}"></script>
+    <!--- end combo box search -->
     <script src="{{asset('website/dist/js/wow.min.js')}}"></script>
     <script>
         $(function() {
@@ -473,8 +624,10 @@
     <script>
         $('ul.nav-tools .dropdown').hover(function() {
             $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+            $(this).find("#nav-icon1").toggleClass("open");
         }, function() {
             $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+            $(this).find("#nav-icon1").toggleClass("open");
         });
     </script>
     <script>
@@ -521,7 +674,7 @@
             $(this).parent(".cart_item").fadeOut(300);
         });
     </script>
-  
+
     @yield('scripts')
     <!-- /////////////////////||||||||||||||||||||||||||||| End Script |||||||||||||||||||||||||||| -->
 </body>

@@ -1055,6 +1055,10 @@ label .forgot {
   margin-bottom: 15px;
 }
 
+.padd_left {
+  padding-left: 52px;
+}
+
 /************ confirm code .blade****************/
 .grey_p {
   color: #7c7e7c;
