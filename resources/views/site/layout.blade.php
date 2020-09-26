@@ -489,26 +489,50 @@
                         </li> -->
                         <!-- /////////////////////||||||||||| End Nav Profile  |||||||||||||||||||| -->
 
-                        <!----------------********************** show this if user NOT logged in ***************------------------------------>
+                        <!----------------********************** show these links if user NOT logged in ***************------------------------------>
                         <!-- /////////////////////||||||||||| Start Sign up/In Links  |||||||||||||||||||| -->
-                        <li class="hidden-xs"><a href="#">For Partners</a></li>
+                        <!-- <li class="hidden-xs"><a href="#">For Partners</a></li>
                         <li class="hidden-xs"><a href="{{url('sign-up')}}">sign up</a></li>
-                        <li class="hidden-xs"><a href="{{url('sign-in')}}">sign in</a></li>
+                        <li class="hidden-xs"><a href="{{url('sign-in')}}">sign in</a></li> -->
+                        <!--------->
                         <li class="dropdown view_box">
                             <a href="javascript:void(0)" id="mob_view" class="icon_mob">
-                                <div id="nav-icon1">
+                                <!----------------********************** show id="nav-icon1" if user NOT logged in ***************------------------------------>
+                                <!-- <div id="nav-icon1">
                                     <span></span>
                                     <span></span>
                                     <span></span>
-                                </div>
+                                </div> -->
+                                <!----------------********************** show class="logged_crt" if user logged in ***************------------------------------>
+                                <div class="logged_crt">
+                                    <img src="{{asset('website/dist/img/user.png')}}">
+                                     <span class="caret"></span>
+                                  </div>
                             </a>
                             <div class="nav_mob">
                                 <ul class="dropdown-menu menu_mob">
-                                    <li><a href="{{url('sign-up')}}" class="display-xs">sign up</a></li>
-                                    <li><a href="{{url('sign-in')}}" class="display-xs">sign in</a></li>
-                                    <li><a href="#" class="display-xs">For Partners</a></li>
-                                    <li><a href="{{url('contact-us')}}">customer support</a></li>
-                                    <li><a href="#">عربى</a></li>
+                                    <!----------------********************** show these links if user logged in ***************------------------------------>
+                                    <li class="pro_li">
+                                        <a href="{{url('editprofile')}}">
+                                            <div class="img_in display-xs">
+                                                 <img src="{{asset('website/dist/img/user.png')}}">
+                                            </div>
+                                            <h3 class="ellipsis">reem faris</h3>
+                                            <span class="blue">Edit profile</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="{{url('my_orders')}}"><span class="link_i"><i class="far fa-calendar-alt"></i></span>my appointments</a></li>
+                                    <li><a href="{{url('my_favourites')}}"><span class="link_i"><i class="far fa-heart"></i></span>my favourites</a></li>
+                                    <li><a href="{{url('copouns')}}"><span class="link_i"><i class="fas fa-vr-cardboard"></i></span>copouns</a></li>
+                                    <li><a href="{{url('categories')}}" class="display-xs"><span class="link_i"><i class="fas fa-list-ul"></i></span>categories</a></li>
+                                    <li><a href="{{url('settings')}}"><span class="link_i"><i class="fas fa-cog"></i></span>settings</a></li>
+                                    <!----------------********************** show these links if user NOT logged in ***************------------------------------>
+                                    <li><a href="{{url('sign-up')}}" class="display-xs"><span class="link_i"><i class="fas fa-user-plus"></i></span>sign up</a></li>
+                                    <li><a href="{{url('sign-in')}}" class="display-xs"><span class="link_i"><i class="far fa-user"></i></span>sign in</a></li>
+                                    <li><a href="#" class="display-xs"><span class="link_i"><i class="far fa-handshake"></i></span>For Partners</a></li>
+                                    <!----------------********************** end if views ***************------------------------------>
+                                    <li><a href="{{url('contact-us')}}"><span class="link_i"><i class="far fa-life-ring"></i></span>customer support</a></li>
+                                    <li><a href="#"><span class="link_i"><i class="fas fa-globe"></i></span>عربى</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -528,7 +552,7 @@
     @yield('content')
     <!-- /////////////////////||||||||||||||||||||||||||||| Start Footer |||||||||||||||||||||||||||| -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="foot-content">
             <div class="container">
                 <div class="row">
@@ -588,11 +612,11 @@
             &copy;
             جميع الحقوق محفوظة لدى شركة<a href="http://panorama-q.com/">بانوراما القصيم</a> <span id="currentYear"></span>
         </div>
-    </footer>
+    </footer> -->
     <!--Scroll Button-->
     <div id="scroll-top">
         <i class="fa fa-angle-up"></i>
-        <p>إلى الأعلى</p>
+        <p>top</p>
     </div>
     <!-- /////////////////////||||||||||||||||||||||||||||| End Footer |||||||||||||||||||||||||||| -->
 
@@ -653,7 +677,7 @@
                 $(".search-form .form-control").each(function() {
                     if ($(".search-form .form-control").val().length == 0) {
                         e.preventDefault();
-                        $(this).css('border', '2px solid #ea6b60');
+                        $(this).css('border', '2px solid #FBD74D');
                     }
                 })
             })

@@ -1,5 +1,5 @@
 @extends('site.layout')
-@section('title' , 'Fresha || اسم البرودكت')
+@section('title' , 'La Cita || اسم البرودكت')
 @section('styles')
 <link rel="stylesheet" href="{{asset('website/dist/css/jquery.fancybox.min.css')}}">
 <link rel="stylesheet" href="{{asset('website/dist/css/owl.carousel.css')}}">

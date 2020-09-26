@@ -1,5 +1,5 @@
 @extends('site.layout')
-@section('title' , 'Fresha || سياسة الاسترجاع')
+@section('title' , 'La Cita || سياسة الاسترجاع')
 @section('styles')
 <link rel="stylesheet" href="{{asset('website/dist/css/jquery.fancybox.min.css')}}">
 

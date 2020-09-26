@@ -1,5 +1,5 @@
 @extends('site.layout')
-@section('title' , 'Fresha || الحجوزات ')
+@section('title' , 'La Cita || الحجوزات ')
 @section('styles')
 <!-- special for this page -->
 <!-- for timepiker -->

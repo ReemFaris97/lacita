@@ -1,5 +1,5 @@
 @extends('site.layout')
-@section('title' , 'Fresha || عناوينى')
+@section('title' , 'La Cita || عناوينى')
 @section('styles')
 <link rel="stylesheet" href="{{asset('website/dist/css/a-style.css')}}">
 <link rel="stylesheet" href="{{asset('website/dist/css/select2.min.css')}}">

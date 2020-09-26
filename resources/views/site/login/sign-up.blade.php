@@ -1,5 +1,5 @@
 @extends('site.layout')
-@section('title' , 'Fresha || Sign Up')
+@section('title' , 'La Cita || Sign Up')
 @section('styles')
 <link rel="stylesheet" href="{{asset('website/scss/login-pages.css')}}">
 @endsection
@@ -10,7 +10,7 @@
     <div class="container">
         <div class="box_outer">
             <div class="box-top">
-                <a href="{{url('/')}}" class="login-logo"><img src="{{asset('website/dist/img/logo.png')}}" alt="Fresha">
+                <a href="{{url('/')}}" class="login-logo"><img src="{{asset('website/dist/img/logo.png')}}" alt="La Cita">
                 </a>
                 <a href="{{url('/')}}" class="to_site"><i class="fas fa-arrow-left"></i></a>
             </div>
@@ -29,13 +29,13 @@
             <div class="form-box">
                 <h2>Become a partner</h2>
                 <div class="have_ac">
-                    <p>Manage your business with Fresha by
+                    <p>Manage your business with La Cita by
                          <a href="#"> signing up as a professional </a>
                     </p>
                 </div>
             </div>
             <div class="copyright">
-            &copy; <span id="currentYear"></span>Fresha.com SV Ltd
+            &copy; <span id="currentYear"></span>La Cita.com SV Ltd
         </div>
         </div>
     </div>

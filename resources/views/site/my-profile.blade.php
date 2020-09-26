@@ -1,5 +1,5 @@
 @extends('site.layout')
-@section('title' , 'Fresha || الحساب الشخصي')
+@section('title' , 'La Cita || الحساب الشخصي')
 @section('styles')
 <link rel="stylesheet" href="{{asset('website/dist/css/jquery.fancybox.min.css')}}">
 <link rel="stylesheet" href="{{asset('website/dist/css/a-style.css')}}">

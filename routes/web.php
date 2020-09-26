@@ -104,13 +104,17 @@ Route::get('/edit_password', function () {
 /**orders */
 Route::get('/my_orders', function () {
     return view('site.my_orders');
-});
+});  /// حجوزاتى
 Route::get('/order_details', function () {
     return view('site.order_details');
 });
 /**addresses */
 Route::get('/my_addresses', function () {
     return view('site.my_addresses');
+});
+/**favourites */
+Route::get('/my_favourites', function () {
+    return view('site.my_favourites');
 });
 Route::get('/new_address', function () {
     return view('site.new_address');

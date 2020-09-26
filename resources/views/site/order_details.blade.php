@@ -1,5 +1,5 @@
 @extends('site.layout')
-@section('title' , 'Fresha ||تفاصيل الطلب')
+@section('title' , 'La Cita ||تفاصيل الطلب')
 @section('styles')
 <link rel="stylesheet" href="{{asset('website/dist/css/a-style.css')}}">
 <link rel="stylesheet" href="{{asset('website/dist/css/select2.min.css')}}">
@@ -95,7 +95,7 @@
                     </a>
                     <div class="right_dtls">
                         <a href="{{url('single-product')}}" class="item_nm">مجموعة الصابون الطبيعى</a>
-                        <span class="spanSec">Fresha</span>
+                        <span class="spanSec">La Cita</span>
                         <div class="i_prices">
                             <p class="old_price"><span>300</span><span> ر.س</span></p>
                             <p class="new_price"><span class="current_price">100</span><span> ر.س</span></p>
@@ -115,7 +115,7 @@
                     </a>
                     <div class="right_dtls">
                         <a href="{{url('single-product')}}" class="item_nm">مجموعة الصابون الطبيعى</a>
-                        <span class="spanSec">Fresha</span>
+                        <span class="spanSec">La Cita</span>
                         <div class="i_prices">
                             <p class="old_price"><span>300</span><span> ر.س</span></p>
                             <p class="new_price"><span class="current_price">100</span><span> ر.س</span></p>
@@ -135,7 +135,7 @@
                     </a>
                     <div class="right_dtls">
                         <a href="{{url('single-product')}}" class="item_nm">مجموعة الصابون الطبيعى</a>
-                        <span class="spanSec">Fresha</span>
+                        <span class="spanSec">La Cita</span>
                         <div class="i_prices">
                             <p class="old_price"><span>300</span><span> ر.س</span></p>
                             <p class="new_price"><span class="current_price">100</span><span> ر.س</span></p>
