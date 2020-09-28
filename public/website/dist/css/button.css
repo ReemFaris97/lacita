@@ -1,26 +1,30 @@
 /********************** start my button **************/
 .btn-hvr{
-  font-family: 'Almarai-Bold';
-  min-width: 100px;
-  height: 40px;
-  line-height: 38px;
-  display: block;
-  text-transform: uppercase;
-  font-size: 16px;
-  text-decoration: none;
-  border: 2px solid #037AFF;
-  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  height: 50px;
+  line-height: unset;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 17px;
+  border-radius: 6px;
+  text-transform: capitalize;
   position: relative;
-  text-align: center;
+  color: #ffffff;
 }
 .btn-hvr::before{
+  border-radius: 6px;
   content: "";
   position: absolute;
   top: 0;
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: #F9A392;
+  background-color: #fbd74d;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -30,13 +34,14 @@
   z-index: -5;
 }
 .btn-hvr::after{
+  border-radius: 6px;
   content: "";
   position: absolute;
   right: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #037AFF;
+  background-color: #101928;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -81,7 +86,7 @@
     border-radius: 50%;
     line-height: 40px;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     background-color: transparent;
     position: relative;
     -webkit-transition: all .5s ease-in-out;
@@ -89,6 +94,7 @@
     transition: all .5s ease-in-out;
     z-index: 1;
     display: block;
+    color: #7c7e7c;
 }
 .social li:last-child a{
     margin: 0;

@@ -709,6 +709,8 @@ ul[role="listbox"] li[role="option"] {
     background-color: #fff !important;
     height: 60px;
     line-height: 60px;
+    -webkit-box-shadow: rgba(16, 25, 40, 0.08) 0px 16px 32px 0px;
+            box-shadow: rgba(16, 25, 40, 0.08) 0px 16px 32px 0px;
 }
 .fixd-navbar .logged_crt{
     height: 60px;
@@ -728,35 +730,15 @@ ul[role="listbox"] li[role="option"] {
 
 /******************* Start Footer **************************/
 footer {
-    position: relative;
     text-transform: capitalize;
     font-size: 14px;
 }
-footer:after{
-    content: "";
-    background-color: rgba(255, 255, 255, .2);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    top: 0;
-}
 /********* footer content **************/
-.foot-content{
-    position: relative;
-    z-index: 9;
-    background-image: url("../img/feather.png"), url("../img/grass-tall.png");
-    background-position: left top, right bottom;
-    background-repeat: no-repeat, no-repeat;
-    background-size:300px,150px;
-    padding: 60px 0 40px 0;
-}
 .foot-logo{
-    max-width: 120px;
+    max-width: 250px;
     margin: 0 0 16px 0;
     display: block;
+    width: 100%;
 }
 .foot-logo img{
     max-width: 100%;
@@ -767,7 +749,7 @@ footer:after{
 .f-title{
     font-family: 'Almarai-ExtraBold';
     margin: 0 0 16px 0;
-    color: #037AFF;
+    font-size: 21px;
 }
 .flex-r.foot1 p {
     margin: 0 0 16px 0;
@@ -777,23 +759,15 @@ footer li{
     line-height: 1.9;
 }
 footer li a , footer p{
-    color: #5C5C5C;
+    color: #7c7e7c;
     font-family: 'Almarai-Bold';
 }
 footer .btn-hvr {
-    max-width: 190px;
-    margin-left: 0;
-    margin-right: 0;
+    height: 50px;
+    -webkit-box-pack: space-evenly !important;
+        -ms-flex-pack: space-evenly !important;
+            justify-content: space-evenly !important;
 }
-footer .btn-hvr::after {
-    background: #ec6a60;
-}
-footer .btn-hvr:hover::after {
-    height: 100%;
-}
-/* footer .btn-hvr:hover, footer .btn-hvr:focus {
-    color: #037AFF;
-} */
 /******************* End Footer **************************/
 /*******************Start copyright  **************************/
 .copyright {
@@ -802,11 +776,11 @@ footer .btn-hvr:hover::after {
     text-align: center;
     color: #7c7e7c;
     font-size: 15px;
-    
 }
-.footer .copyright{
-    position: relative;
-    z-index: 9;
+.copyright .container{
+    margin: 20px auto 0 auto;
+    border-top: 1px solid #c2c2c2;
+    padding: 10px 0 0 0;
 }
 .copyright a{
     color: #ffffff;
@@ -818,6 +792,46 @@ footer li a:hover , footer li a:focus , .copyright a:hover, .copyright a:focus{
 .first-sec {
     position: relative;
 }
+/*******************start bottom icons **************************/
+.the_icons{
+    display: none;
+    -webkit-box-shadow: rgb(104 105 107 / 8%) 0px -4px 8px 0px;
+            box-shadow: rgb(104 105 107 / 8%) 0px -4px 8px 0px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 50px;
+    font-size: 25px;
+    background-color: #fff;
+    z-index: 99;
+    border-top: 1px solid #e7e8e9;
+}
+.the_icons:before , .the_icons:after{
+    content: "";
+    position: absolute;
+    height: 50%;
+    top: 25%;
+    width: 2px;
+    background-color: rgb(189 189 189 / .6);
+}
+.the_icons:before{
+    left: calc(33.33% - 1px);
+}
+.the_icons:after{
+    right: calc(33.33% - 1px);
+}
+/*******************end bottom icons **************************/
+
+
+
 /*** Scroll to top *********/
 /*Scroll-Top*/
 #scroll-top {
@@ -893,14 +907,18 @@ footer li a:hover , footer li a:focus , .copyright a:hover, .copyright a:focus{
     /************************** End navbar ****************/
     /******************* start Footer **************************/
     .foot1 {
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
+    min-height: 95px;
+}
+footer .row .col-lg-3:last-of-type .foot1 {
+    min-height: unset;
 }
 .f-title {
     margin: 0 0 8px 0;
 }
-    .copyright{
-        margin: 0;
-    }
+footer .btn-flex {
+    max-width: 300px;
+}
     /******************* End Footer **************************/
 }
 @media (max-width: 767px) {
@@ -1134,18 +1152,19 @@ width: 130px;
         margin: 0 0 6px 0;
 }
     footer .btn-hvr {
-        max-width: 140px;
-        width: auto;
-        min-width: unset;
-        margin: 0 auto 10px auto;
+        max-width: 200px;
         height: 40px;
-        line-height: 40px;
         font-size: 14px;
+        margin-top: 12px;
     }
     .flex-r.foot1 p {
     margin: 0 0 10px 0;
 }
-    
+footer .social li a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
     /*********** End Footer ********************/
     .all-sections,
     .site-about {
@@ -1157,6 +1176,17 @@ width: 130px;
     .width-70,
     .width-90 {
         width: 100%;
+    }
+    /*******************start bottom icons **************************/
+    .the_icons{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    /*******************scroll to top **************************/
+    #scroll-top {
+        right: 10px;
+        bottom: 60px;
     }
 }
 @media (max-width: 700px) {}

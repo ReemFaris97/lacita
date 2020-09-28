@@ -22,7 +22,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="{{asset('website/dist/img/favicon/favicon-96x96.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('website/dist/img/favicon/favicon-16x16.png')}}">
     <link rel="manifest" href="{{asset('website/dist/img/favicon/manifest.json')}}">
-    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#037AFF">
     <meta name="msapplication-TileImage" content="{{asset('website/dist/img/favicon//ms-icon-144x144.png')}}">
     <meta name="theme-color" content="#037AFF">
     <!------ End generated favicon ----->
@@ -64,379 +64,379 @@
 
                 <div class="col-md-6 col-sm-5 col-xs-2">
                     <div class="center_nav view_box new_btn">
-                                <a href="javascript:void(0)" class="icon_mob">
-                                    <i class="fas fa-search"></i>
-                                </a>
+                        <a href="javascript:void(0)" class="icon_mob">
+                            <i class="fas fa-search"></i>
+                        </a>
                         <!-- /////////////////////||||||||||| Start Searchbar |||||||||||||||||||| -->
-                                <div class="nav_mob">
-                                <a href="javascript:void(0)" id="icon_close">
-                                    <i class="fas fa-times"></i>
-                                </a>
-                                    <div class="menu_mob">
-                            <div class="combobox combobox-list">
-                                <div class="group">
-                                    <span class="srch_i"><i class="fas fa-search"></i></span>
-                                    <input id="cb1-input" class="cb_edit" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="cb1-listbox" placeholder="Search for a service or venue">
-                                    <button id="cb1-button" tabindex="-1" aria-label="Open">
-                                        <i class="fas fa-sort-down"></i>
-                                    </button>
+                        <div class="nav_mob">
+                            <a href="javascript:void(0)" id="icon_close">
+                                <i class="fas fa-times"></i>
+                            </a>
+                            <div class="menu_mob">
+                                <div class="combobox combobox-list">
+                                    <div class="group">
+                                        <span class="srch_i"><i class="fas fa-search"></i></span>
+                                        <input id="cb1-input" class="cb_edit" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="cb1-listbox" placeholder="Search for a service or venue">
+                                        <button id="cb1-button" tabindex="-1" aria-label="Open">
+                                            <i class="fas fa-sort-down"></i>
+                                        </button>
+                                    </div>
+                                    <!----- drop common search suggestions here -------->
+                                    <ul id="cb1-listbox" role="listbox" aria-label="States">
+                                        <li id="lb1-al" role="option">
+                                            Alabama
+                                        </li>
+                                        <li id="lb1-ak" role="option">
+                                            Alaska
+                                        </li>
+                                        <li id="lb1-as" role="option">
+                                            American Samoa
+                                        </li>
+                                        <li id="lb1-az" role="option">
+                                            Arizona
+                                        </li>
+                                        <li id="lb1-ar" role="option">
+                                            Arkansas
+                                        </li>
+                                        <li id="lb1-ca" role="option">
+                                            California
+                                        </li>
+                                        <li id="lb1-co" role="option">
+                                            Colorado
+                                        </li>
+                                        <li id="lb1-ct" role="option">
+                                            Connecticut
+                                        </li>
+                                        <li id="lb1-de" role="option">
+                                            Delaware
+                                        </li>
+                                        <li id="lb1-dc" role="option">
+                                            District of Columbia
+                                        </li>
+                                        <li id="lb1-fl" role="option">
+                                            Florida
+                                        </li>
+                                        <li id="lb1-ga" role="option">
+                                            Georgia
+                                        </li>
+                                        <li id="lb1-gm" role="option">
+                                            Guam
+                                        </li>
+                                        <li id="lb1-hi" role="option">
+                                            Hawaii
+                                        </li>
+                                        <li id="lb1-id" role="option">
+                                            Idaho
+                                        </li>
+                                        <li id="lb1-il" role="option">
+                                            Illinois
+                                        </li>
+                                        <li id="lb1-in" role="option">
+                                            Indiana
+                                        </li>
+                                        <li id="lb1-ia" role="option">
+                                            Iowa
+                                        </li>
+                                        <li id="lb1-ks" role="option">
+                                            Kansas
+                                        </li>
+                                        <li id="lb1-ky" role="option">
+                                            Kentucky
+                                        </li>
+                                        <li id="lb1-la" role="option">
+                                            Louisiana
+                                        </li>
+                                        <li id="lb1-me" role="option">
+                                            Maine
+                                        </li>
+                                        <li id="lb1-md" role="option">
+                                            Maryland
+                                        </li>
+                                        <li id="lb1-ma" role="option">
+                                            Massachusetts
+                                        </li>
+                                        <li id="lb1-mi" role="option">
+                                            Michigan
+                                        </li>
+                                        <li id="lb1-mn" role="option">
+                                            Minnesota
+                                        </li>
+                                        <li id="lb1-ms" role="option">
+                                            Mississippi
+                                        </li>
+                                        <li id="lb1-mo" role="option">
+                                            Missouri
+                                        </li>
+                                        <li id="lb1-mt" role="option">
+                                            Montana
+                                        </li>
+                                        <li id="lb1-ne" role="option">
+                                            Nebraska
+                                        </li>
+                                        <li id="lb1-nv" role="option">
+                                            Nevada
+                                        </li>
+                                        <li id="lb1-nh" role="option">
+                                            New Hampshire
+                                        </li>
+                                        <li id="lb1-nj" role="option">
+                                            New Jersey
+                                        </li>
+                                        <li id="lb1-nm" role="option">
+                                            New Mexico
+                                        </li>
+                                        <li id="lb1-ny" role="option">
+                                            New York
+                                        </li>
+                                        <li id="lb1-nc" role="option">
+                                            North Carolina
+                                        </li>
+                                        <li id="lb1-nd" role="option">
+                                            North Dakota
+                                        </li>
+                                        <li id="lb1-mp" role="option">
+                                            Northern Marianas Islands
+                                        </li>
+                                        <li id="lb1-oh" role="option">
+                                            Ohio
+                                        </li>
+                                        <li id="lb1-ok" role="option">
+                                            Oklahoma
+                                        </li>
+                                        <li id="lb1-or" role="option">
+                                            Oregon
+                                        </li>
+                                        <li id="lb1-pa" role="option">
+                                            Pennsylvania
+                                        </li>
+                                        <li id="lb1-pr" role="option">
+                                            Puerto Rico
+                                        </li>
+                                        <li id="lb1-ri" role="option">
+                                            Rhode Island
+                                        </li>
+                                        <li id="lb1-sc" role="option">
+                                            South Carolina
+                                        </li>
+                                        <li id="lb1-sd" role="option">
+                                            South Dakota
+                                        </li>
+                                        <li id="lb1-tn" role="option">
+                                            Tennessee
+                                        </li>
+                                        <li id="lb1-tx" role="option">
+                                            Texas
+                                        </li>
+                                        <li id="lb1-ut" role="option">
+                                            Utah
+                                        </li>
+                                        <li id="lb1-ve" role="option">
+                                            Vermont
+                                        </li>
+                                        <li id="lb1-va" role="option">
+                                            Virginia
+                                        </li>
+                                        <li id="lb1-vi" role="option">
+                                            Virgin Islands
+                                        </li>
+                                        <li id="lb1-wa" role="option">
+                                            Washington
+                                        </li>
+                                        <li id="lb1-wv" role="option">
+                                            West Virginia
+                                        </li>
+                                        <li id="lb1-wi" role="option">
+                                            Wisconsin
+                                        </li>
+                                        <li id="lb1-wy" role="option">
+                                            Wyoming
+                                        </li>
+                                    </ul>
                                 </div>
-                                <!----- drop common search suggestions here -------->
-                                <ul id="cb1-listbox" role="listbox" aria-label="States">
-                                    <li id="lb1-al" role="option">
-                                        Alabama
-                                    </li>
-                                    <li id="lb1-ak" role="option">
-                                        Alaska
-                                    </li>
-                                    <li id="lb1-as" role="option">
-                                        American Samoa
-                                    </li>
-                                    <li id="lb1-az" role="option">
-                                        Arizona
-                                    </li>
-                                    <li id="lb1-ar" role="option">
-                                        Arkansas
-                                    </li>
-                                    <li id="lb1-ca" role="option">
-                                        California
-                                    </li>
-                                    <li id="lb1-co" role="option">
-                                        Colorado
-                                    </li>
-                                    <li id="lb1-ct" role="option">
-                                        Connecticut
-                                    </li>
-                                    <li id="lb1-de" role="option">
-                                        Delaware
-                                    </li>
-                                    <li id="lb1-dc" role="option">
-                                        District of Columbia
-                                    </li>
-                                    <li id="lb1-fl" role="option">
-                                        Florida
-                                    </li>
-                                    <li id="lb1-ga" role="option">
-                                        Georgia
-                                    </li>
-                                    <li id="lb1-gm" role="option">
-                                        Guam
-                                    </li>
-                                    <li id="lb1-hi" role="option">
-                                        Hawaii
-                                    </li>
-                                    <li id="lb1-id" role="option">
-                                        Idaho
-                                    </li>
-                                    <li id="lb1-il" role="option">
-                                        Illinois
-                                    </li>
-                                    <li id="lb1-in" role="option">
-                                        Indiana
-                                    </li>
-                                    <li id="lb1-ia" role="option">
-                                        Iowa
-                                    </li>
-                                    <li id="lb1-ks" role="option">
-                                        Kansas
-                                    </li>
-                                    <li id="lb1-ky" role="option">
-                                        Kentucky
-                                    </li>
-                                    <li id="lb1-la" role="option">
-                                        Louisiana
-                                    </li>
-                                    <li id="lb1-me" role="option">
-                                        Maine
-                                    </li>
-                                    <li id="lb1-md" role="option">
-                                        Maryland
-                                    </li>
-                                    <li id="lb1-ma" role="option">
-                                        Massachusetts
-                                    </li>
-                                    <li id="lb1-mi" role="option">
-                                        Michigan
-                                    </li>
-                                    <li id="lb1-mn" role="option">
-                                        Minnesota
-                                    </li>
-                                    <li id="lb1-ms" role="option">
-                                        Mississippi
-                                    </li>
-                                    <li id="lb1-mo" role="option">
-                                        Missouri
-                                    </li>
-                                    <li id="lb1-mt" role="option">
-                                        Montana
-                                    </li>
-                                    <li id="lb1-ne" role="option">
-                                        Nebraska
-                                    </li>
-                                    <li id="lb1-nv" role="option">
-                                        Nevada
-                                    </li>
-                                    <li id="lb1-nh" role="option">
-                                        New Hampshire
-                                    </li>
-                                    <li id="lb1-nj" role="option">
-                                        New Jersey
-                                    </li>
-                                    <li id="lb1-nm" role="option">
-                                        New Mexico
-                                    </li>
-                                    <li id="lb1-ny" role="option">
-                                        New York
-                                    </li>
-                                    <li id="lb1-nc" role="option">
-                                        North Carolina
-                                    </li>
-                                    <li id="lb1-nd" role="option">
-                                        North Dakota
-                                    </li>
-                                    <li id="lb1-mp" role="option">
-                                        Northern Marianas Islands
-                                    </li>
-                                    <li id="lb1-oh" role="option">
-                                        Ohio
-                                    </li>
-                                    <li id="lb1-ok" role="option">
-                                        Oklahoma
-                                    </li>
-                                    <li id="lb1-or" role="option">
-                                        Oregon
-                                    </li>
-                                    <li id="lb1-pa" role="option">
-                                        Pennsylvania
-                                    </li>
-                                    <li id="lb1-pr" role="option">
-                                        Puerto Rico
-                                    </li>
-                                    <li id="lb1-ri" role="option">
-                                        Rhode Island
-                                    </li>
-                                    <li id="lb1-sc" role="option">
-                                        South Carolina
-                                    </li>
-                                    <li id="lb1-sd" role="option">
-                                        South Dakota
-                                    </li>
-                                    <li id="lb1-tn" role="option">
-                                        Tennessee
-                                    </li>
-                                    <li id="lb1-tx" role="option">
-                                        Texas
-                                    </li>
-                                    <li id="lb1-ut" role="option">
-                                        Utah
-                                    </li>
-                                    <li id="lb1-ve" role="option">
-                                        Vermont
-                                    </li>
-                                    <li id="lb1-va" role="option">
-                                        Virginia
-                                    </li>
-                                    <li id="lb1-vi" role="option">
-                                        Virgin Islands
-                                    </li>
-                                    <li id="lb1-wa" role="option">
-                                        Washington
-                                    </li>
-                                    <li id="lb1-wv" role="option">
-                                        West Virginia
-                                    </li>
-                                    <li id="lb1-wi" role="option">
-                                        Wisconsin
-                                    </li>
-                                    <li id="lb1-wy" role="option">
-                                        Wyoming
-                                    </li>
-                                </ul>
-                            </div>
-                            <span class="in_btw">in</span>
-                            <!---- location search --->
-                            <div class="combobox combobox-list">
-                                <div class="group">
-                                    <span class="srch_i"><i class="fas fa-search"></i></span>
-                                    <input id="cb2-input" class="cb_edit" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="cb2-listbox" placeholder="Search for a location">
-                                    <button id="cb1-button" tabindex="-1" aria-label="Open">
-                                        <i class="fas fa-sort-down"></i>
-                                    </button>
+                                <span class="in_btw">in</span>
+                                <!---- location search --->
+                                <div class="combobox combobox-list">
+                                    <div class="group">
+                                        <span class="srch_i"><i class="fas fa-search"></i></span>
+                                        <input id="cb2-input" class="cb_edit" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="cb2-listbox" placeholder="Search for a location">
+                                        <button id="cb1-button" tabindex="-1" aria-label="Open">
+                                            <i class="fas fa-sort-down"></i>
+                                        </button>
+                                    </div>
+                                    <!----- drop common search suggestions here -------->
+                                    <ul id="cb2-listbox" role="listbox" aria-label="States">
+                                        <li id="lb1-al" role="option">
+                                            Alabama
+                                        </li>
+                                        <li id="lb1-ak" role="option">
+                                            Alaska
+                                        </li>
+                                        <li id="lb1-as" role="option">
+                                            American Samoa
+                                        </li>
+                                        <li id="lb1-az" role="option">
+                                            Arizona
+                                        </li>
+                                        <li id="lb1-ar" role="option">
+                                            Arkansas
+                                        </li>
+                                        <li id="lb1-ca" role="option">
+                                            California
+                                        </li>
+                                        <li id="lb1-co" role="option">
+                                            Colorado
+                                        </li>
+                                        <li id="lb1-ct" role="option">
+                                            Connecticut
+                                        </li>
+                                        <li id="lb1-de" role="option">
+                                            Delaware
+                                        </li>
+                                        <li id="lb1-dc" role="option">
+                                            District of Columbia
+                                        </li>
+                                        <li id="lb1-fl" role="option">
+                                            Florida
+                                        </li>
+                                        <li id="lb1-ga" role="option">
+                                            Georgia
+                                        </li>
+                                        <li id="lb1-gm" role="option">
+                                            Guam
+                                        </li>
+                                        <li id="lb1-hi" role="option">
+                                            Hawaii
+                                        </li>
+                                        <li id="lb1-id" role="option">
+                                            Idaho
+                                        </li>
+                                        <li id="lb1-il" role="option">
+                                            Illinois
+                                        </li>
+                                        <li id="lb1-in" role="option">
+                                            Indiana
+                                        </li>
+                                        <li id="lb1-ia" role="option">
+                                            Iowa
+                                        </li>
+                                        <li id="lb1-ks" role="option">
+                                            Kansas
+                                        </li>
+                                        <li id="lb1-ky" role="option">
+                                            Kentucky
+                                        </li>
+                                        <li id="lb1-la" role="option">
+                                            Louisiana
+                                        </li>
+                                        <li id="lb1-me" role="option">
+                                            Maine
+                                        </li>
+                                        <li id="lb1-md" role="option">
+                                            Maryland
+                                        </li>
+                                        <li id="lb1-ma" role="option">
+                                            Massachusetts
+                                        </li>
+                                        <li id="lb1-mi" role="option">
+                                            Michigan
+                                        </li>
+                                        <li id="lb1-mn" role="option">
+                                            Minnesota
+                                        </li>
+                                        <li id="lb1-ms" role="option">
+                                            Mississippi
+                                        </li>
+                                        <li id="lb1-mo" role="option">
+                                            Missouri
+                                        </li>
+                                        <li id="lb1-mt" role="option">
+                                            Montana
+                                        </li>
+                                        <li id="lb1-ne" role="option">
+                                            Nebraska
+                                        </li>
+                                        <li id="lb1-nv" role="option">
+                                            Nevada
+                                        </li>
+                                        <li id="lb1-nh" role="option">
+                                            New Hampshire
+                                        </li>
+                                        <li id="lb1-nj" role="option">
+                                            New Jersey
+                                        </li>
+                                        <li id="lb1-nm" role="option">
+                                            New Mexico
+                                        </li>
+                                        <li id="lb1-ny" role="option">
+                                            New York
+                                        </li>
+                                        <li id="lb1-nc" role="option">
+                                            North Carolina
+                                        </li>
+                                        <li id="lb1-nd" role="option">
+                                            North Dakota
+                                        </li>
+                                        <li id="lb1-mp" role="option">
+                                            Northern Marianas Islands
+                                        </li>
+                                        <li id="lb1-oh" role="option">
+                                            Ohio
+                                        </li>
+                                        <li id="lb1-ok" role="option">
+                                            Oklahoma
+                                        </li>
+                                        <li id="lb1-or" role="option">
+                                            Oregon
+                                        </li>
+                                        <li id="lb1-pa" role="option">
+                                            Pennsylvania
+                                        </li>
+                                        <li id="lb1-pr" role="option">
+                                            Puerto Rico
+                                        </li>
+                                        <li id="lb1-ri" role="option">
+                                            Rhode Island
+                                        </li>
+                                        <li id="lb1-sc" role="option">
+                                            South Carolina
+                                        </li>
+                                        <li id="lb1-sd" role="option">
+                                            South Dakota
+                                        </li>
+                                        <li id="lb1-tn" role="option">
+                                            Tennessee
+                                        </li>
+                                        <li id="lb1-tx" role="option">
+                                            Texas
+                                        </li>
+                                        <li id="lb1-ut" role="option">
+                                            Utah
+                                        </li>
+                                        <li id="lb1-ve" role="option">
+                                            Vermont
+                                        </li>
+                                        <li id="lb1-va" role="option">
+                                            Virginia
+                                        </li>
+                                        <li id="lb1-vi" role="option">
+                                            Virgin Islands
+                                        </li>
+                                        <li id="lb1-wa" role="option">
+                                            Washington
+                                        </li>
+                                        <li id="lb1-wv" role="option">
+                                            West Virginia
+                                        </li>
+                                        <li id="lb1-wi" role="option">
+                                            Wisconsin
+                                        </li>
+                                        <li id="lb1-wy" role="option">
+                                            Wyoming
+                                        </li>
+                                    </ul>
                                 </div>
-                                <!----- drop common search suggestions here -------->
-                                <ul id="cb2-listbox" role="listbox" aria-label="States">
-                                    <li id="lb1-al" role="option">
-                                        Alabama
-                                    </li>
-                                    <li id="lb1-ak" role="option">
-                                        Alaska
-                                    </li>
-                                    <li id="lb1-as" role="option">
-                                        American Samoa
-                                    </li>
-                                    <li id="lb1-az" role="option">
-                                        Arizona
-                                    </li>
-                                    <li id="lb1-ar" role="option">
-                                        Arkansas
-                                    </li>
-                                    <li id="lb1-ca" role="option">
-                                        California
-                                    </li>
-                                    <li id="lb1-co" role="option">
-                                        Colorado
-                                    </li>
-                                    <li id="lb1-ct" role="option">
-                                        Connecticut
-                                    </li>
-                                    <li id="lb1-de" role="option">
-                                        Delaware
-                                    </li>
-                                    <li id="lb1-dc" role="option">
-                                        District of Columbia
-                                    </li>
-                                    <li id="lb1-fl" role="option">
-                                        Florida
-                                    </li>
-                                    <li id="lb1-ga" role="option">
-                                        Georgia
-                                    </li>
-                                    <li id="lb1-gm" role="option">
-                                        Guam
-                                    </li>
-                                    <li id="lb1-hi" role="option">
-                                        Hawaii
-                                    </li>
-                                    <li id="lb1-id" role="option">
-                                        Idaho
-                                    </li>
-                                    <li id="lb1-il" role="option">
-                                        Illinois
-                                    </li>
-                                    <li id="lb1-in" role="option">
-                                        Indiana
-                                    </li>
-                                    <li id="lb1-ia" role="option">
-                                        Iowa
-                                    </li>
-                                    <li id="lb1-ks" role="option">
-                                        Kansas
-                                    </li>
-                                    <li id="lb1-ky" role="option">
-                                        Kentucky
-                                    </li>
-                                    <li id="lb1-la" role="option">
-                                        Louisiana
-                                    </li>
-                                    <li id="lb1-me" role="option">
-                                        Maine
-                                    </li>
-                                    <li id="lb1-md" role="option">
-                                        Maryland
-                                    </li>
-                                    <li id="lb1-ma" role="option">
-                                        Massachusetts
-                                    </li>
-                                    <li id="lb1-mi" role="option">
-                                        Michigan
-                                    </li>
-                                    <li id="lb1-mn" role="option">
-                                        Minnesota
-                                    </li>
-                                    <li id="lb1-ms" role="option">
-                                        Mississippi
-                                    </li>
-                                    <li id="lb1-mo" role="option">
-                                        Missouri
-                                    </li>
-                                    <li id="lb1-mt" role="option">
-                                        Montana
-                                    </li>
-                                    <li id="lb1-ne" role="option">
-                                        Nebraska
-                                    </li>
-                                    <li id="lb1-nv" role="option">
-                                        Nevada
-                                    </li>
-                                    <li id="lb1-nh" role="option">
-                                        New Hampshire
-                                    </li>
-                                    <li id="lb1-nj" role="option">
-                                        New Jersey
-                                    </li>
-                                    <li id="lb1-nm" role="option">
-                                        New Mexico
-                                    </li>
-                                    <li id="lb1-ny" role="option">
-                                        New York
-                                    </li>
-                                    <li id="lb1-nc" role="option">
-                                        North Carolina
-                                    </li>
-                                    <li id="lb1-nd" role="option">
-                                        North Dakota
-                                    </li>
-                                    <li id="lb1-mp" role="option">
-                                        Northern Marianas Islands
-                                    </li>
-                                    <li id="lb1-oh" role="option">
-                                        Ohio
-                                    </li>
-                                    <li id="lb1-ok" role="option">
-                                        Oklahoma
-                                    </li>
-                                    <li id="lb1-or" role="option">
-                                        Oregon
-                                    </li>
-                                    <li id="lb1-pa" role="option">
-                                        Pennsylvania
-                                    </li>
-                                    <li id="lb1-pr" role="option">
-                                        Puerto Rico
-                                    </li>
-                                    <li id="lb1-ri" role="option">
-                                        Rhode Island
-                                    </li>
-                                    <li id="lb1-sc" role="option">
-                                        South Carolina
-                                    </li>
-                                    <li id="lb1-sd" role="option">
-                                        South Dakota
-                                    </li>
-                                    <li id="lb1-tn" role="option">
-                                        Tennessee
-                                    </li>
-                                    <li id="lb1-tx" role="option">
-                                        Texas
-                                    </li>
-                                    <li id="lb1-ut" role="option">
-                                        Utah
-                                    </li>
-                                    <li id="lb1-ve" role="option">
-                                        Vermont
-                                    </li>
-                                    <li id="lb1-va" role="option">
-                                        Virginia
-                                    </li>
-                                    <li id="lb1-vi" role="option">
-                                        Virgin Islands
-                                    </li>
-                                    <li id="lb1-wa" role="option">
-                                        Washington
-                                    </li>
-                                    <li id="lb1-wv" role="option">
-                                        West Virginia
-                                    </li>
-                                    <li id="lb1-wi" role="option">
-                                        Wisconsin
-                                    </li>
-                                    <li id="lb1-wy" role="option">
-                                        Wyoming
-                                    </li>
-                                </ul>
                             </div>
-                            </div>
-                            </div>
+                        </div>
                         <!-- /////////////////////||||||||||| End Searchbar |||||||||||||||||||| -->
                     </div>
                 </div>
@@ -506,8 +506,8 @@
                                 <!----------------********************** show class="logged_crt" if user logged in ***************------------------------------>
                                 <div class="logged_crt">
                                     <img src="{{asset('website/dist/img/user.png')}}">
-                                     <span class="caret"></span>
-                                  </div>
+                                    <span class="caret"></span>
+                                </div>
                             </a>
                             <div class="nav_mob">
                                 <ul class="dropdown-menu menu_mob">
@@ -515,7 +515,7 @@
                                     <li class="pro_li">
                                         <a href="{{url('editprofile')}}">
                                             <div class="img_in display-xs">
-                                                 <img src="{{asset('website/dist/img/user.png')}}">
+                                                <img src="{{asset('website/dist/img/user.png')}}">
                                             </div>
                                             <h3 class="ellipsis">reem faris</h3>
                                             <span class="blue">Edit profile</span>
@@ -551,74 +551,85 @@
     <!---////////////  //////////////////------------>
     @yield('content')
     <!-- /////////////////////||||||||||||||||||||||||||||| Start Footer |||||||||||||||||||||||||||| -->
-
-    <!-- <footer class="footer">
-        <div class="foot-content">
+    <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-sm-12 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
                         <div class="foot1">
                             <a href="{{url('/')}}" class="foot-logo">
                                 <img src="{{asset('website/dist/img/logo.png')}}">
                             </a>
-                            <p>
-                                هذا النص هو مثال لنص يمكن ان يستبدل من مولد النص العربى
-                                هذا النص هو مثال لنص يمكن ان يستبدل من مولد النص العربى
-                                هذا النص هو مثال لنص يمكن ان يستبدل من مولد النص العربى
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 col-xs-6">
-                        <div class="foot1">
-                            <h3 class="f-title">الصفحات الرئيسية</h3>
-                            <ul>
-                                <li><a href="{{url('about')}}">من نحن</a></li>
-                                <li><a href="{{url('multimedia')}}">مكتبة المالتيميديا</a></li>
-                                <li><a href="{{url('use_policy')}}">سياسة الاستخدام</a></li>
-                                <li><a href="{{url('privacy')}}">الشروط والأحكام</a></li>
+                            <ul class="social">
+                                <li><a href="www.facebook.com" target="_blank" class="icon-f"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="www.twitter.com" target="_blank" class="icon-tw"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="www.linkedin.com" target="_blank" class="icon-in"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="www.instagram.com" target="_blank" class="icon-ig"><i class="fab fa-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-4 col-xs-6">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                         <div class="foot1">
-                            <h3 class="f-title">خدمة العملاء</h3>
+                            <h3 class="f-title">About la cita</h3>
                             <ul>
-                                <li><a href="{{url('contact-us')}}">اتصل بنا</a></li>
-                                <li><a href="{{url('return_policy')}}">سياسة الاسترجاع</a></li>
+                                <li><a href="{{url('contact-us')}}">customer support</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-4 col-xs-12">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                         <div class="foot1">
-                            <h3 class="f-title">روابط سريعة</h3>
+                            <h3 class="f-title">for business</h3>
                             <ul>
-                                <li><a href="{{url('my-profile')}}">الحساب</a></li>
-                                <li><a href="{{url('favourites')}}">المفضلة</a></li>
+                                <li><a href="#">for partners</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="foot1">
+                            <h3 class="f-title">legal</h3>
+                            <ul>
+                                <li><a href="{{url('use_policy')}}">booking terms</a></li>
+                                <li><a href="{{url('privacy')}}">privacy policy</a></li>
+                                <li><a href="{{url('polices_rules')}}">website terms</a></li>
                                 <li>
-                                    <ul class="social">
-                                        <li><a href="www.facebook.com" target="_blank" class="icon-f"><i class="fab fa-facebook"></i></a></li>
-                                        <li><a href="www.google.com" target="_blank" class="icon-g"><i class="fab fa-google-plus-g"></i></a></li>
-                                        <li><a href="www.twitter.com" target="_blank" class="icon-tw"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="www.instagram.com" target="_blank" class="icon-ig"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
+
                                 </li>
                             </ul>
                         </div>
                     </div>
+                    <div class="col-lg-3 col-md-4 col-sm-8 col-xs-12">
+                        <div class="foot1">
+                            <h3 class="f-title">Free mobile app</h3>
+                            <a href="#" class="btn-hvr btn-flex wow animate__animated animate__slideInRight">
+                                <span class="btn-icon"><i class="fas fa-download"></i></span>
+                                <span class="z-span"> Download app </span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
+    </footer>
+    <!-- /////////////////////||||||||||||||||||||||||||||| End Footer |||||||||||||||||||||||||||| -->
+
+
+    <!-- /////////////////////||||||||||||||||||||||||||||| Start Bottom Icons |||||||||||||||||||||||||||| -->
+    <ul class="the_icons">
+        <li><a href="{{url('/')}}"><i class="fas fa-home"></i></a></li>
+        <li><a href="{{url('my_orders')}}"><i class="far fa-calendar"></i></a></li>
+        <li><a href="{{url('search_map')}}"><i class="fas fa-map-marked-alt"></i></a></li>
+    </ul>
+    <!-- /////////////////////||||||||||||||||||||||||||||| End Bottom Icons |||||||||||||||||||||||||||| -->
+
+    <!-- /////////////////////||||||||||||||||||||||||||||| Start copyright |||||||||||||||||||||||||||| -->
+    <div class="copyright">
+        <div class="container">
+            &copy; <span id="currentYear"></span>La Cita.com SV Ltd
         </div>
-        <div class="copyright">
-            &copy;
-            جميع الحقوق محفوظة لدى شركة<a href="http://panorama-q.com/">بانوراما القصيم</a> <span id="currentYear"></span>
-        </div>
-    </footer> -->
+    </div>
     <!--Scroll Button-->
     <div id="scroll-top">
         <i class="fa fa-angle-up"></i>
         <p>top</p>
     </div>
-    <!-- /////////////////////||||||||||||||||||||||||||||| End Footer |||||||||||||||||||||||||||| -->
 
 
 
@@ -629,10 +640,10 @@
     <script src="{{asset('website/dist/js/bootstrap.min.js')}}"></script>
     <script src="{{asset('website/dist/js/fontawesome.min.js')}}"></script>
     <script>
-  window.FontAwesomeConfig = {
-    searchPseudoElements: true
-  }
-</script>
+        window.FontAwesomeConfig = {
+            searchPseudoElements: true
+        }
+    </script>
     <!--- start combo box search -->
     <script src="{{asset('website/dist/js/combobox-list.js')}}"></script>
     <script src="{{asset('website/dist/js/listbox.js')}}"></script>

@@ -78,6 +78,9 @@ Route::get('/new_products', function () {
 Route::get('/offers', function () {
     return view('site.offers');
 });
+Route::get('/search_map', function () {
+    return view('site.search_map');
+});  //// البحث بالخريطة
 Route::get('/public_offers', function () {
     return view('site.public_offers');
 });
