@@ -236,6 +236,75 @@
 </section>
 <!---//////////// End Featured Categories Section //////////////////------------>
 
+<!---//////////// Start Offers Section //////////////////------------>
+<section class="categories-r">
+    <div class="container">
+        <div class="head-title">
+            <h2>Latest Offers in London</h2>
+        </div>
+        <div class="owl-carousel owl-theme owl_categ">
+            <a class="card_categ" href="{{url('sub-sections')}}">
+                <h4 class="off_ratio"><p>OFF</p>30%</h4>
+                <div class="img_categ"><img src="{{asset('website/dist/img/category1.jpg')}}"></div>
+                <div class="txt_categ">
+                    <p>Beauty Salon</p>
+                </div>
+            </a>
+            <a class="card_categ" href="{{url('sub-sections')}}">
+                <h4 class="off_ratio"><p>OFF</p>30%</h4>
+                <div class="img_categ"><img src="{{asset('website/dist/img/category2.jpg')}}"></div>
+                <div class="txt_categ">
+                    <p>Hair Salon</p>
+                </div>
+            </a>
+            <a class="card_categ" href="{{url('sub-sections')}}">
+                <h4 class="off_ratio"><p>OFF</p>30%</h4>
+                <div class="img_categ"><img src="{{asset('website/dist/img/category3.jpg')}}"></div>
+                <div class="txt_categ">
+                    <p>Nail Salon</p>
+                </div>
+            </a>
+            <a class="card_categ" href="{{url('sub-sections')}}">
+                <h4 class="off_ratio"><p>OFF</p>30%</h4>
+                <div class="img_categ"><img src="{{asset('website/dist/img/category4.jpg')}}"></div>
+                <div class="txt_categ">
+                    <p>Eyebrows & Lashes</p>
+                </div>
+            </a>
+            <a class="card_categ" href="{{url('sub-sections')}}">
+                <h4 class="off_ratio"><p>OFF</p>30%</h4>
+                <div class="img_categ"><img src="{{asset('website/dist/img/category5.jpg')}}"></div>
+                <div class="txt_categ">
+                    <p>Barbershop</p>
+                </div>
+            </a>
+            <a class="card_categ" href="{{url('sub-sections')}}">
+                <h4 class="off_ratio"><p>OFF</p>30%</h4>
+                <div class="img_categ"><img src="{{asset('website/dist/img/category6.jpg')}}"></div>
+                <div class="txt_categ">
+                    <p>Massage</p>
+                </div>
+            </a>
+            <a class="card_categ" href="{{url('sub-sections')}}">
+                <h4 class="off_ratio"><p>OFF</p>30%</h4>
+                <div class="img_categ"><img src="{{asset('website/dist/img/category7.jpg')}}"></div>
+                <div class="txt_categ">
+                    <p>Therapy Center</p>
+                </div>
+            </a>
+            <a class="card_categ" href="{{url('sub-sections')}}">
+                <h4 class="off_ratio"><p>OFF</p>30%</h4>
+                <div class="img_categ"><img src="{{asset('website/dist/img/category8.jpg')}}"></div>
+                <div class="txt_categ">
+                    <p>Gym & Fitness</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+<!---//////////// End Offers Section //////////////////------------>
+
+
 @endsection
 @section('scripts')
 <script src="{{asset('website/dist/js/owl.carousel.min.js')}}"></script>

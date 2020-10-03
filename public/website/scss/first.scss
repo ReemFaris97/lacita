@@ -214,6 +214,7 @@ $grey-bg: #fff9f9;
 .card_categ {
     border-radius: 8px;
     display: block;
+    position: relative;
     -webkit-box-shadow: rgba(16, 25, 40, 0.08) 0px 4px 8px 0px;
     box-shadow: rgba(16, 25, 40, 0.08) 0px 4px 8px 0px;
     border: 1px solid rgb(231, 232, 233);
@@ -450,6 +451,29 @@ $grey-bg: #fff9f9;
     }
 }
 /************** End Sub Categories .blade*************/
+
+/************** Start Offers Section *************/
+.off_ratio{
+    position: absolute;
+    background-color: #c80505;
+    color: #fff;
+    margin: 0;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    border-radius: 0 0 0 8px;
+    padding: 8px 6px;
+    z-index: 9;
+    @include dis-flex;
+    @include flex-col-center;
+    @include flex-dir-column;
+    text-align: center;
+    p{
+        margin: 0 auto 3px auto;
+        font-size: 12px;
+    }
+}
+/************** End Offers Section *************/
 
 /*********** Responsive ****************/
 @media (max-width: 991px) {
