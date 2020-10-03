@@ -1,8 +1,8 @@
 @import "first";
 .navbar,
 .footer,
-#scroll-top {
-    display: none;
+#scroll-top , .the_icons , .footer ~ .copyright {
+    display: none !important;
 }
 .modal-backdrop {
     background-color: #8a8a8a;
@@ -254,17 +254,6 @@
     left: 0;
     bottom: 0;
     top: auto;
-}
-.logForm .select2-container .select2-selection--single {
-    height: 50px;
-    border-radius: 6px 0 0 6px;
-}
-.select2-container--default .select2-selection--single .select2-selection__rendered {
-    line-height: 50px;
-    padding: 0 0 0 2px;
-}
-.select2-container--default .select2-selection--single .select2-selection__arrow {
-    top: calc(50% - 13px);
 }
 label .forgot{
     color: $third-color;

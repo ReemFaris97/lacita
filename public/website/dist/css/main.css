@@ -327,14 +327,14 @@ input[type=number]::-webkit-outer-spin-button {
   .shape:nth-child(1) {
     cy: 50;
     cx: 50;
-    fill: #BA453A;
+    fill: #fbd74d;
     -webkit-animation: movein 3s ease infinite alternate;
             animation: movein 3s ease infinite alternate;
   }
   .shape:nth-child(2) {
     cy: 50;
     cx: 150;
-    fill: #F9A392;
+    fill: #7c7e7c;
     -webkit-animation: movein 3s ease infinite alternate;
             animation: movein 3s ease infinite alternate;
   }
@@ -435,7 +435,7 @@ input[type=number]::-webkit-outer-spin-button {
     height: 90px;
     margin: 0 auto;
     min-height: auto;
-    position: fixed;
+    /* position: fixed; */
     background-color: transparent;
     border: 0;
     z-index: 999;
@@ -457,9 +457,9 @@ input[type=number]::-webkit-outer-spin-button {
     object-fit: contain;
 }
 /********************* Start Searchbar **************************/
-.center_nav{
+/* .center_nav{
     display: none;
-}
+} */
 .center_nav .icon_mob , #icon_close{
     display: none;
 }
@@ -718,7 +718,7 @@ ul[role="listbox"] li[role="option"] {
 .navbar.fixd-navbar .center_nav , .fixd-navbar .center_nav .nav_mob{
     display: block;
 }
-.fixd-navbar .center_nav .nav_mob .menu_mob{
+.navbar .center_nav .nav_mob .menu_mob{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -762,11 +762,27 @@ footer li a , footer p{
     color: #7c7e7c;
     font-family: 'Almarai-Bold';
 }
-footer .btn-hvr {
+/* footer .btn-hvr {
     height: 50px;
     -webkit-box-pack: space-evenly !important;
         -ms-flex-pack: space-evenly !important;
             justify-content: space-evenly !important;
+} */
+footer .flex_down{
+    justify-content: flex-start;
+}
+footer .down_app{
+    display: block;
+    max-width: 150px;
+    flex: 1 1 0;
+}
+footer .down_app:first-child{
+    margin-right: 8px;
+}
+footer .down_app img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 /******************* End Footer **************************/
 /*******************Start copyright  **************************/
@@ -829,6 +845,26 @@ footer li a:hover , footer li a:focus , .copyright a:hover, .copyright a:focus{
     right: calc(33.33% - 1px);
 }
 /*******************end bottom icons **************************/
+
+/*******************start select2 **************************/
+.select2-container--open .select2-dropdown {
+    min-width: 100px;
+}
+.select2-results__option {
+    display: block;
+}
+.select2-container .select2-selection--single {
+    height: 50px !important;
+    border-radius: 6px 0 0 6px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 50px !important;
+    padding: 0 0 0 2px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: calc(50% - 13px) !important;
+}
+/*******************end select2 **************************/
 
 
 
@@ -1053,7 +1089,7 @@ width: 130px;
     transform: translate(-50%, -50%);
     opacity: 1;
     width: 100%;
-    display: block;
+    display: block !important;
     z-index: 99;
     background-color: transparent;
     padding: 0 30px;

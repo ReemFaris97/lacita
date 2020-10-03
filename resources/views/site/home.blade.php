@@ -4,6 +4,15 @@
 <link rel="stylesheet" href="{{asset('website/dist/css/owl.carousel.css')}}">
 <link rel="stylesheet" href="{{asset('website/dist/css/owl.theme.default.min.css')}}">
 <link rel="stylesheet" href="{{asset('website/scss/first.css')}}">
+<style>
+    .navbar {
+        position: fixed;
+    }
+
+    .center_nav {
+        display: none;
+    }
+</style>
 @endsection
 @section('content')
 <!---//////////// Start Header //////////////////------------>
@@ -26,38 +35,54 @@
             <h2>Top categories in London</h2>
         </div>
         <div class="owl-carousel owl-theme owl_categ">
-                <a class="card_categ" href="{{url('sub-sections')}}">
-                    <div class="img_categ"><img src="{{asset('website/dist/img/category1.jpg')}}"></div>
-                    <div class="txt_categ"><p>Beauty Salon</p></div>
-                </a>
-                <a class="card_categ" href="{{url('sub-sections')}}">
-                    <div class="img_categ"><img src="{{asset('website/dist/img/category2.jpg')}}"></div>
-                    <div class="txt_categ"><p>Hair Salon</p></div>
-                </a>
-                <a class="card_categ" href="{{url('sub-sections')}}">
-                    <div class="img_categ"><img src="{{asset('website/dist/img/category3.jpg')}}"></div>
-                    <div class="txt_categ"><p>Nail Salon</p></div>
-                </a>
-                <a class="card_categ" href="{{url('sub-sections')}}">
-                    <div class="img_categ"><img src="{{asset('website/dist/img/category4.jpg')}}"></div>
-                    <div class="txt_categ"><p>Eyebrows & Lashes</p></div>
-                </a>
-                <a class="card_categ" href="{{url('sub-sections')}}">
-                    <div class="img_categ"><img src="{{asset('website/dist/img/category5.jpg')}}"></div>
-                    <div class="txt_categ"><p>Barbershop</p></div>
-                </a>
-                <a class="card_categ" href="{{url('sub-sections')}}">
-                    <div class="img_categ"><img src="{{asset('website/dist/img/category6.jpg')}}"></div>
-                    <div class="txt_categ"><p>Massage</p></div>
-                </a>
-                <a class="card_categ" href="{{url('sub-sections')}}">
-                    <div class="img_categ"><img src="{{asset('website/dist/img/category7.jpg')}}"></div>
-                    <div class="txt_categ"><p>Therapy Center</p></div>
-                </a>
-                <a class="card_categ" href="{{url('sub-sections')}}">
-                    <div class="img_categ"><img src="{{asset('website/dist/img/category8.jpg')}}"></div>
-                    <div class="txt_categ"><p>Gym & Fitness</p></div>
-                </a>
+            <a class="card_categ" href="{{url('sub-sections')}}">
+                <div class="img_categ"><img src="{{asset('website/dist/img/category1.jpg')}}"></div>
+                <div class="txt_categ">
+                    <p>Beauty Salon</p>
+                </div>
+            </a>
+            <a class="card_categ" href="{{url('sub-sections')}}">
+                <div class="img_categ"><img src="{{asset('website/dist/img/category2.jpg')}}"></div>
+                <div class="txt_categ">
+                    <p>Hair Salon</p>
+                </div>
+            </a>
+            <a class="card_categ" href="{{url('sub-sections')}}">
+                <div class="img_categ"><img src="{{asset('website/dist/img/category3.jpg')}}"></div>
+                <div class="txt_categ">
+                    <p>Nail Salon</p>
+                </div>
+            </a>
+            <a class="card_categ" href="{{url('sub-sections')}}">
+                <div class="img_categ"><img src="{{asset('website/dist/img/category4.jpg')}}"></div>
+                <div class="txt_categ">
+                    <p>Eyebrows & Lashes</p>
+                </div>
+            </a>
+            <a class="card_categ" href="{{url('sub-sections')}}">
+                <div class="img_categ"><img src="{{asset('website/dist/img/category5.jpg')}}"></div>
+                <div class="txt_categ">
+                    <p>Barbershop</p>
+                </div>
+            </a>
+            <a class="card_categ" href="{{url('sub-sections')}}">
+                <div class="img_categ"><img src="{{asset('website/dist/img/category6.jpg')}}"></div>
+                <div class="txt_categ">
+                    <p>Massage</p>
+                </div>
+            </a>
+            <a class="card_categ" href="{{url('sub-sections')}}">
+                <div class="img_categ"><img src="{{asset('website/dist/img/category7.jpg')}}"></div>
+                <div class="txt_categ">
+                    <p>Therapy Center</p>
+                </div>
+            </a>
+            <a class="card_categ" href="{{url('sub-sections')}}">
+                <div class="img_categ"><img src="{{asset('website/dist/img/category8.jpg')}}"></div>
+                <div class="txt_categ">
+                    <p>Gym & Fitness</p>
+                </div>
+            </a>
         </div>
     </div>
 </section>
@@ -71,7 +96,8 @@
         </div>
         <div class="row">
             <div class="col-lg-3 col-md-4 col-xs-6">
-                <a class="card_featured animate__fadeInUp animate__animated wow" href="{{url('products')}}">
+                <div class="outer_card animate__fadeInUp animate__animated wow">
+                    <a class="card_featured" href="{{url('products')}}">
                         <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
                         <div class="txt_featured">
                             <h3>Le Fix</h3>
@@ -84,9 +110,11 @@
                             <div class="badge_f">Featured</div>
                         </div>
                     </a>
+                </div>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6">
-                <a class="card_featured animate__fadeInUp animate__animated wow" href="{{url('products')}}">
+                <div class="outer_card animate__fadeInUp animate__animated wow">
+                    <a class="card_featured" href="{{url('products')}}">
                         <div class="img_featured"><img src="{{asset('website/dist/img/salon2.jpg')}}"></div>
                         <div class="txt_featured">
                             <h3>The Barbery</h3>
@@ -99,9 +127,11 @@
                             <div class="badge_f">Featured</div>
                         </div>
                     </a>
+                </div>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6">
-                <a class="card_featured animate__fadeInUp animate__animated wow" href="{{url('products')}}">
+                <div class="outer_card animate__fadeInUp animate__animated wow">
+                    <a class="card_featured" href="{{url('products')}}">
                         <div class="img_featured"><img src="{{asset('website/dist/img/salon3.jpg')}}"></div>
                         <div class="txt_featured">
                             <h3>Balance Massage & Wellness</h3>
@@ -114,9 +144,11 @@
                             <div class="badge_f">Featured</div>
                         </div>
                     </a>
+                </div>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6">
-                <a class="card_featured animate__fadeInUp animate__animated wow" href="{{url('products')}}">
+                <div class="outer_card animate__fadeInUp animate__animated wow">
+                    <a class="card_featured" href="{{url('products')}}">
                         <div class="img_featured"><img src="{{asset('website/dist/img/salon4.jpg')}}"></div>
                         <div class="txt_featured">
                             <h3>ELP Barbershop</h3>
@@ -129,9 +161,11 @@
                             <div class="badge_f">Featured</div>
                         </div>
                     </a>
+                </div>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6">
-                <a class="card_featured animate__fadeInUp animate__animated wow" href="{{url('products')}}">
+                <div class="outer_card animate__fadeInUp animate__animated wow">
+                    <a class="card_featured" href="{{url('products')}}">
                         <div class="img_featured"><img src="{{asset('website/dist/img/salon5.jpg')}}"></div>
                         <div class="txt_featured">
                             <h3>douce</h3>
@@ -144,9 +178,11 @@
                             <div class="badge_f">Featured</div>
                         </div>
                     </a>
+                </div>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6">
-                <a class="card_featured animate__fadeInUp animate__animated wow" href="{{url('products')}}">
+                <div class="outer_card animate__fadeInUp animate__animated wow">
+                    <a class="card_featured" href="{{url('products')}}">
                         <div class="img_featured"><img src="{{asset('website/dist/img/salon6.jpg')}}"></div>
                         <div class="txt_featured">
                             <h3>Karda Hair & Beauty</h3>
@@ -159,9 +195,11 @@
                             <div class="badge_f">Featured</div>
                         </div>
                     </a>
+                </div>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6">
-                <a class="card_featured animate__fadeInUp animate__animated wow" href="{{url('products')}}">
+                <div class="outer_card animate__fadeInUp animate__animated wow">
+                    <a class="card_featured" href="{{url('products')}}">
                         <div class="img_featured"><img src="{{asset('website/dist/img/salon7.jpg')}}"></div>
                         <div class="txt_featured">
                             <h3>The Nail Lounge</h3>
@@ -174,9 +212,11 @@
                             <div class="badge_f">Featured</div>
                         </div>
                     </a>
+                </div>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6">
-                <a class="card_featured animate__fadeInUp animate__animated wow" href="{{url('products')}}">
+                <div class="outer_card animate__fadeInUp animate__animated wow">
+                    <a class="card_featured" href="{{url('products')}}">
                         <div class="img_featured"><img src="{{asset('website/dist/img/salon8.jpg')}}"></div>
                         <div class="txt_featured">
                             <h3>Beauty Bars</h3>
@@ -189,6 +229,7 @@
                             <div class="badge_f">Featured</div>
                         </div>
                     </a>
+                </div>
             </div>
         </div>
     </div>
@@ -201,34 +242,34 @@
 <!------- categories owl --------->
 <script>
     $('.owl_categ').owlCarousel({
-            loop: true,
-            margin: 10,
-            autoplay: false,
-            smartSpeed: 2000,
-            dragEndSpeed: 2000,
-            animateOut: 'fadeOut',
-            animateIn: 'fadeIn',
-            dots: false,
-            nav: true,
-            navText: [
-                '<i class="fas fa-chevron-left"></i>',
-                '<i class="fas fa-chevron-right"></i>'
-            ],
-            responsive: {
-                0: {
-                    items: 2
-                },
-                500: {
-                    items: 3
-                },
-                768: {
-                    items: 4
-                },
-                1000: {
-                    items: 6
-                }
+        loop: true,
+        margin: 10,
+        autoplay: false,
+        smartSpeed: 2000,
+        dragEndSpeed: 2000,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        dots: false,
+        nav: true,
+        navText: [
+            '<i class="fas fa-chevron-left"></i>',
+            '<i class="fas fa-chevron-right"></i>'
+        ],
+        responsive: {
+            0: {
+                items: 2
+            },
+            500: {
+                items: 3
+            },
+            768: {
+                items: 4
+            },
+            1000: {
+                items: 6
             }
-        });
+        }
+    });
 </script>
 <!---- like new product --->
 <script>

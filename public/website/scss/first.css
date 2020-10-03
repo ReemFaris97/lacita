@@ -9,6 +9,14 @@
   text-overflow: ellipsis;
 }
 
+.my-header .head-txt h3 {
+  font-family: 'Almarai-ExtraBold';
+}
+
+.head-title h2, .card_categ .txt_categ, .card_featured .txt_featured h3, .card_featured .txt_featured p .bold, .card_featured .txt_featured .badge_f, .filtering .select2-container .select2-selection--single .select2-selection__rendered {
+  font-family: 'Almarai-Bold';
+}
+
 /************************/
 .btn-flex {
   display: -webkit-box;
@@ -103,7 +111,6 @@
 }
 
 .my-header .head-txt h3 {
-  font-family: "Almarai-ExtraBold";
   font-size: 3em;
   margin-top: 0;
 }
@@ -128,12 +135,11 @@
 /***********Start head titles*************/
 .head-title {
   margin: 0 0 30px 0;
+  text-transform: capitalize;
 }
 
 .head-title h2 {
-  font-family: "Almarai-Bold";
   font-size: 36px;
-  font-weight: bold;
   margin: 0;
 }
 
@@ -185,7 +191,6 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-family: "Almarai-Bold";
   font-size: 16px;
 }
 
@@ -275,7 +280,6 @@
 }
 
 .card_featured .txt_featured h3 {
-  font-family: "Almarai-Bold";
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   margin: 10px 0 6px 0;
@@ -298,7 +302,6 @@
 }
 
 .card_featured .txt_featured p .bold {
-  font-family: "Almarai-Bold";
   color: #101928;
 }
 
@@ -309,7 +312,6 @@
 .card_featured .txt_featured .badge_f {
   color: #037aff;
   text-transform: uppercase;
-  font-family: "Almarai-Bold";
   padding: 4px 12px;
   border-radius: 4px;
   background: #cde4ff;
@@ -332,6 +334,7 @@
 }
 
 /******* End Featured Categories Section *************/
+/******* start like button*************/
 .likerr {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -351,13 +354,60 @@
   font-size: 20px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  position: absolute;
+  z-index: 9;
+  border-radius: 8px 0 0 0;
 }
 
 .i_liked {
   background-color: red;
 }
 
-/******* End recent products Section *************/
+.outer_card {
+  position: relative;
+}
+
+/******* End like button*************/
+/************** Start Sub Categories .blade*************/
+.srch_city a {
+  display: inline-block;
+  color: #7c7e7c;
+  margin-right: 8px;
+}
+
+.srch_city a:hover, .srch_city a:focus {
+  color: #037aff;
+}
+
+.filtering {
+  margin: 0 0 30px 0;
+}
+
+.filtering .select2-container {
+  min-width: 140px;
+}
+
+.filtering .select2-container:first-of-type {
+  margin-right: 20px;
+}
+
+.filtering .select2-container .select2-selection--single {
+  height: 40px !important;
+  border-radius: 30px !important;
+  border-color: #c2c1c1 !important;
+  text-align: center;
+}
+
+.filtering .select2-container .select2-selection--single .select2-selection__arrow b {
+  border-color: #037aff transparent transparent transparent;
+}
+
+.filtering .select2-container .select2-selection--single .select2-selection__rendered {
+  line-height: 40px !important;
+  color: #037aff !important;
+}
+
+/************** End Sub Categories .blade*************/
 /*********** Responsive ****************/
 @media (max-width: 991px) {
   .btn-flex {
@@ -408,8 +458,14 @@
   .most_sec, .featured_sec {
     padding: 20px 0;
   }
+  .head-title {
+    margin: 0 0 15px 0;
+  }
   .head-title h2 {
     font-size: 20px;
+  }
+  .filtering {
+    margin: 0 0 15px 0;
   }
   /******** banner ***/
   .my-header {
@@ -443,6 +499,16 @@
   }
   .card_featured .txt_featured .badge_f {
     font-size: 13px;
+  }
+}
+
+@media (max-width: 599px) {
+  .filtering {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 

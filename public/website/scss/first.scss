@@ -8,7 +8,6 @@ $grey-bg: #fff9f9;
     -o-transition: $tr;
     transition: $tr;
 }
-
 @mixin boxShadow($sh1, $sh2) {
     -webkit-box-shadow: $sh-1, $sh-2;
     -o-box-shadow: $sh-1, $sh-2;
@@ -93,6 +92,12 @@ $grey-bg: #fff9f9;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
 }
+%bold {
+    font-family: 'Almarai-ExtraBold';
+}
+%semi_bold {
+    font-family: 'Almarai-Bold';
+}
 /************************/
 .btn-flex {
     display: -webkit-box;
@@ -162,7 +167,7 @@ $grey-bg: #fff9f9;
         max-width: 500px;
         padding: 20px 40px;
         h3 {
-            font-family: "Almarai-ExtraBold";
+            @extend %bold;
             font-size: 3em;
             margin-top: 0;
         }
@@ -188,10 +193,10 @@ $grey-bg: #fff9f9;
 /***********Start head titles*************/
 .head-title {
     margin: 0 0 30px 0;
+    text-transform: capitalize;
     h2 {
-        font-family: "Almarai-Bold";
+        @extend %semi_bold;
         font-size: 36px;
-        font-weight: bold;
         margin: 0;
     }
 }
@@ -241,7 +246,7 @@ $grey-bg: #fff9f9;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        font-family: "Almarai-Bold";
+        @extend %semi_bold;
         font-size: 16px;
         p {
             margin: 0;
@@ -328,7 +333,7 @@ $grey-bg: #fff9f9;
     }
     .txt_featured {
         h3 {
-            font-family: "Almarai-Bold";
+            @extend %semi_bold;
             @extend %ellipsis;
             @include rTransition(all .3s ease-in-out);
             margin: 10px 0 6px 0;
@@ -349,7 +354,7 @@ $grey-bg: #fff9f9;
                 color: #FFC830;
             }
             .bold {
-                font-family: "Almarai-Bold";
+                @extend %semi_bold;
                 color: $primary-color;
             }
             .grey {
@@ -359,7 +364,7 @@ $grey-bg: #fff9f9;
         .badge_f {
             color: $third-color;
             text-transform: uppercase;
-            font-family: "Almarai-Bold";
+            @extend %semi_bold;
             padding: 4px 12px;
             border-radius: 4px;
             background: rgb(205, 228, 255);
@@ -382,13 +387,10 @@ $grey-bg: #fff9f9;
 }
 /******* End Featured Categories Section *************/
 
+/******* start like button*************/
 .likerr {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    @include dis-flex;
+    @include flex-col-center;
     background-color: #f9a392;
     color: #fff;
     -webkit-box-pack: center;
@@ -400,11 +402,54 @@ $grey-bg: #fff9f9;
     margin: 0;
     font-size: 20px;
     @include rTransition(all 0.3s ease-in-out);
+    position: absolute;
+    z-index: 9;
+    border-radius: 8px 0 0 0;
 }
 .i_liked {
     background-color: red;
 }
-/******* End recent products Section *************/
+.outer_card{
+    position: relative;
+}
+/******* End like button*************/
+
+
+/************** Start Sub Categories .blade*************/
+.srch_city{
+    a{
+        display: inline-block;
+        color: $grey-color;
+        margin-right: 8px;
+        &:hover , &:focus{
+            color: $third-color;
+        }
+    }
+}
+.filtering{
+    margin: 0 0 30px 0;
+    .select2-container {
+        min-width: 140px;
+        &:first-of-type{
+            margin-right: 20px;
+        }
+    }
+    .select2-container .select2-selection--single {
+        height: 40px !important;
+        border-radius: 30px !important;
+        border-color:  #c2c1c1 !important;
+        text-align: center;
+        .select2-selection__arrow b{
+            border-color: $third-color  transparent transparent transparent;
+        }
+        .select2-selection__rendered {
+            line-height: 40px !important;
+            color: $third-color !important;
+            @extend %semi_bold;
+        }
+    }
+}
+/************** End Sub Categories .blade*************/
 
 /*********** Responsive ****************/
 @media (max-width: 991px) {
@@ -456,8 +501,14 @@ $grey-bg: #fff9f9;
     %all-section-padd {
         padding: 20px 0;
     }
-    .head-title h2 {
-        font-size: 20px;
+    .head-title{
+        margin: 0 0 15px 0;
+        h2 {
+            font-size: 20px;
+        }
+    } 
+    .filtering{
+        margin: 0 0 15px 0;
     }
     /******** banner ***/
     .my-header {
@@ -497,6 +548,12 @@ $grey-bg: #fff9f9;
             font-size: 13px;
         }
     }
+    }
+}
+@media (max-width: 599px) {
+    .filtering {
+        @include dis-flex;
+        justify-content: space-around;
     }
 }
 @media (max-width: 375px) {

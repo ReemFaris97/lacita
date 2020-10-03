@@ -599,10 +599,14 @@
                     <div class="col-lg-3 col-md-4 col-sm-8 col-xs-12">
                         <div class="foot1">
                             <h3 class="f-title">Free mobile app</h3>
-                            <a href="#" class="btn-hvr btn-flex wow animate__animated animate__slideInRight">
-                                <span class="btn-icon"><i class="fas fa-download"></i></span>
-                                <span class="z-span"> Download app </span>
+                            <div class="flex-r flex_down">
+                            <a href="#" target="_blank" class="down_app wow animate__animated animate__slideInUp">
+                                <img src="{{asset('website/dist/img/app_store.png')}}">
                             </a>
+                            <a href="#" target="_blank" class="down_app wow animate__animated animate__slideIUp">
+                                <img src="{{asset('website/dist/img/google.png')}}">
+                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>

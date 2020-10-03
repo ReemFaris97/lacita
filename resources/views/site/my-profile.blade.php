@@ -69,7 +69,6 @@
       </div>
    </div>
 </section>
-@include('site.modals.reset-pass-modal')
 <!-- /////////////////////|||||||||||End my_profile |||||||||||||||||||| -->
 @endsection
 

@@ -45,7 +45,7 @@ $(document).ready(function () {
         /** Fixed Navbar **/
     $(window).scroll(function () {
         var st = $(window).scrollTop();
-        if (st > 60) {
+        if (st > 40) {
             $(".navbar").addClass('fixd-navbar');
 
         } else {
