@@ -1,5 +1,5 @@
 @extends('site.layout')
-@section('title' , 'La Cita || My Favourites')
+@section('title' , 'La Cita ||Products')
 @section('styles')
 <link rel="stylesheet" href="{{asset('website/scss/first.css')}}">
 @endsection
@@ -114,6 +114,16 @@
                 </div>
             </div>
         </div>
+         <!----- Pagination ----->
+      <ul class="pagination">
+         <li class="previous"><a href="#"><i class="fas fa-chevron-left"></i></a></li>
+         <li><a href="#">1</a></li>
+         <li><a href="#">2</a></li>
+         <li class="active"><a href="#">3</a></li>
+         <li><a href="#">4</a></li>
+         <li><a href="#">5</a></li>
+         <li class="next"><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+      </ul>
     </div>
 </section>
 <!---//////////// End Featured Categories Section //////////////////------------>

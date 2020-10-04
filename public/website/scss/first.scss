@@ -478,6 +478,31 @@ $grey-bg: #fff9f9;
     max-width: 280px;
     margin: 0 auto;
 }
+/************* Start Pagination ************/
+.pagination {
+    margin: 20px auto 0 auto;
+    display: table;
+    border-radius: 0;
+  }
+  
+  .pagination > li > a {
+    color: $grey-color;
+    background-color: transparent;
+    border: 0 !important;
+    font-size: 18px;
+  }
+  
+  .pagination > li > a:hover, .pagination > li > a:focus {
+    background-color: $third-color;
+    color: #fff;
+  }
+  
+  .pagination > li.active > a, .pagination > li.active > a:focus, .pagination > li.active > a:hover {
+    color: $grey-color;
+    background-color: #fff;
+  }
+  
+  /************* End Pagination ************/
 /*********** Responsive ****************/
 @media (max-width: 991px) {
     .btn-flex {

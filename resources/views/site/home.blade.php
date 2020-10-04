@@ -84,7 +84,7 @@
                 </div>
             </a>
         </div>
-        <a href="{{url('categories')}}" class="btn-hvr view_more"><span class="z-span">View More</span></a>
+        <a href="{{url('categories')}}" class="btn-hvr view_more"><span class="z-span">See More</span></a>
     </div>
 </section>
 <!---//////////// End Categories Section //////////////////------------>
@@ -233,7 +233,7 @@
                 </div>
             </div>
         </div>
-        <a href="{{url('categories')}}" class="btn-hvr view_more"><span class="z-span">View More</span></a>
+        <a href="{{url('categories')}}" class="btn-hvr view_more"><span class="z-span">See More</span></a>
     </div>
 </section>
 <!---//////////// End Featured Categories Section //////////////////------------>
@@ -302,7 +302,7 @@
                 </div>
             </a>
         </div>
-        <a href="{{url('categories')}}" class="btn-hvr view_more"><span class="z-span">View More</span></a>
+        <a href="{{url('categories')}}" class="btn-hvr view_more"><span class="z-span">See More</span></a>
     </div>
 </section>
 <!---//////////// End Offers Section //////////////////------------>

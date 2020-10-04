@@ -8,7 +8,7 @@
 <section class="featured_sec">
    <div class="container">
       <div class="head-title">
-         <h4 class="srch_city"><a href="{{url('products')}}">london</a> .
+         <h4 class="srch_city"><a href="{{url('sub-sections')}}">london</a> .
          Beauty Salon</h4>
          <h2>Top Featured Venues</h2>
       </div>
@@ -31,7 +31,7 @@
                <!-- start like button--->
                <button type="button" class="likerr"><i class="far fa-heart"></i></button>
                <!-- end like button--->
-               <a class="card_featured" href="{{url('products')}}">
+               <a class="card_featured" href="{{url('sub-sections')}}">
                   <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
                   <div class="txt_featured">
                      <h3>Le Fix</h3>
@@ -51,7 +51,7 @@
                <!-- start like button--->
                <button type="button" class="likerr i_liked"><i class="far fa-heart"></i></button>
                <!-- end like button--->
-               <a class="card_featured" href="{{url('products')}}">
+               <a class="card_featured" href="{{url('sub-sections')}}">
                   <div class="img_featured"><img src="{{asset('website/dist/img/salon2.jpg')}}"></div>
                   <div class="txt_featured">
                      <h3>The Barbery</h3>
@@ -71,7 +71,7 @@
                <!-- start like button--->
                <button type="button" class="likerr"><i class="far fa-heart"></i></button>
                <!-- end like button--->
-               <a class="card_featured" href="{{url('products')}}">
+               <a class="card_featured" href="{{url('sub-sections')}}">
                   <div class="img_featured"><img src="{{asset('website/dist/img/salon3.jpg')}}"></div>
                   <div class="txt_featured">
                      <h3>Balance Massage & Wellness</h3>
@@ -91,7 +91,7 @@
                <!-- start like button--->
                <button type="button" class="likerr i_liked"><i class="far fa-heart"></i></button>
                <!-- end like button--->
-               <a class="card_featured" href="{{url('products')}}">
+               <a class="card_featured" href="{{url('sub-sections')}}">
                   <div class="img_featured"><img src="{{asset('website/dist/img/salon4.jpg')}}"></div>
                   <div class="txt_featured">
                      <h3>ELP Barbershop</h3>
@@ -111,7 +111,7 @@
                <!-- start like button--->
                <button type="button" class="likerr i_liked"><i class="far fa-heart"></i></button>
                <!-- end like button--->
-               <a class="card_featured" href="{{url('products')}}">
+               <a class="card_featured" href="{{url('sub-sections')}}">
                   <div class="img_featured"><img src="{{asset('website/dist/img/salon5.jpg')}}"></div>
                   <div class="txt_featured">
                      <h3>douce</h3>
@@ -131,7 +131,7 @@
                <!-- start like button--->
                <button type="button" class="likerr"><i class="far fa-heart"></i></button>
                <!-- end like button--->
-               <a class="card_featured" href="{{url('products')}}">
+               <a class="card_featured" href="{{url('sub-sections')}}">
                   <div class="img_featured"><img src="{{asset('website/dist/img/salon6.jpg')}}"></div>
                   <div class="txt_featured">
                      <h3>Karda Hair & Beauty</h3>
@@ -151,7 +151,7 @@
                <!-- start like button--->
                <button type="button" class="likerr i_liked"><i class="far fa-heart"></i></button>
                <!-- end like button--->
-               <a class="card_featured" href="{{url('products')}}">
+               <a class="card_featured" href="{{url('sub-sections')}}">
                   <div class="img_featured"><img src="{{asset('website/dist/img/salon7.jpg')}}"></div>
                   <div class="txt_featured">
                      <h3>The Nail Lounge</h3>
@@ -171,7 +171,7 @@
                <!-- start like button--->
                <button type="button" class="likerr i_liked"><i class="far fa-heart"></i></button>
                <!-- end like button--->
-               <a class="card_featured" href="{{url('products')}}">
+               <a class="card_featured" href="{{url('sub-sections')}}">
                   <div class="img_featured"><img src="{{asset('website/dist/img/salon8.jpg')}}"></div>
                   <div class="txt_featured">
                      <h3>Beauty Bars</h3>
@@ -187,6 +187,16 @@
             </div>
          </div>
       </div>
+       <!----- Pagination ----->
+       <ul class="pagination">
+         <li class="previous"><a href="#"><i class="fas fa-chevron-left"></i></a></li>
+         <li><a href="#">1</a></li>
+         <li><a href="#">2</a></li>
+         <li class="active"><a href="#">3</a></li>
+         <li><a href="#">4</a></li>
+         <li><a href="#">5</a></li>
+         <li class="next"><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+      </ul>
    </div>
 </section>
 <!-- /////////////////////|||||||||||End Categories section |||||||||||||||||||| -->

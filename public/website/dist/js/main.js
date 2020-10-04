@@ -14,6 +14,11 @@ $(document).ready(function () {
                     $(this).parents(".view_box").find(".menu_mob").toggleClass("fixed-r"), 
                     $("body").toggleClass("body-mob")
                 })
+                $("#new_list").click(function () {
+                    $(this).parents(".sett_li").find(".menu_mob2").toggleClass("fixed-r"),
+                    $(this).parents(".sett_li").find(".nav_mob2").toggleClass("back-nav"),
+                    $(".icon_mob , #icon_close").parents(".view_box").find(".nav_mob,.menu_mob").toggleClass("fixed_height")
+                })
             }
         }
     

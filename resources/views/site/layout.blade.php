@@ -525,7 +525,18 @@
                                     <li><a href="{{url('my_favourites')}}"><span class="link_i"><i class="far fa-heart"></i></span>my favourites</a></li>
                                     <li><a href="{{url('copouns')}}"><span class="link_i"><i class="fas fa-vr-cardboard"></i></span>copouns</a></li>
                                     <li><a href="{{url('categories')}}" class="display-xs"><span class="link_i"><i class="fas fa-list-ul"></i></span>categories</a></li>
-                                    <li><a href="{{url('settings')}}"><span class="link_i"><i class="fas fa-cog"></i></span>settings</a></li>
+                                    <li class="dropdown sett_li"><a href="javascript:void(0)" id="new_list"><span class="link_i"><i class="fas fa-cog"></i></span>settings</a>
+                                    <!------------- Start settings links ul ----------------->
+                                    <div class="nav_mob2">
+                                <ul class="dropdown-menu menu_mob2">
+                                <li><a href="#" target="_blank">For Partners</a></li>
+                                <li><a href="{{url('use_policy')}}" target="_blank">Booking Terms</a></li>
+                                <li><a href="{{url('privacy')}}" target="_blank">privacy policy</a></li>
+                                <li><a href="{{url('polices_rules')}}" target="_blank">website terms</a></li>
+                                </ul>
+                                    </div>
+                                    <!------------- End settings links ul ----------------->
+                                </li>
                                     <!----------------********************** show these links if user NOT logged in ***************------------------------------>
                                     <li><a href="{{url('sign-up')}}" class="display-xs"><span class="link_i"><i class="fas fa-user-plus"></i></span>sign up</a></li>
                                     <li><a href="{{url('sign-in')}}" class="display-xs"><span class="link_i"><i class="far fa-user"></i></span>sign in</a></li>
@@ -662,10 +673,10 @@
     <script src="{{asset('website/dist/js/main.js')}}"></script>
     <script>
         $('ul.nav-tools .dropdown').hover(function() {
-            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+            $(this).find('.dropdown-menu').first().stop(true, true).delay(200).fadeIn(500);
             $(this).find("#nav-icon1").toggleClass("open");
         }, function() {
-            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+            $(this).find('.dropdown-menu').first().stop(true, true).delay(200).fadeOut(500);
             $(this).find("#nav-icon1").toggleClass("open");
         });
     </script>

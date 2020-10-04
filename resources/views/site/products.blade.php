@@ -1,197 +1,208 @@
 @extends('site.layout')
-@section('title' , 'La Cita ||  العناية بالبشرة')
+@section('title' , 'La Cita || Products ')
 @section('styles')
-<link rel="stylesheet" href="{{asset('website/dist/css/jquery.fancybox.min.css')}}">
-<link rel="stylesheet" href="{{asset('website/dist/css/a-style.css')}}">
+<link rel="stylesheet" href="{{asset('website/dist/css/select2.min.css')}}">
 @endsection
 @section('content')
-<!-- /////////////////////||||||||||| bread crumbs |||||||||||||||||||| -->
-<section class="all-sections sec-about single-work subsection">
-   <div class="single-workdiv">
-      <h3 class="titlebread" > العناية بالبشرة </h3>
-      <p class="breadcrum"> <a href="../">الرئيسية</a> / <a href="{{url('categories')}}">الاقسام</a>  /  <a href="{{url('sub-sections')}}"> العناية بالبشرة </a>  /  <a href="{{url('products')}}">  منتجات </a></p>
-   </div>
-   <img class="absimgbread" alt="" src="{{asset('website/dist/img/Layer_1.png')}}">
-   <div id='wrapper' class="wrapper">
-      <div class="bubble small"></div>
-      <div class="bubble s-medium"></div>
-      <div class="bubble medium"></div>
-      <div class="bubble large"></div>
-      <div class="bubble small-l"></div>
-   </div>
-</section>
-<!-- /////// ||||||||||||||||||||end breadcrumbs|||||||||||||||||||| ///////// -->
-<!-- /////// |||||||||||||||||||| breadcrumbs|||||||||||||||||||| ///////// -->
-<section class="all-sections seccateg ">
+<!-- /////////////////////||||||||||| Start Categories section |||||||||||||||||||| -->
+<section class="featured_sec">
    <div class="container">
-      <div class="flexpagin">
-         <div class="pagenum">
-            <span>عدد الصفحات :</span>
-            <ul class="pagination">
-               <li><a href="#">1</a></li>
-               <li><a href="#">2</a></li>
-               <li><a href="#">3</a></li>
-               <li><a href="#">4</a></li>
-               <li><a href="#">5</a></li>
-            </ul>
-         </div>
-         <div class="filter-buttons">
-            <div class="relative">
-               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               <i class="fas fa-sort-amount-down"></i>
-               </button>
-               <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
-                  <div class="custom_radio">
-                    <ul class="inlineradio">
-                        <li>
-                            <a href="{{url('public_offers')}}">الخصم العام </a>
-                        </li>
-                        <li>
-                            <a href="{{url('offer')}}"> عرض منتجين ومنتج مجاني</a>
-                        </li>
-                        <li>
-                            <a href="{{url('offer')}}"> عرض منتج ومنتج مجاني</a>
-                        </li>
-                        <li>
-                            <a href="{{url('offer')}}">عرض الكمية</a>
-                        </li>
-                        <li>
-                            <a href="{{url('offer')}}"> خصم النسبة</a>
-                        </li>
-                        <li>
-                            <a href="{{url('categories')}}">عروض الاقسام</a>
-                        </li>
-                        <li>
-                            <a href="#">كبونات الخصم</a>
-                        </li>
-                    </ul>
-                  </div>
-               </div>
-            </div>
-            <div class="list-view-button"><i class="fa fa-bars" aria-hidden="true"></i>  </div>
-            <div class="grid-view-button"><i class="fa fa-th-large" aria-hidden="true"></i>  </div>
-            <div class="dropdown">
-            </div>
-         </div>
+      <div class="head-title">
+         <h4 class="srch_city"><a href="{{url('single-product')}}">london</a> .
+         Beauty Salon</h4>
+         <h2>Top Featured Venues</h2>
       </div>
-
-
-
-      <!-- ------------------------ -->
-      <!-- الخصم العام -->
-      <!-- --------------------------- -->
-      <div class="row list list-view-filter recents">
-         <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid list4">
-            <div class="fleximgfav">
-                <a href="{{url('single-product')}}">
-                    <div class="fleximgwidth">
-                        <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
-                    </div>
-                </a>
-               <div class="descrpp">
-                  <a href="{{url('single-product')}}"><p class="nameprodfav">مجموعة الصابون الطبيعي  </p></a>
-                  <div class="discprice">
-                    <b><span>100</span>  ريال سعودي </b><b><span>100</span>  ريال سعودي </b>
+      <div class="filtering">
+         <select class="select-2">
+            <option>Nearest</option>
+            <option>top rated</option>
+            <option>newest</option>
+            <option>lowest price</option>
+         </select>
+         <select class="select-2">
+            <option>Men and women</option>
+            <option>women only</option>
+            <option>men only</option>
+         </select>
+      </div>
+      <div class="row">
+         <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="outer_card animate__fadeInUp animate__animated wow">
+               <!-- start like button--->
+               <button type="button" class="likerr"><i class="far fa-heart"></i></button>
+               <!-- end like button--->
+               <a class="card_featured" href="{{url('single-product')}}">
+                  <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
+                  <div class="txt_featured">
+                     <h3>Le Fix</h3>
+                     <h5>45 Newman Street</h5>
+                     <p>
+                        <span class="one_star"><i class="fas fa-star"></i></span>
+                        <span class="bold">4.8 Great</span>
+                        <span class="grey">97 rating</span>
+                     </p>
+                     <div class="badge_f">Featured</div>
                   </div>
-                  <b class="favpp">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة  هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</b>
-                  <b class="datedes">
-                      <b>2-aug-2020</b> <b>22-aug-2020</b>
-                  </b>
-                  <div class="flex flexadd">
-                     <div class="likerr"><i class="far fa-heart"></i></div>
-                     <div class="addcard"  data-toggle="modal" data-target="#addCardModal">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
-                  </div>
-               </div>
-               <div class="discname">اسم الخصم</div>
-               <div class="discprecent">-20%</div>
+               </a>
             </div>
          </div>
-         <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid list4">
-            <div class="fleximgfav">
-                <a href="{{url('single-product')}}">
-                    <div class="fleximgwidth">
-                        <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
-                    </div>
-                </a>
-               <div class="descrpp">
-                  <a href="{{url('single-product')}}"><p class="nameprodfav">مجموعة الصابون الطبيعي  </p></a>
-                  <div class="discprice">
-                    <b><span>100</span>  ريال سعودي </b><b><span>100</span>  ريال سعودي </b>
+         <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="outer_card animate__fadeInUp animate__animated wow">
+               <!-- start like button--->
+               <button type="button" class="likerr i_liked"><i class="far fa-heart"></i></button>
+               <!-- end like button--->
+               <a class="card_featured" href="{{url('single-product')}}">
+                  <div class="img_featured"><img src="{{asset('website/dist/img/salon2.jpg')}}"></div>
+                  <div class="txt_featured">
+                     <h3>The Barbery</h3>
+                     <h5>29 Webber Street</h5>
+                     <p>
+                        <span class="one_star"><i class="fas fa-star"></i></span>
+                        <span class="bold">4.8 Great</span>
+                        <span class="grey">97 rating</span>
+                     </p>
+                     <div class="badge_f">Featured</div>
                   </div>
-                  <b class="favpp">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة  هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</b>
-                  <b class="datedes">
-                      <b>2-aug-2020</b> <b>22-aug-2020</b>
-                  </b>
-                  <div class="flex flexadd">
-                     <div class="likerr"><i class="far fa-heart"></i></div>
-                     <div class="addcard"  data-toggle="modal" data-target="#addCardModal">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
-                  </div>
-               </div>
-               <div class="discname">اسم الخصم</div>
-               <div class="discprecent">-20%</div>
+               </a>
             </div>
          </div>
-         <div class="col-xs-12 mr-top-10">
-            <button class="btn-hvr btn-flex btnminwidth">
-            <span class="z-span"> عرض المزيد </span>
-            </button>
-        </div>
-
-
-
+         <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="outer_card animate__fadeInUp animate__animated wow">
+               <!-- start like button--->
+               <button type="button" class="likerr"><i class="far fa-heart"></i></button>
+               <!-- end like button--->
+               <a class="card_featured" href="{{url('single-product')}}">
+                  <div class="img_featured"><img src="{{asset('website/dist/img/salon3.jpg')}}"></div>
+                  <div class="txt_featured">
+                     <h3>Balance Massage & Wellness</h3>
+                     <h5>45 Newman Street</h5>
+                     <p>
+                        <span class="one_star"><i class="fas fa-star"></i></span>
+                        <span class="bold">4.8 Great</span>
+                        <span class="grey">97 rating</span>
+                     </p>
+                     <div class="badge_f">Featured</div>
+                  </div>
+               </a>
+            </div>
+         </div>
+         <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="outer_card animate__fadeInUp animate__animated wow">
+               <!-- start like button--->
+               <button type="button" class="likerr i_liked"><i class="far fa-heart"></i></button>
+               <!-- end like button--->
+               <a class="card_featured" href="{{url('single-product')}}">
+                  <div class="img_featured"><img src="{{asset('website/dist/img/salon4.jpg')}}"></div>
+                  <div class="txt_featured">
+                     <h3>ELP Barbershop</h3>
+                     <h5>45 Newman Street</h5>
+                     <p>
+                        <span class="one_star"><i class="fas fa-star"></i></span>
+                        <span class="bold">4.8 Great</span>
+                        <span class="grey">97 rating</span>
+                     </p>
+                     <div class="badge_f">Featured</div>
+                  </div>
+               </a>
+            </div>
+         </div>
+         <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="outer_card animate__fadeInUp animate__animated wow">
+               <!-- start like button--->
+               <button type="button" class="likerr i_liked"><i class="far fa-heart"></i></button>
+               <!-- end like button--->
+               <a class="card_featured" href="{{url('single-product')}}">
+                  <div class="img_featured"><img src="{{asset('website/dist/img/salon5.jpg')}}"></div>
+                  <div class="txt_featured">
+                     <h3>douce</h3>
+                     <h5>45 Newman Street</h5>
+                     <p>
+                        <span class="one_star"><i class="fas fa-star"></i></span>
+                        <span class="bold">4.8 Great</span>
+                        <span class="grey">97 rating</span>
+                     </p>
+                     <div class="badge_f">Featured</div>
+                  </div>
+               </a>
+            </div>
+         </div>
+         <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="outer_card animate__fadeInUp animate__animated wow">
+               <!-- start like button--->
+               <button type="button" class="likerr"><i class="far fa-heart"></i></button>
+               <!-- end like button--->
+               <a class="card_featured" href="{{url('single-product')}}">
+                  <div class="img_featured"><img src="{{asset('website/dist/img/salon6.jpg')}}"></div>
+                  <div class="txt_featured">
+                     <h3>Karda Hair & Beauty</h3>
+                     <h5>45 Newman Street</h5>
+                     <p>
+                        <span class="one_star"><i class="fas fa-star"></i></span>
+                        <span class="bold">4.8 Great</span>
+                        <span class="grey">97 rating</span>
+                     </p>
+                     <div class="badge_f">Featured</div>
+                  </div>
+               </a>
+            </div>
+         </div>
+         <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="outer_card animate__fadeInUp animate__animated wow">
+               <!-- start like button--->
+               <button type="button" class="likerr i_liked"><i class="far fa-heart"></i></button>
+               <!-- end like button--->
+               <a class="card_featured" href="{{url('single-product')}}">
+                  <div class="img_featured"><img src="{{asset('website/dist/img/salon7.jpg')}}"></div>
+                  <div class="txt_featured">
+                     <h3>The Nail Lounge</h3>
+                     <h5>45 Newman Street</h5>
+                     <p>
+                        <span class="one_star"><i class="fas fa-star"></i></span>
+                        <span class="bold">4.8 Great</span>
+                        <span class="grey">97 rating</span>
+                     </p>
+                     <div class="badge_f">Featured</div>
+                  </div>
+               </a>
+            </div>
+         </div>
+         <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="outer_card animate__fadeInUp animate__animated wow">
+               <!-- start like button--->
+               <button type="button" class="likerr i_liked"><i class="far fa-heart"></i></button>
+               <!-- end like button--->
+               <a class="card_featured" href="{{url('single-product')}}">
+                  <div class="img_featured"><img src="{{asset('website/dist/img/salon8.jpg')}}"></div>
+                  <div class="txt_featured">
+                     <h3>Beauty Bars</h3>
+                     <h5>45 Newman Street</h5>
+                     <p>
+                        <span class="one_star"><i class="fas fa-star"></i></span>
+                        <span class="bold">4.8 Great</span>
+                        <span class="grey">97 rating</span>
+                     </p>
+                     <div class="badge_f">Featured</div>
+                  </div>
+               </a>
+            </div>
+         </div>
       </div>
    </div>
 </section>
-<!-- /////////////////////|||||||||||End sections |||||||||||||||||||| -->
-
-
-@include('site.modals.addcard')
-
+<!-- /////////////////////|||||||||||End Categories section |||||||||||||||||||| -->
 @endsection
 @section('scripts')
-<script src="{{asset('website/dist/js/jquery.fancybox.min.js')}}"></script>
+<!---- like new product --->
 <script>
-   $(".deleteaa").click(function() {
-           $(this).parents(".parentfav").fadeOut(300 ,function() {
-               $(this).remove();
-               });
-
-       });
+   $(".likerr").click(function() {
+      $(this).toggleClass("i_liked");
+   });
 </script>
+<!----select 2---->
+<script src="{{asset('website/dist/js/select2.full.js')}}"></script>
 <script>
-   const listViewButton = document.querySelector('.list-view-button');
-          const gridViewButton = document.querySelector('.grid-view-button');
-          const list = document.querySelector('.list.list-view-filter');
-
-          listViewButton.onclick = function () {
-          list.classList.remove('grid-view-filter');
-          list.classList.add('list-view-filter');
-          $(".listgrid").addClass( "col-md-6 listgrida" );
-          $(".listgrid").removeClass( "col-md-3 " );
-          $(".list-view-button").addClass( "classListGrid" );
-          $(".grid-view-button").removeClass( "classListGrid" );
-
-
-
-
-          }
-
-          gridViewButton.onclick = function () {
-          list.classList.remove('list-view-filter');
-          list.classList.add('grid-view-filter');
-          $(".listgrid").addClass( "col-md-3" );
-          $(".listgrid").removeClass( "col-md-6 listgrida" );
-          $(".grid-view-button").addClass( "classListGrid" );
-          $(".list-view-button").removeClass( "classListGrid" );
-
-
-          }
-
+   $(document).ready(function() {
+      $('.select-2').select2();
+   })
 </script>
-<script>
-    $(".likerr").click(function() {
-        $(this).toggleClass("i_liked");
-    });
-</script>
-
 @endsection
