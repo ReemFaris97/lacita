@@ -474,7 +474,10 @@ $grey-bg: #fff9f9;
     }
 }
 /************** End Offers Section *************/
-
+.view_more{
+    max-width: 280px;
+    margin: 0 auto;
+}
 /*********** Responsive ****************/
 @media (max-width: 991px) {
     .btn-flex {

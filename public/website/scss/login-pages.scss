@@ -311,6 +311,9 @@ $in-w: $n-char * ($char-w + $gap);
     }
 }
 @media (max-width: 767px) {
+    .copyright{
+        padding: 0;
+    }
     .login_inner {
         background-color: #fff;
          .box_outer {

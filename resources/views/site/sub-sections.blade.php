@@ -1,5 +1,5 @@
 @extends('site.layout')
-@section('title' , 'La Cita || Categories ')
+@section('title' , 'La Cita || Sub Categories ')
 @section('styles')
 <link rel="stylesheet" href="{{asset('website/dist/css/select2.min.css')}}">
 @endsection
