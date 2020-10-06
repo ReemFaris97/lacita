@@ -2,6 +2,7 @@
 @section('title' , 'La Cita || Sign In')
 @section('styles')
 <link rel="stylesheet" href="{{asset('website/scss/login-pages.css')}}">
+<link rel="stylesheet" href="{{asset('website/scss/custom_checkbox.css')}}">
 @endsection
 @section('content')
 

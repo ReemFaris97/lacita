@@ -5,7 +5,7 @@
 @endsection
 @section('content')
 <!-- /////////////////////||||||||||| Start Categories section |||||||||||||||||||| -->
-<section class="featured_sec">
+<section class="bread_crumbs">
    <div class="container">
       <div class="head-title">
          <h4 class="srch_city"><a href="{{url('sub-sections')}}">london</a> .

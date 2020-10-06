@@ -5,7 +5,7 @@
 @endsection
 @section('content')
 <!---//////////// Start Featured Categories Section //////////////////------------>
-<section class="featured_sec">
+<section class="bread_crumbs">
     <div class="container">
         <div class="head-title">
             <h2>My favorites</h2>

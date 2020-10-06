@@ -3,6 +3,7 @@
 @section('styles')
 <link rel="stylesheet" href="{{asset('website/dist/css/select2.min.css')}}">
 <link rel="stylesheet" href="{{asset('website/scss/login-pages.css')}}">
+<link rel="stylesheet" href="{{asset('website/scss/custom_checkbox.css')}}">
 @endsection
 @section('content')
 

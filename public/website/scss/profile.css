@@ -581,6 +581,7 @@
   }
   .featured_sec .col-xs-6 .card_featured .img_featured {
     border-radius: 5px;
+    height: 120px;
   }
   /********End Featured Categories Section**********/
 }

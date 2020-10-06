@@ -521,6 +521,8 @@
                                             <span class="blue">Edit profile</span>
                                         </a>
                                     </li>
+                                    <li><a href="{{url('search_map')}}"><span class="link_i"><i class="fas fa-map-marked-alt"></i></span>Map Search</a></li>
+
                                     <li><a href="{{url('my_orders')}}"><span class="link_i"><i class="far fa-calendar-alt"></i></span>my appointments</a></li>
                                     <li><a href="{{url('my_favourites')}}"><span class="link_i"><i class="far fa-heart"></i></span>my favourites</a></li>
                                     <li><a href="{{url('copouns')}}"><span class="link_i"><i class="fas fa-vr-cardboard"></i></span>copouns</a></li>
@@ -533,6 +535,7 @@
                                 <li><a href="{{url('use_policy')}}" target="_blank">Booking Terms</a></li>
                                 <li><a href="{{url('privacy')}}" target="_blank">privacy policy</a></li>
                                 <li><a href="{{url('polices_rules')}}" target="_blank">website terms</a></li>
+                                <li><a href="{{url('about')}}" target="_blank">about us</a></li>
                                 </ul>
                                     </div>
                                     <!------------- End settings links ul ----------------->

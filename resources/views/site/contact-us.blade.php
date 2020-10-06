@@ -1,17 +1,19 @@
 @extends('site.layout')
-@section('title' , 'La Cita || اتصل بنا')
+@section('title' , 'La Cita || Contact Us')
 @section('styles')
 <link rel="stylesheet" href="{{asset('website/dist/css/a-style.css')}}">
 @endsection
 @section('content')
-<div class="most_sec">
-    <div class="container">
-        <div class="head-title">
-            <h2>contact Us</h2>
-        </div>
-    </div>
-</div>
-
+<!-- /////////////////////||||||||||| Start Breadcrumbs |||||||||||||||||||| -->
+<section class="bread_crumbs">
+   <div class="container">
+      <div class="head-title">
+         <h4 class="srch_city"><a href="{{url('/')}}">Home</a> .
+            Contact Us</h4>
+      </div>
+   </div>
+</section>
+<!-- /////////////////////||||||||||| End Breadcrumbs |||||||||||||||||||| -->
 <!-- /////////////////////|||||||||||Start sections |||||||||||||||||||| -->
 <div id="map"></div>
 

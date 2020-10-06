@@ -1,43 +1,26 @@
 @extends('site.layout')
-@section('title' , 'La Cita || الشروط والاحكام')
+@section('title' , 'La Cita || Policy Rules')
 @section('styles')
-<link rel="stylesheet" href="{{asset('website/dist/css/jquery.fancybox.min.css')}}">
-
-<link rel="stylesheet" href="{{asset('website/dist/css/a-style.css')}}">
 @endsection
 @section('content')
-
-<!-- /////////////////////||||||||||| bread crumbs |||||||||||||||||||| -->
-<section class="all-sections single-work">
-    <div class="single-workdiv">
-        <h3 class="titlebread" > الشروط والاحكام   </h3>
-        <p class="breadcrum"> <a href="../">الرئيسية</a> / <a href="{{url('polices_rules')}}">الشروط والاحكام  </a> </p>
-    </div>
-    <img class="absimgbread" alt="" src="{{asset('website/dist/img/grass.png')}}">
-    <div id="leaves">
-  <i></i>
-  <i></i>
-  <i></i>
-  <i></i>
-  <i></i>
-  <i></i>
-  <i></i>
-  <i></i>
-  <i></i>
-  <i></i>
-  <i></i>
-  <i></i>
-  <i></i>
-  <i></i>
-  <i></i>
-</div>
-</section>
-<!-- /////// ||||||||||||||||||||end breadcrumbs|||||||||||||||||||| ///////// -->
-<!-- /////// |||||||||||||||||||| breadcrumbs|||||||||||||||||||| ///////// -->
-<section class="all-sections seccateg about">
+<!-- /////////////////////||||||||||| Start Breadcrumbs |||||||||||||||||||| -->
+<section class="bread_crumbs">
     <div class="container">
-        <p>هذا النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحةا النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحة ا النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحة ا النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحة ا النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحة ا النص هو النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحة </p>
-        <p>هذا النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحةا النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحة ا النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحة ا النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحة ا النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحة ا النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحة ا النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحة </p>
+        <div class="head-title">
+            <h4 class="srch_city"><a href="{{url('/')}}">Home</a> .
+                Policy Rules</h4>
+        </div>
+    </div>
+</section>
+<!-- /////////////////////||||||||||| End Breadcrumbs |||||||||||||||||||| -->
+<section class="about">
+    <div class="container">
+        <a href="{{url('/')}}" class="foot-logo">
+            <img src="{{asset('website/dist/img/logo.png')}}">
+        </a>
+        <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        </p>
     </div>
 </section>
 
@@ -45,7 +28,5 @@
 <!-- /////////////////////|||||||||||End sections |||||||||||||||||||| -->
 @endsection
 @section('scripts')
-
-<script src="{{asset('website/dist/js/jquery.fancybox.min.js')}}"></script>
 
 @endsection

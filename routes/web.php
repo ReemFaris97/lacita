@@ -143,6 +143,27 @@ Route::get('/payOff', function () {
 Route::get('/booking-done', function () {
     return view('site.booking-done');
 });
+Route::get('/select_service', function () {
+    return view('site.select_service');
+});
+Route::get('/select_staff_services', function () {
+    return view('site.select_staff_services');
+});
+Route::get('/select_voucher', function () {
+    return view('site.select_voucher');
+});
+Route::get('/quantity', function () {
+    return view('site.quantity');
+});
+Route::get('/select_staff', function () {
+    return view('site.select_staff');
+});
+Route::get('/recipient', function () {
+    return view('site.recipient');
+});
+Route::get('/payment_method', function () {
+    return view('site.payment_method');
+});
 
 
 

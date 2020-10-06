@@ -1,0 +1,373 @@
+@import "login-pages";
+/**********************************/
+body {
+    display: block;
+}
+/********Start Steps Header Section********/
+.step_hdr {
+    background-color: $primary-color;
+    height: 135px;
+    padding: 20px 0;
+    @include rTransition(all 0.3s ease-in-out);
+    .step_flex {
+        @include dis-flex;
+        justify-content: space-between;
+        & > div {
+            .to_site {
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 20px;
+            }
+            & > div {
+                display: inline-block;
+                p {
+                    color: $grey-color;
+                }
+                h3 {
+                    color: #ffffff;
+                    @extend %semi_bold;
+                    margin-top: 0;
+                }
+            }
+        }
+        .to_site {
+            color: #ffffff;
+            font-size: 20px;
+        }
+    }
+    &.fixed_steps {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        height: 82px;
+        z-index: 9999;
+        p {
+            display: none;
+        }
+    }
+}
+/********End Steps Header Section********/
+/******** Start Serivces Section********/
+.my_content {
+    margin-top: -30px;
+}
+/******** choose services left ********/
+.nav.flex-column {
+    margin-bottom: 10px;
+    @include overfollow_scroll;
+    justify-content: space-between;
+    @include boxShadowOne(rgba(16, 25, 40, 0.08) 0px 4px 8px 0px);
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #fff;
+    .nav-link {
+        font-size: 14px;
+    }
+}
+.tab-content {
+    @include boxShadowOne(rgba(16, 25, 40, 0.08) 0px 4px 8px 0px);
+    padding: 16px;
+    border-radius: 8px;
+    h4 {
+        @extend %semi_bold;
+    }
+}
+/***********total right***********/
+.right_total {
+    position: sticky;
+    z-index: 101;
+    top: 70px;
+    width: 100%;
+    margin-bottom: -24px;
+    height: calc(100vh - 220px);
+    .card_inner {
+        position: relative;
+        overflow: initial;
+        @include dis-flex;
+        @include flex-dir-column;
+        @include boxShadowOne(rgba(16, 25, 40, 0.08) 0px 8px 16px 0px);
+        .styled_details {
+            text-align: center;
+            position: relative;
+            background: rgb(255, 255, 255);
+            padding: 60px 32px 24px;
+            @include dis-flex;
+            border-radius: 8px 8px 0px 0px;
+            border-bottom: 1px solid rgb(231, 232, 233);
+            .styled_content {
+                width: 100%;
+                p {
+                    &.text_st1 {
+                        margin: 0px;
+                        min-width: 0px;
+                        font-size: 17px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        -webkit-line-clamp: 2;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        overflow-wrap: break-word;
+                    }
+                    &.text_st2 {
+                        letter-spacing: 0px;
+                        margin: 0px;
+                        min-width: 0px;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 21px;
+                        color: rgb(135, 140, 147);
+                        -webkit-line-clamp: 3;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        word-break: break-word;
+                        padding-top: 8px;
+                    }
+                }
+            }
+            .simpleLink {
+                position: absolute;
+                top: 0px;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                order: -1;
+                .styledImageWrapper {
+                    border: 2px solid rgb(255, 255, 255);
+                    box-shadow: rgba(16, 25, 40, 0.08) 0px 8px 16px 0px;
+                    position: relative;
+                    display: block;
+                    margin: 0px;
+                    padding: 0px;
+                    background: transparent;
+                    overflow: hidden;
+                    min-width: 80px;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 8px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        @include objectFit(cover);
+                    }
+                }
+            }
+        }
+
+        .content_body {
+            margin: 0px -20px;
+            padding: 0px 20px;
+            overflow-y: auto;
+            .content_shadow {
+                .emptyInfoWrapper {
+                    padding: 40px 50px 30px;
+                    background: rgb(255, 255, 255);
+                    p {
+                        margin: 0px;
+                        min-width: 0px;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 21px;
+                        color: rgb(135, 140, 147);
+                    }
+                }
+            }
+            .list_sc {
+                border-top: 1px solid rgb(231, 232, 233);
+                @include dis-flex;
+                flex-direction: column;
+                -webkit-box-flex: 1;
+                flex-grow: 1;
+                max-width: 100%;
+                padding: 24px 32px;
+                margin: unset;
+                background: rgb(255, 255, 255);
+                li {
+                    @include dis-flex;
+                    .listItemText {
+                        -webkit-box-flex: 1;
+                        flex-grow: 1;
+                        order: 2;
+                        min-width: 0px;
+                        @include dis-flex;
+                        @include flex-dir-column;
+                        margin: 0px;
+                        min-width: 0px;
+                        font-size: 17px;
+                        font-weight: 700;
+                        line-height: 24px;
+                    }
+                    .priceContainer {
+                        @include dis-flex;
+                        flex-direction: row-reverse;
+                        flex-basis: auto;
+                        -webkit-box-flex: 0;
+                        flex-grow: 0;
+                        align-items: flex-end;
+                        margin-left: 20px;
+                        order: 3;
+                    }
+                }
+            }
+        }
+    }
+}
+/********* select staff services .blade **********/
+.blue {
+    color: $third-color;
+    font-size: 16px;
+}
+.bg_white{
+    background-color: #ffffff;
+    @include boxShadowOne(rgba(16, 25, 40, 0.08) 0px 4px 8px 0px);
+    padding: 16px;
+    border-radius: 8px;
+}
+/********* select staff .blade **********/
+body {
+    min-height: 800px;
+}
+.my_content {
+    .rv_inner {
+        li{
+        .serve1 {
+            border-bottom: 1px solid #e7e8e9;
+            @include flex-col-center;
+            padding-bottom: 20px;
+        }
+        &:last-of-type{
+            .serve1{
+                border: 0;
+            }
+        }
+    }
+    }
+}
+/*********** select voucher .blade********/
+.bg_white{
+    .head-title h2 {
+        font-size: 24px;
+    }
+    .q_lbl{
+        text-align: center;
+    display: block;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin: 0 auto 14px auto;
+    }
+    .voucher1{
+        @include dis-flex;
+        width: 100%;
+        max-width: 300px;
+        margin: 20px auto 0 auto;
+    }
+}
+.v_single{
+    .voucher1{
+        .voucher1_in {
+            .voucher_body {
+                @include flex-col-center;
+                @include flex-dir-column;
+                text-align: center;
+                .voucher_right {
+                    text-align: center;
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+/********* quantity *******/
+.number-input {
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    .quantity {
+        background-color: transparent;
+        height: 30px;
+        width: 45px;
+        text-align: center;
+        font-size: 16px;
+        vertical-align: middle;
+        font-weight: bold;
+        border-bottom: 1px solid #b4b6b8;
+    }
+    .minus,
+    .plus {
+        width: 30px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+        background-color: $secondary-color;
+    }
+}
+/**************payment methods .blade****************/
+.login_inner {
+    background-color: transparent;
+    padding: 0;
+    .form-box{
+        box-shadow: none !important;
+        padding: 0;
+        margin: 0;
+    }
+}
+/************Responsive********/
+
+@media (min-width: 1200px) {
+    .right_total {
+        height: calc(100vh - 188px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .right_total .card_inner {
+        max-height: 100%;
+        margin-bottom: 0px;
+        border-radius: 8px 8px 0px 0px;
+        background: initial;
+    }
+}
+@media (max-width: 767px) {
+    .step_hdr {
+        .step_flex > div > div h3 {
+            color: #ffffff;
+            margin-top: 0;
+            font-size: 16px;
+        }
+        &.fixed_steps {
+            height: 66px;
+        }
+    }
+    .my_content {
+        margin-top: 0;
+        .row {
+            @include dis-flex;
+            flex-direction: column-reverse;
+            .right_total {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

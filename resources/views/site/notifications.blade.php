@@ -6,7 +6,7 @@
 @section('content')
 
 <!-- /////////////////////||||||||||| start sections |||||||||||||||||||| -->
-<section class="my_profile">
+<section class="bread_crumbs">
     <div class="container">
     <div class="head-title">
          <h2>notification</h2>
