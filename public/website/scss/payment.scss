@@ -75,6 +75,25 @@ body {
     }
 }
 /***********total right***********/
+.styledImageWrapper {
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: rgba(16, 25, 40, 0.08) 0px 8px 16px 0px;
+    position: relative;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    background: transparent;
+    overflow: hidden;
+    min-width: 80px;
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    img {
+        width: 100%;
+        height: 100%;
+        @include objectFit(cover);
+    }
+}
 .right_total {
     position: sticky;
     z-index: 101;
@@ -134,25 +153,6 @@ body {
                 left: 50%;
                 transform: translateX(-50%) translateY(-50%);
                 order: -1;
-                .styledImageWrapper {
-                    border: 2px solid rgb(255, 255, 255);
-                    box-shadow: rgba(16, 25, 40, 0.08) 0px 8px 16px 0px;
-                    position: relative;
-                    display: block;
-                    margin: 0px;
-                    padding: 0px;
-                    background: transparent;
-                    overflow: hidden;
-                    min-width: 80px;
-                    width: 80px;
-                    height: 80px;
-                    border-radius: 8px;
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        @include objectFit(cover);
-                    }
-                }
             }
         }
 
@@ -218,8 +218,18 @@ body {
 .blue {
     color: $third-color;
     font-size: 16px;
+    background-color: transparent;
 }
-.bg_white{
+.logForm {
+    .blue {
+        margin-bottom: 20px;
+    }
+    .btn-hvr {
+        min-width: 200px;
+        margin: 0 auto;
+    }
+}
+.bg_white {
     background-color: #ffffff;
     @include boxShadowOne(rgba(16, 25, 40, 0.08) 0px 4px 8px 0px);
     padding: 16px;
@@ -231,41 +241,41 @@ body {
 }
 .my_content {
     .rv_inner {
-        li{
-        .serve1 {
-            border-bottom: 1px solid #e7e8e9;
-            @include flex-col-center;
-            padding-bottom: 20px;
-        }
-        &:last-of-type{
-            .serve1{
-                border: 0;
+        li {
+            .serve1 {
+                border-bottom: 1px solid #e7e8e9;
+                @include flex-col-center;
+                padding-bottom: 20px;
+            }
+            &:last-of-type {
+                .serve1 {
+                    border: 0;
+                }
             }
         }
     }
-    }
 }
 /*********** select voucher .blade********/
-.bg_white{
+.bg_white {
     .head-title h2 {
         font-size: 24px;
     }
-    .q_lbl{
+    .q_lbl {
         text-align: center;
-    display: block;
-    text-transform: capitalize;
-    font-size: 18px;
-    margin: 0 auto 14px auto;
+        display: block;
+        text-transform: capitalize;
+        font-size: 18px;
+        margin: 0 auto 14px auto;
     }
-    .voucher1{
+    .voucher1 {
         @include dis-flex;
         width: 100%;
         max-width: 300px;
         margin: 20px auto 0 auto;
     }
 }
-.v_single{
-    .voucher1{
+.v_single {
+    .voucher1 {
         .voucher1_in {
             .voucher_body {
                 @include flex-col-center;
@@ -305,21 +315,21 @@ body {
     .minus,
     .plus {
         width: 30px;
-    height: 30px;
-    font-size: 16px;
-    border-radius: 50%;
-    vertical-align: middle;
-    text-align: center;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    color: #fff;
+        height: 30px;
+        font-size: 16px;
+        border-radius: 50%;
+        vertical-align: middle;
+        text-align: center;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        color: #fff;
         background-color: $secondary-color;
     }
 }
@@ -327,11 +337,14 @@ body {
 .login_inner {
     background-color: transparent;
     padding: 0;
-    .form-box{
+    .form-box {
         box-shadow: none !important;
         padding: 0;
         margin: 0;
     }
+}
+.display_print {
+    display: none;
 }
 /************Responsive********/
 

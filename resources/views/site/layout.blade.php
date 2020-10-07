@@ -54,7 +54,7 @@
         <div class="container-fluid">
             <div class="row">
 
-                <div class="col-md-2 col-sm-2 col-xs-7">
+                <div class="col-md-2 col-sm-2 col-xs-6">
                     <div class="nav_logo">
                         <a href="{{url('/')}}" class="logo-nav">
                             <img src="{{asset('website/dist/img/logo.png')}}">
@@ -441,60 +441,16 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-5 col-xs-3">
+                <div class="col-md-4 col-sm-5 col-xs-4">
 
                     <ul class="nav-tools">
-
-                        <!----------------********************** show this if user logged in ***************------------------------------>
-                        <!-- /////////////////////||||||||||| Start Nav Profile  |||||||||||||||||||| -->
-                        <!-- <li>
-                            <a href="javascript:void(0)" class="menu-toggle">
-                                <span class="nav-icon"><i class="far fa-user"></i></span>
-                            </a>
-                            <div class="side-menu flexx pro-menu">
-                                <div>
-                                    <button type="button" class="nav-icon close-menu"><i class="fas fa-times"></i></button>
-                                    <img src="{{asset('website/dist/img/user.png')}}">
-                                    <h4>ريم فارس</h4>
-                                    <p>reem.faris@gmail.com</p>
-                                    <ul>
-                                        <li>
-                                            <a href="{{url('my-profile')}}">
-                                                الحساب الشخصى
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="{{url('my_orders')}}">
-                                                طلباتى
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="{{url('my_addresses')}}">
-                                                عنوانى
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="{{url('my_wallet')}}">
-                                                المحفظة
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="{{url('/')}}">
-                                                تسجيل الخروج
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li> -->
-                        <!-- /////////////////////||||||||||| End Nav Profile  |||||||||||||||||||| -->
-
                         <!----------------********************** show these links if user NOT logged in ***************------------------------------>
                         <!-- /////////////////////||||||||||| Start Sign up/In Links  |||||||||||||||||||| -->
                         <!-- <li class="hidden-xs"><a href="#">For Partners</a></li>
                         <li class="hidden-xs"><a href="{{url('sign-up')}}">sign up</a></li>
                         <li class="hidden-xs"><a href="{{url('sign-in')}}">sign in</a></li> -->
                         <!--------->
+                        <!----------------********************** show these links if user logged in ***************------------------------------>
                         <li class="dropdown view_box">
                             <a href="javascript:void(0)" id="mob_view" class="icon_mob">
                                 <!----------------********************** show id="nav-icon1" if user NOT logged in ***************------------------------------>
@@ -525,7 +481,6 @@
 
                                     <li><a href="{{url('my_orders')}}"><span class="link_i"><i class="far fa-calendar-alt"></i></span>my appointments</a></li>
                                     <li><a href="{{url('my_favourites')}}"><span class="link_i"><i class="far fa-heart"></i></span>my favourites</a></li>
-                                    <li><a href="{{url('copouns')}}"><span class="link_i"><i class="fas fa-vr-cardboard"></i></span>copouns</a></li>
                                     <li><a href="{{url('categories')}}" class="display-xs"><span class="link_i"><i class="fas fa-list-ul"></i></span>categories</a></li>
                                     <li class="dropdown sett_li"><a href="javascript:void(0)" id="new_list"><span class="link_i"><i class="fas fa-cog"></i></span>settings</a>
                                     <!------------- Start settings links ul ----------------->
@@ -574,10 +529,11 @@
                                 <img src="{{asset('website/dist/img/logo.png')}}">
                             </a>
                             <ul class="social">
-                                <li><a href="www.facebook.com" target="_blank" class="icon-f"><i class="fab fa-facebook"></i></a></li>
+                                <!-- <li><a href="www.facebook.com" target="_blank" class="icon-f"><i class="fab fa-facebook"></i></a></li>
                                 <li><a href="www.twitter.com" target="_blank" class="icon-tw"><i class="fab fa-twitter"></i></a></li>
                                 <li><a href="www.linkedin.com" target="_blank" class="icon-in"><i class="fab fa-linkedin"></i></a></li>
-                                <li><a href="www.instagram.com" target="_blank" class="icon-ig"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="www.instagram.com" target="_blank" class="icon-ig"><i class="fab fa-instagram"></i></a></li> -->
+                                <li><a href="www.snapchat.com" target="_blank" class="icon-snap"><i class="fab fa-snapchat-ghost"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -631,9 +587,11 @@
 
     <!-- /////////////////////||||||||||||||||||||||||||||| Start Bottom Icons |||||||||||||||||||||||||||| -->
     <ul class="the_icons">
-        <li><a href="{{url('/')}}"><i class="fas fa-home"></i></a></li>
-        <li><a href="{{url('my_orders')}}"><i class="far fa-calendar"></i></a></li>
-        <li><a href="{{url('search_map')}}"><i class="fas fa-map-marked-alt"></i></a></li>
+        <li><a href="{{url('/')}}"><b><i class="fas fa-home"></i></b><p>Explore</p></a></li>
+        <li><a href="{{url('my_favourites')}}"><b><i class="far fa-heart"></i></b><p>Saved</p></a></li>
+        <li><a href="{{url('search_map')}}"><b><i class="fas fa-map-marked-alt"></i></b><p>Search</p></a></li>
+        <li><a href="{{url('my_orders')}}"><b><i class="far fa-calendar"></i></b><p>Orders</p></a></li>
+        <li><a href="{{url('editprofile')}}"><b><i class="far fa-user"></i></b><p>Profile</p></a></li>
     </ul>
     <!-- /////////////////////||||||||||||||||||||||||||||| End Bottom Icons |||||||||||||||||||||||||||| -->
 

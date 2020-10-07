@@ -1,23 +1,23 @@
 .combobox-list {
   position: relative;
 }
-
 .combobox .group {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
-
 .combobox .group input,
 .combobox .group button {
   background-color: white;
   color: black;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 1.75rem;
   padding: 0;
   margin: 0;
   vertical-align: bottom;
   border: 1px solid gray;
 }
-
 .combobox .group input {
   width: 10.75rem;
   border-right: none;
@@ -25,19 +25,16 @@
   font-size: 87.5%;
   padding: 0.1em 0.3em;
 }
-
 .combobox .group button {
   width: 1.25rem;
   border-left: none;
   outline: none;
   font-size: 70%;
 }
-
 .combobox .group.focus {
   outline: 2px solid black;
   outline-offset: 1px;
 }
-
 ul[role="listbox"] {
   margin: 0;
   padding: 0;
@@ -47,7 +44,8 @@ ul[role="listbox"] {
   list-style: none;
   background-color: white;
   display: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 1px gray solid;
   border-top: none;
   max-height: 12em;
@@ -56,7 +54,6 @@ ul[role="listbox"] {
   overflow-x: hidden;
   font-size: 87.5%;
 }
-
 ul[role="listbox"] li[role="option"] {
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
@@ -64,14 +61,11 @@ ul[role="listbox"] li[role="option"] {
   margin: 0;
   padding: 0.1em 0.3em;
 }
-
 /* focus and hover styling */
-
 [role="listbox"].focus [role="option"][aria-selected="true"] {
   background-color: #DEF;
   border-color: #8CCBF2;
 }
-
 @media (forced-colors: active), (-ms-high-contrast: active) {
   [role="listbox"].focus [role="option"][aria-selected="true"] {
     -ms-high-contrast-adjust: none; /* disable the backgrounds that Edge puts behind text */
@@ -80,7 +74,6 @@ ul[role="listbox"] li[role="option"] {
     border-color: currentcolor;
   }
 }
-
 [role="listbox"] li[role="option"]:hover {
   background-color: #DEF;
 }

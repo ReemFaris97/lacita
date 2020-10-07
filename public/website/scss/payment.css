@@ -2105,6 +2105,29 @@ body {
 }
 
 /***********total right***********/
+.styledImageWrapper {
+  border: 2px solid white;
+  -webkit-box-shadow: rgba(16, 25, 40, 0.08) 0px 8px 16px 0px;
+          box-shadow: rgba(16, 25, 40, 0.08) 0px 8px 16px 0px;
+  position: relative;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  background: transparent;
+  overflow: hidden;
+  min-width: 80px;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+}
+
+.styledImageWrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .right_total {
   position: -webkit-sticky;
   position: sticky;
@@ -2185,29 +2208,6 @@ body {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
-}
-
-.right_total .card_inner .styled_details .simpleLink .styledImageWrapper {
-  border: 2px solid white;
-  -webkit-box-shadow: rgba(16, 25, 40, 0.08) 0px 8px 16px 0px;
-          box-shadow: rgba(16, 25, 40, 0.08) 0px 8px 16px 0px;
-  position: relative;
-  display: block;
-  margin: 0px;
-  padding: 0px;
-  background: transparent;
-  overflow: hidden;
-  min-width: 80px;
-  width: 80px;
-  height: 80px;
-  border-radius: 8px;
-}
-
-.right_total .card_inner .styled_details .simpleLink .styledImageWrapper img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
 }
 
 .right_total .card_inner .content_body {
@@ -2302,6 +2302,16 @@ body {
 .blue {
   color: #037aff;
   font-size: 16px;
+  background-color: transparent;
+}
+
+.logForm .blue {
+  margin-bottom: 20px;
+}
+
+.logForm .btn-hvr {
+  min-width: 200px;
+  margin: 0 auto;
 }
 
 .bg_white {
@@ -2427,6 +2437,10 @@ body {
           box-shadow: none !important;
   padding: 0;
   margin: 0;
+}
+
+.display_print {
+  display: none;
 }
 
 /************Responsive********/

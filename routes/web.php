@@ -1,7 +1,5 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +10,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('site.home');
 });
@@ -36,7 +33,6 @@ Route::get('/confirmation-code', function () {
 Route::get('/new-password', function () {
     return view('site.login.new-password');
 });
-
 /**********************/
 Route::get('/contact-us', function () {
     return view('site.contact-us');
@@ -56,12 +52,6 @@ Route::get('/return_policy', function () {
 Route::get('/privacy', function () {
     return view('site.privacy');
 });
-Route::get('/multimedia', function () {
-    return view('site.multimedia');
-});
-Route::get('/singleMulti', function () {
-    return view('site.singleMulti');
-});
 /**** categories *****/
 Route::get('/categories', function () {
     return view('site.categories');
@@ -72,77 +62,29 @@ Route::get('/sub-sections', function () {
 Route::get('/products', function () {
     return view('site.products');
 }); /// منتجات القسم الفرعى
-Route::get('/new_products', function () {
-    return view('site.new_products');
-});  /// المنتجات الجديدة
-Route::get('/offers', function () {
-    return view('site.offers');
-});
+Route::get('/single_product', function () {
+    return view('site.single-product');
+}); /// تفاصيل المنتج
 Route::get('/search_map', function () {
     return view('site.search_map');
 });  //// البحث بالخريطة
-Route::get('/public_offers', function () {
-    return view('site.public_offers');
-});
-Route::get('/single-product', function () {
-    return view('site.single-product');
-});
-Route::get('/favourites', function () {
-    return view('site.favourites');
-});
-Route::get('/offer', function () {
-    return view('site.offer');
-});
-
 /******Profile******/
-Route::get('/my-profile', function () {
-    return view('site.my-profile');
-});
 Route::get('/editprofile', function () {
     return view('site.editprofile');
-});
-Route::get('/edit_password', function () {
-    return view('site.edit_password');
-});
-/**orders */
-Route::get('/my_orders', function () {
-    return view('site.my_orders');
-});  /// حجوزاتى
-Route::get('/order_details', function () {
-    return view('site.order_details');
-});
-/**addresses */
-Route::get('/my_addresses', function () {
-    return view('site.my_addresses');
 });
 /**favourites */
 Route::get('/my_favourites', function () {
     return view('site.my_favourites');
 });
-Route::get('/new_address', function () {
-    return view('site.new_address');
-});
-/**wallet */
-Route::get('/my_wallet', function () {
-    return view('site.my_wallet');
-});
-Route::get('/recharge_wallet', function () {
-    return view('site.recharge_wallet');
+/**my orders */
+Route::get('/my_orders', function () {
+    return view('site.my_orders');
 });
 /* notifications */
 Route::get('/notifications', function () {
     return view('site.notifications');
 });
 /**** cart***/
-Route::get('/cart', function () {
-    return view('site.cart');
-});
-Route::get('/payOff', function () {
-    return view('site.payOff');
-});
-Route::get('/booking-done', function () {
-    return view('site.booking-done');
-});
 Route::get('/select_service', function () {
     return view('site.select_service');
 });
@@ -164,8 +106,9 @@ Route::get('/recipient', function () {
 Route::get('/payment_method', function () {
     return view('site.payment_method');
 });
-
-
-
-
-
+Route::get('/print_gift', function () {
+    return view('site.print_gift');
+});
+Route::get('/email_gift', function () {
+    return view('site.email_gift');
+});

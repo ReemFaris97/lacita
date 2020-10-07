@@ -1,121 +1,139 @@
 @extends('site.layout')
-@section('title' , 'La Cita || طلباتى')
+@section('title' , 'La Cita ||My Orders')
 @section('styles')
-<link rel="stylesheet" href="{{asset('website/dist/css/a-style.css')}}">
-<!-- start datatable -->
-<link rel="stylesheet" href="{{asset('website/dist/css/Datatable/jquery.dataTables.min.css')}}">
-<link rel="stylesheet" href="{{asset('website/dist/css/Datatable/responsive.dataTables.min.css')}}">
-<!-- end datatable -->
-<link rel="stylesheet" href="{{asset('website/scss/profile.css')}}">
+<link rel="stylesheet" href="{{asset('website/scss/first.css')}}">
 @endsection
 @section('content')
-
-<!-- /////////////////////||||||||||| bread crumbs |||||||||||||||||||| -->
-<section class="all-sections sec-about single-work">
-    <div class="single-workdiv">
-        <h3 class="titlebread"> طلباتى </h3>
-        <p class="breadcrum"> <a href="../">الرئيسية</a> / <a href="{{url('my-profile')}}">حسابى</a> / طلباتى</p>
-    </div>
-    <img class="absimgbread" alt="" src="{{asset('website/dist/img/grass.png')}}">
-    <div id="leaves">
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-    </div>
-</section>
-<!-- /////// ||||||||||||||||||||end breadcrumbs|||||||||||||||||||| ///////// -->
-
-<!-- /////////////////////||||||||||| start my_orders |||||||||||||||||||| -->
-<section class="my_adress">
+<!---//////////// Start Featured Categories Section //////////////////------------>
+<section class="bread_crumbs">
     <div class="container">
-        <table class="datatable display nowrap">
-            <thead>
-                <tr>
-                    <th>رقم الطلب.</th>
-                    <th>تاريخ الطلب</th>
-                    <th>إجمالى مبلغ الطلب</th>
-                    <th>حالة الطلب</th>
-                    <th>العمليات</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>15 Nov 2020</td>
-                    <td>3000 ر.س</td>
-                    <td>تم التسليم</td>
-                    <td>
-                        <div class="flex-r">
-                            <a href="{{url('order_details')}}" class="btn-hvr andShow">
-                                <span class="z-span">
-                                    <p class="opert"><i class="far fa-eye"></i></p>عرض
-                                </span>
-                            </a>
-                            <!-- لو حالة الحجز //تم التسليم// اظهر حذف -->
-                            <button type="button" class="btn-hvr remove_order">
-                                <span class="z-span">
-                                    <p class="opert"><i class="far fa-trash-alt"></i></p>حذف
-                                </span>
-                            </button>
+        <div class="head-title">
+            <h2>My Orders</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <div class="fav animate__fadeInUp animate__animated wow">
+                    <!-- start like button--->
+                    <button type="button" class="likerr i_liked"><i class="far fa-heart"></i></button>
+                    <!-- end like button--->
+                    <a class="card_featured" href="{{url('single_product')}}">
+                        <div class="img_featured">
+                            <img src="{{asset('website/dist/img/salon1.jpg')}}">
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>22 Nov 2020</td>
-                    <td>2300 ر.س</td>
-                    <td>قيد التجهيز</td>
-                    <td>
-                        <div class="flex-r">
-                            <a href="{{url('order_details')}}" class="btn-hvr andShow">
-                                <span class="z-span">
-                                    <p class="opert"><i class="far fa-eye"></i></p>عرض
-                                </span>
-                            </a>
-                            <!-- لو حالة الحجز //قيد التجهيز// اظهر إلغاء -->
-                            <button type="button" class="btn-hvr andCancel">
-                                <span class="z-span">
-                                    <p class="opert"><i class="fas fa-power-off"></i></p>إلغاء
-                                </span>
-                            </button>
+                        <div class="txt_featured">
+                            <h3>Le Fix</h3>
+                            <h5>45 Newman Street</h5>
+                            <div class="badge_f">Featured</div>
                         </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <div class="fav animate__fadeInUp animate__animated wow">
+                    <!-- start like button--->
+                    <button type="button" class="likerr i_liked"><i class="far fa-heart"></i></button>
+                    <!-- end like button--->
+                    <a class="card_featured" href="{{url('single_product')}}">
+                        <div class="img_featured">
+                            <img src="{{asset('website/dist/img/salon1.jpg')}}">
+                        </div>
+                        <div class="txt_featured">
+                            <h3>Le Fix</h3>
+                            <h5>45 Newman Street</h5>
+                            <div class="badge_f">Featured</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <div class="fav animate__fadeInUp animate__animated wow">
+                    <!-- start like button--->
+                    <button type="button" class="likerr i_liked"><i class="far fa-heart"></i></button>
+                    <!-- end like button--->
+                    <a class="card_featured" href="{{url('single_product')}}">
+                        <div class="img_featured">
+                            <img src="{{asset('website/dist/img/salon1.jpg')}}">
+                        </div>
+                        <div class="txt_featured">
+                            <h3>Le Fix</h3>
+                            <h5>45 Newman Street</h5>
+                            <div class="badge_f">Featured</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <div class="fav animate__fadeInUp animate__animated wow">
+                    <!-- start like button--->
+                    <button type="button" class="likerr i_liked"><i class="far fa-heart"></i></button>
+                    <!-- end like button--->
+                    <a class="card_featured" href="{{url('single_product')}}">
+                        <div class="img_featured">
+                            <img src="{{asset('website/dist/img/salon1.jpg')}}">
+                        </div>
+                        <div class="txt_featured">
+                            <h3>Le Fix</h3>
+                            <h5>45 Newman Street</h5>
+                            <div class="badge_f">Featured</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <div class="fav animate__fadeInUp animate__animated wow">
+                    <!-- start like button--->
+                    <button type="button" class="likerr i_liked"><i class="far fa-heart"></i></button>
+                    <!-- end like button--->
+                    <a class="card_featured" href="{{url('single_product')}}">
+                        <div class="img_featured">
+                            <img src="{{asset('website/dist/img/salon1.jpg')}}">
+                        </div>
+                        <div class="txt_featured">
+                            <h3>Le Fix</h3>
+                            <h5>45 Newman Street</h5>
+                            <div class="badge_f">Featured</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <div class="fav animate__fadeInUp animate__animated wow">
+                    <!-- start like button--->
+                    <button type="button" class="likerr i_liked"><i class="far fa-heart"></i></button>
+                    <!-- end like button--->
+                    <a class="card_featured" href="{{url('single_product')}}">
+                        <div class="img_featured">
+                            <img src="{{asset('website/dist/img/salon1.jpg')}}">
+                        </div>
+                        <div class="txt_featured">
+                            <h3>Le Fix</h3>
+                            <h5>45 Newman Street</h5>
+                            <div class="badge_f">Featured</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+         <!----- Pagination ----->
+      <ul class="pagination">
+         <li class="previous"><a href="#"><i class="fas fa-chevron-left"></i></a></li>
+         <li><a href="#">1</a></li>
+         <li><a href="#">2</a></li>
+         <li class="active"><a href="#">3</a></li>
+         <li><a href="#">4</a></li>
+         <li><a href="#">5</a></li>
+         <li class="next"><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+      </ul>
     </div>
 </section>
-<!-- /////////////////////|||||||||||End my_orders |||||||||||||||||||| -->
+<!---//////////// End Featured Categories Section //////////////////------------>
 
 @endsection
-
 @section('scripts')
-<!----- datatable init---->
-<script src="{{asset('website/dist/js/Datatable/jquery.dataTables.min.js')}}"></script>
-<script src="{{asset('website/dist/js/Datatable/dataTables.responsive.min.js')}}"></script>
+<!---- like new product --->
 <script>
-$(document).ready(function () {
-    $('.datatable').DataTable({
-        responsive: true
-    });
-});
-</script>
-<!---- remove an order item --->
-<script>
-    $(".remove_order").click(function() {
-        $(this).parents("tr").fadeOut(300);
+    $(".likerr").click(function() {
+        $(this).toggleClass("i_liked");
     });
 </script>
 @endsection

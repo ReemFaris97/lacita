@@ -62,23 +62,23 @@
                             </i> </button>
                     </div>
                     <div class="v_single">
-                    <div class="voucher1">
-                        <div class="voucher1_in">
-                            <div class="voucher_title">
-                                <b><span class="current_price">100</span> $</b>
-                                <p>Voucher value</p>
-                            </div>
-                            <div class="voucher_body">
-                                <div class="voucher_left">
-                                    <b>£79</b>
-                                    <p>Redeem on all services</p>
+                        <div class="voucher1">
+                            <div class="voucher1_in">
+                                <div class="voucher_title">
+                                    <b><span class="current_price">100</span> $</b>
+                                    <p>Voucher value</p>
                                 </div>
-                                <div class="voucher_right">
-                                    <b>£79</b>
+                                <div class="voucher_body">
+                                    <div class="voucher_left">
+                                        <b>£79</b>
+                                        <p>Redeem on all services</p>
+                                    </div>
+                                    <div class="voucher_right">
+                                        <b>£79</b>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     </div>
                 </div>
             </div>

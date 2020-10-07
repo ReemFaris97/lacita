@@ -1,5 +1,5 @@
 @extends('site.layout')
-@section('title' , 'La Cita ||Products')
+@section('title' , 'La Cita ||My favorites')
 @section('styles')
 <link rel="stylesheet" href="{{asset('website/scss/first.css')}}">
 @endsection
@@ -16,7 +16,7 @@
                     <!-- start like button--->
                     <button type="button" class="likerr i_liked"><i class="far fa-heart"></i></button>
                     <!-- end like button--->
-                    <a class="card_featured" href="{{url('products')}}">
+                    <a class="card_featured" href="{{url('single_product')}}">
                         <div class="img_featured">
                             <img src="{{asset('website/dist/img/salon1.jpg')}}">
                         </div>
@@ -33,7 +33,7 @@
                     <!-- start like button--->
                     <button type="button" class="likerr i_liked"><i class="far fa-heart"></i></button>
                     <!-- end like button--->
-                    <a class="card_featured" href="{{url('products')}}">
+                    <a class="card_featured" href="{{url('single_product')}}">
                         <div class="img_featured">
                             <img src="{{asset('website/dist/img/salon1.jpg')}}">
                         </div>
@@ -50,7 +50,7 @@
                     <!-- start like button--->
                     <button type="button" class="likerr i_liked"><i class="far fa-heart"></i></button>
                     <!-- end like button--->
-                    <a class="card_featured" href="{{url('products')}}">
+                    <a class="card_featured" href="{{url('single_product')}}">
                         <div class="img_featured">
                             <img src="{{asset('website/dist/img/salon1.jpg')}}">
                         </div>
@@ -67,7 +67,7 @@
                     <!-- start like button--->
                     <button type="button" class="likerr i_liked"><i class="far fa-heart"></i></button>
                     <!-- end like button--->
-                    <a class="card_featured" href="{{url('products')}}">
+                    <a class="card_featured" href="{{url('single_product')}}">
                         <div class="img_featured">
                             <img src="{{asset('website/dist/img/salon1.jpg')}}">
                         </div>
@@ -84,7 +84,7 @@
                     <!-- start like button--->
                     <button type="button" class="likerr i_liked"><i class="far fa-heart"></i></button>
                     <!-- end like button--->
-                    <a class="card_featured" href="{{url('products')}}">
+                    <a class="card_featured" href="{{url('single_product')}}">
                         <div class="img_featured">
                             <img src="{{asset('website/dist/img/salon1.jpg')}}">
                         </div>
@@ -101,7 +101,7 @@
                     <!-- start like button--->
                     <button type="button" class="likerr i_liked"><i class="far fa-heart"></i></button>
                     <!-- end like button--->
-                    <a class="card_featured" href="{{url('products')}}">
+                    <a class="card_featured" href="{{url('single_product')}}">
                         <div class="img_featured">
                             <img src="{{asset('website/dist/img/salon1.jpg')}}">
                         </div>

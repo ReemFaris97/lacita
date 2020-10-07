@@ -57,9 +57,16 @@ body {
     overflow-y: hidden;
     direction: ltr !important;
     min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .bg-white{
     background-color: #fff;
@@ -321,12 +328,10 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-animation: spin 3s ease infinite alternate;
             animation: spin 3s ease infinite alternate;
   }
-  
   /*Give each dot a radius of 20*/
   .shape {
     r: 20;
   }
-  
   /*Give each dot its positioning and set the default animation and color for each */
   .shape:nth-child(1) {
     cy: 50;
@@ -356,7 +361,6 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-animation: movein 3s ease infinite alternate;
             animation: movein 3s ease infinite alternate;
   }
-  
 /*Spin the svg so all the dots spin*/
 @-webkit-keyframes spin {
     to {
@@ -370,7 +374,6 @@ input[type=number]::-webkit-outer-spin-button {
               transform: rotate(-1turn);
     }
   }
-  
   /* Move all the dots toward the center */
   @-webkit-keyframes movein {
     to {
@@ -384,7 +387,6 @@ input[type=number]::-webkit-outer-spin-button {
       cx: 100;
     }
   }
-  
   /* Set a bouncy ball type movement for the dots */
   @-webkit-keyframes moveup {
     to {
@@ -430,7 +432,6 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 30px
 }
 /*|||||||||||||||||||||| ++++++++++++++++ |||||||||||||||||||||||*/
-
 /********************* Start Navbar **************************/
 .navbar {
     width: 100%;
@@ -542,6 +543,13 @@ ul[role="listbox"] li[role="option"] {
 }
 .nav-tools > li > a{
     font-size: 17px;
+    margin-left: 10px;
+}
+.nav-tools > li > .icon_fav{
+    font-size: 24px;
+}
+.nav-tools > li > a:last-child{
+    margin: 0;
 }
 .nav-tools > li > a:hover ,
 .nav-tools > li > a:focus{
@@ -573,7 +581,7 @@ ul[role="listbox"] li[role="option"] {
     font-size: 15px;
 }
 .dropdown-menu>li>a {
-    padding: 5px 20px;
+    padding: 7px 20px;
     color: #101928;
     text-transform: capitalize;
 }
@@ -600,7 +608,6 @@ ul[role="listbox"] li[role="option"] {
     display: inline-block;
 }
 .logged_crt .caret{
-    
 }
 .pro_li a{
     border-bottom: 1px solid rgba(0,0,0,.175);
@@ -708,9 +715,7 @@ ul[role="listbox"] li[role="option"] {
 /*/////////////////*/
 /******** settings list *************/
 .new_list .dropdown-menu{
-
 }
-
 /********************* Fixed Navbar **************************/
 .fixd-navbar {
     position: fixed;
@@ -735,7 +740,6 @@ ul[role="listbox"] li[role="option"] {
             justify-content: space-evenly;
 }
 /********************* End Navbar **************************/
-
 /******************* Start Footer **************************/
 footer {
     text-transform: capitalize;
@@ -778,12 +782,16 @@ footer li a , footer p{
             justify-content: space-evenly !important;
 } */
 footer .flex_down{
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 footer .down_app{
     display: block;
     max-width: 150px;
-    flex: 1 1 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 0px;
+            flex: 1 1 0;
 }
 footer .down_app:first-child{
     margin-right: 8px;
@@ -791,7 +799,8 @@ footer .down_app:first-child{
 footer .down_app img{
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 /******************* End Footer **************************/
 /*******************Start copyright  **************************/
@@ -834,27 +843,38 @@ footer li a:hover , footer li a:focus , .copyright a:hover, .copyright a:focus{
         -ms-flex-align: center;
             align-items: center;
     height: 50px;
-    font-size: 25px;
     background-color: #fff;
     z-index: 99;
     border-top: 1px solid #e7e8e9;
 }
-.the_icons:before , .the_icons:after{
+.the_icons a {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+} 
+.the_icons a b{
+    margin: 0;
+    font-size: 17px;
+}
+.the_icons a p{
+    font-size: 13px;
+    margin: 0;
+}
+.the_icons li a:before{
     content: "";
     position: absolute;
     height: 50%;
     top: 25%;
     width: 2px;
     background-color: rgb(189 189 189 / .6);
+    right: -30%;
 }
-.the_icons:before{
-    left: calc(33.33% - 1px);
-}
-.the_icons:after{
-    right: calc(33.33% - 1px);
+.the_icons li:last-child a::before{
+    display: none;
 }
 /*******************end bottom icons **************************/
-
 /*******************start select2 **************************/
 .select2-container--open .select2-dropdown {
     min-width: 100px;
@@ -874,59 +894,18 @@ footer li a:hover , footer li a:focus , .copyright a:hover, .copyright a:focus{
     top: calc(50% - 13px) !important;
 }
 /*******************end select2 **************************/
-
-/******* input type checkbox  ********/
-[type="checkbox"] {
-    height: 26px;
-    right: 0;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 5;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    & + label {
-        cursor: pointer;
-        padding: 0;
-        position: relative;
-    }
-    & + label:before {
-        background-color: #fff;
-        border: 2px solid $primary-color;
-        content: "";
-        display: inline-block;
-        height: 24px;
-        margin-right: 12px;
-        pointer-events: none;
-        vertical-align: middle;
-        width: 24px;
-        @include rTransition(all 0.3s ease-in-out);
-    }
-    &:hover + label:before {
-        border-color: $third-color;
-    }
-    &:focus + label:before {
-        border-color: $third-color;
-        -webkit-box-shadow: 0 0 0 2px $third-color;
-        box-shadow: 0 0 0 2px $third-color;
-    }
-    &:checked + label:after {
-        color: $third-color;
-        content: "✓";
-        display: block;
-        font-size: 20px;
-        height: 18px;
-        left: 5px;
-        pointer-events: none;
-        position: absolute;
-        top: -2px;
-        width: 18px;
-        z-index: 10;
-    }
+textarea.form-control {
+	border-radius: 4px;
+	height: 160px !important;
+	overflow-y: initial;
+	resize: none;
+	color: #757575;
+	font-size: 17px;
+	background-color: #fafafa;
+	border: 1px solid #fafafa;
+	-webkit-box-shadow: 0 0 black;
+	        box-shadow: 0 0 black;
 }
-
 /*** Scroll to top *********/
 /*Scroll-Top*/
 #scroll-top {
@@ -978,7 +957,6 @@ footer li a:hover , footer li a:focus , .copyright a:hover, .copyright a:focus{
     -webkit-animation-delay: .6s;
     animation-delay: .6s
 } */
-
 /* Media Screen */
 @media (max-width: 1450px) {}
 @media (max-width: 1050px) {}

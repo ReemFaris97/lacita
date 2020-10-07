@@ -51,7 +51,7 @@
                      </a>
                   </li>
                   <li>
-                     <a href="{{url('payment_method')}}" class="serve1">
+                     <a href="{{url('print_gift')}}" class="serve1">
                         <div>
                            <img src="{{asset('website/dist/img/printer.png')}}" alt="RF" class="person">
                            <div>
@@ -64,7 +64,7 @@
                      </a>
                   </li>
                   <li>
-                     <a href="{{url('payment_method')}}" class="serve1">
+                     <a href="{{url('email_gift')}}" class="serve1">
                         <div>
                            <img src="{{asset('website/dist/img/email.png')}}" alt="RF" class="person">
                            <div>

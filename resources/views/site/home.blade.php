@@ -1,5 +1,5 @@
 @extends('site.layout')
-@section('title' , 'La Cita || الرئيسية')
+@section('title' , 'La Cita || Home')
 @section('styles')
 <link rel="stylesheet" href="{{asset('website/dist/css/owl.carousel.css')}}">
 <link rel="stylesheet" href="{{asset('website/dist/css/owl.theme.default.min.css')}}">
@@ -88,6 +88,194 @@
     </div>
 </section>
 <!---//////////// End Categories Section //////////////////------------>
+
+<!---//////////// Start Offers Section //////////////////------------>
+<section class="categories-r">
+    <div class="container">
+        <div class="head-title">
+            <h2>Special Offers in London</h2>
+        </div>
+        <div class="owl-carousel owl-theme owl_categ">
+            <a class="card_categ" href="{{url('sub-sections')}}">
+                <h4 class="off_ratio"><p>OFF</p>30%</h4>
+                <div class="img_categ"><img src="{{asset('website/dist/img/category1.jpg')}}"></div>
+                <div class="txt_categ">
+                    <p>Beauty Salon</p>
+                </div>
+            </a>
+            <a class="card_categ" href="{{url('sub-sections')}}">
+                <h4 class="off_ratio"><p>OFF</p>30%</h4>
+                <div class="img_categ"><img src="{{asset('website/dist/img/category2.jpg')}}"></div>
+                <div class="txt_categ">
+                    <p>Hair Salon</p>
+                </div>
+            </a>
+            <a class="card_categ" href="{{url('sub-sections')}}">
+                <h4 class="off_ratio"><p>OFF</p>30%</h4>
+                <div class="img_categ"><img src="{{asset('website/dist/img/category3.jpg')}}"></div>
+                <div class="txt_categ">
+                    <p>Nail Salon</p>
+                </div>
+            </a>
+            <a class="card_categ" href="{{url('sub-sections')}}">
+                <h4 class="off_ratio"><p>OFF</p>30%</h4>
+                <div class="img_categ"><img src="{{asset('website/dist/img/category4.jpg')}}"></div>
+                <div class="txt_categ">
+                    <p>Eyebrows & Lashes</p>
+                </div>
+            </a>
+            <a class="card_categ" href="{{url('sub-sections')}}">
+                <h4 class="off_ratio"><p>OFF</p>30%</h4>
+                <div class="img_categ"><img src="{{asset('website/dist/img/category5.jpg')}}"></div>
+                <div class="txt_categ">
+                    <p>Barbershop</p>
+                </div>
+            </a>
+            <a class="card_categ" href="{{url('sub-sections')}}">
+                <h4 class="off_ratio"><p>OFF</p>30%</h4>
+                <div class="img_categ"><img src="{{asset('website/dist/img/category6.jpg')}}"></div>
+                <div class="txt_categ">
+                    <p>Massage</p>
+                </div>
+            </a>
+            <a class="card_categ" href="{{url('sub-sections')}}">
+                <h4 class="off_ratio"><p>OFF</p>30%</h4>
+                <div class="img_categ"><img src="{{asset('website/dist/img/category7.jpg')}}"></div>
+                <div class="txt_categ">
+                    <p>Therapy Center</p>
+                </div>
+            </a>
+            <a class="card_categ" href="{{url('sub-sections')}}">
+                <h4 class="off_ratio"><p>OFF</p>30%</h4>
+                <div class="img_categ"><img src="{{asset('website/dist/img/category8.jpg')}}"></div>
+                <div class="txt_categ">
+                    <p>Gym & Fitness</p>
+                </div>
+            </a>
+        </div>
+        <a href="{{url('categories')}}" class="btn-hvr view_more"><span class="z-span">See More</span></a>
+    </div>
+</section>
+<!---//////////// End Offers Section //////////////////------------>
+
+<!---//////////// Start Recently Viewed Section //////////////////------------>
+<section class="categories-r">
+    <div class="container">
+        <div class="head-title">
+            <h2>Recently Viewed</h2>
+        </div>
+        <div class="owl-carousel owl-theme owl_sm">
+                <div class="outer_card animate__fadeInUp animate__animated wow">
+                    <a class="card_featured" href="{{url('products')}}">
+                        <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
+                        <div class="txt_featured">
+                            <h3>Le Fix</h3>
+                            <h5>45 Newman Street</h5>
+                            <p>
+                                <span class="one_star"><i class="fas fa-star"></i></span>
+                                <span class="bold">4.8 Great</span>
+                                <span class="grey">97 rating</span>
+                            </p>
+                            <div class="badge_f">Featured</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="outer_card animate__fadeInUp animate__animated wow">
+                    <a class="card_featured" href="{{url('products')}}">
+                        <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
+                        <div class="txt_featured">
+                            <h3>Le Fix</h3>
+                            <h5>45 Newman Street</h5>
+                            <p>
+                                <span class="one_star"><i class="fas fa-star"></i></span>
+                                <span class="bold">4.8 Great</span>
+                                <span class="grey">97 rating</span>
+                            </p>
+                            <div class="badge_f">Featured</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="outer_card animate__fadeInUp animate__animated wow">
+                    <a class="card_featured" href="{{url('products')}}">
+                        <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
+                        <div class="txt_featured">
+                            <h3>Le Fix</h3>
+                            <h5>45 Newman Street</h5>
+                            <p>
+                                <span class="one_star"><i class="fas fa-star"></i></span>
+                                <span class="bold">4.8 Great</span>
+                                <span class="grey">97 rating</span>
+                            </p>
+                            <div class="badge_f">Featured</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="outer_card animate__fadeInUp animate__animated wow">
+                    <a class="card_featured" href="{{url('products')}}">
+                        <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
+                        <div class="txt_featured">
+                            <h3>Le Fix</h3>
+                            <h5>45 Newman Street</h5>
+                            <p>
+                                <span class="one_star"><i class="fas fa-star"></i></span>
+                                <span class="bold">4.8 Great</span>
+                                <span class="grey">97 rating</span>
+                            </p>
+                            <div class="badge_f">Featured</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="outer_card animate__fadeInUp animate__animated wow">
+                    <a class="card_featured" href="{{url('products')}}">
+                        <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
+                        <div class="txt_featured">
+                            <h3>Le Fix</h3>
+                            <h5>45 Newman Street</h5>
+                            <p>
+                                <span class="one_star"><i class="fas fa-star"></i></span>
+                                <span class="bold">4.8 Great</span>
+                                <span class="grey">97 rating</span>
+                            </p>
+                            <div class="badge_f">Featured</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="outer_card animate__fadeInUp animate__animated wow">
+                    <a class="card_featured" href="{{url('products')}}">
+                        <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
+                        <div class="txt_featured">
+                            <h3>Le Fix</h3>
+                            <h5>45 Newman Street</h5>
+                            <p>
+                                <span class="one_star"><i class="fas fa-star"></i></span>
+                                <span class="bold">4.8 Great</span>
+                                <span class="grey">97 rating</span>
+                            </p>
+                            <div class="badge_f">Featured</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="outer_card animate__fadeInUp animate__animated wow">
+                    <a class="card_featured" href="{{url('products')}}">
+                        <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
+                        <div class="txt_featured">
+                            <h3>Le Fix</h3>
+                            <h5>45 Newman Street</h5>
+                            <p>
+                                <span class="one_star"><i class="fas fa-star"></i></span>
+                                <span class="bold">4.8 Great</span>
+                                <span class="grey">97 rating</span>
+                            </p>
+                            <div class="badge_f">Featured</div>
+                        </div>
+                    </a>
+                </div>
+        </div>
+        <a href="{{url('categories')}}" class="btn-hvr view_more"><span class="z-span">See More</span></a>
+    </div>
+</section>
+<!---//////////// End Recently Viewed Section //////////////////------------>
+
 
 <!---//////////// Start Featured Categories Section //////////////////------------>
 <section class="featured_sec">
@@ -238,75 +426,6 @@
 </section>
 <!---//////////// End Featured Categories Section //////////////////------------>
 
-<!---//////////// Start Offers Section //////////////////------------>
-<section class="categories-r">
-    <div class="container">
-        <div class="head-title">
-            <h2>Latest Offers in London</h2>
-        </div>
-        <div class="owl-carousel owl-theme owl_categ">
-            <a class="card_categ" href="{{url('sub-sections')}}">
-                <h4 class="off_ratio"><p>OFF</p>30%</h4>
-                <div class="img_categ"><img src="{{asset('website/dist/img/category1.jpg')}}"></div>
-                <div class="txt_categ">
-                    <p>Beauty Salon</p>
-                </div>
-            </a>
-            <a class="card_categ" href="{{url('sub-sections')}}">
-                <h4 class="off_ratio"><p>OFF</p>30%</h4>
-                <div class="img_categ"><img src="{{asset('website/dist/img/category2.jpg')}}"></div>
-                <div class="txt_categ">
-                    <p>Hair Salon</p>
-                </div>
-            </a>
-            <a class="card_categ" href="{{url('sub-sections')}}">
-                <h4 class="off_ratio"><p>OFF</p>30%</h4>
-                <div class="img_categ"><img src="{{asset('website/dist/img/category3.jpg')}}"></div>
-                <div class="txt_categ">
-                    <p>Nail Salon</p>
-                </div>
-            </a>
-            <a class="card_categ" href="{{url('sub-sections')}}">
-                <h4 class="off_ratio"><p>OFF</p>30%</h4>
-                <div class="img_categ"><img src="{{asset('website/dist/img/category4.jpg')}}"></div>
-                <div class="txt_categ">
-                    <p>Eyebrows & Lashes</p>
-                </div>
-            </a>
-            <a class="card_categ" href="{{url('sub-sections')}}">
-                <h4 class="off_ratio"><p>OFF</p>30%</h4>
-                <div class="img_categ"><img src="{{asset('website/dist/img/category5.jpg')}}"></div>
-                <div class="txt_categ">
-                    <p>Barbershop</p>
-                </div>
-            </a>
-            <a class="card_categ" href="{{url('sub-sections')}}">
-                <h4 class="off_ratio"><p>OFF</p>30%</h4>
-                <div class="img_categ"><img src="{{asset('website/dist/img/category6.jpg')}}"></div>
-                <div class="txt_categ">
-                    <p>Massage</p>
-                </div>
-            </a>
-            <a class="card_categ" href="{{url('sub-sections')}}">
-                <h4 class="off_ratio"><p>OFF</p>30%</h4>
-                <div class="img_categ"><img src="{{asset('website/dist/img/category7.jpg')}}"></div>
-                <div class="txt_categ">
-                    <p>Therapy Center</p>
-                </div>
-            </a>
-            <a class="card_categ" href="{{url('sub-sections')}}">
-                <h4 class="off_ratio"><p>OFF</p>30%</h4>
-                <div class="img_categ"><img src="{{asset('website/dist/img/category8.jpg')}}"></div>
-                <div class="txt_categ">
-                    <p>Gym & Fitness</p>
-                </div>
-            </a>
-        </div>
-        <a href="{{url('categories')}}" class="btn-hvr view_more"><span class="z-span">See More</span></a>
-    </div>
-</section>
-<!---//////////// End Offers Section //////////////////------------>
-
 <!---//////////// Start Top Rated Section //////////////////------------>
 <section class="categories-r">
     <div class="container">
@@ -425,123 +544,6 @@
 </section>
 <!---//////////// End Top Rated Section //////////////////------------>
 
-<!---//////////// Start Recently Viewed Section //////////////////------------>
-<section class="categories-r">
-    <div class="container">
-        <div class="head-title">
-            <h2>Recently Viewed</h2>
-        </div>
-        <div class="owl-carousel owl-theme owl_sm">
-                <div class="outer_card animate__fadeInUp animate__animated wow">
-                    <a class="card_featured" href="{{url('products')}}">
-                        <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
-                        <div class="txt_featured">
-                            <h3>Le Fix</h3>
-                            <h5>45 Newman Street</h5>
-                            <p>
-                                <span class="one_star"><i class="fas fa-star"></i></span>
-                                <span class="bold">4.8 Great</span>
-                                <span class="grey">97 rating</span>
-                            </p>
-                            <div class="badge_f">Featured</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="outer_card animate__fadeInUp animate__animated wow">
-                    <a class="card_featured" href="{{url('products')}}">
-                        <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
-                        <div class="txt_featured">
-                            <h3>Le Fix</h3>
-                            <h5>45 Newman Street</h5>
-                            <p>
-                                <span class="one_star"><i class="fas fa-star"></i></span>
-                                <span class="bold">4.8 Great</span>
-                                <span class="grey">97 rating</span>
-                            </p>
-                            <div class="badge_f">Featured</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="outer_card animate__fadeInUp animate__animated wow">
-                    <a class="card_featured" href="{{url('products')}}">
-                        <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
-                        <div class="txt_featured">
-                            <h3>Le Fix</h3>
-                            <h5>45 Newman Street</h5>
-                            <p>
-                                <span class="one_star"><i class="fas fa-star"></i></span>
-                                <span class="bold">4.8 Great</span>
-                                <span class="grey">97 rating</span>
-                            </p>
-                            <div class="badge_f">Featured</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="outer_card animate__fadeInUp animate__animated wow">
-                    <a class="card_featured" href="{{url('products')}}">
-                        <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
-                        <div class="txt_featured">
-                            <h3>Le Fix</h3>
-                            <h5>45 Newman Street</h5>
-                            <p>
-                                <span class="one_star"><i class="fas fa-star"></i></span>
-                                <span class="bold">4.8 Great</span>
-                                <span class="grey">97 rating</span>
-                            </p>
-                            <div class="badge_f">Featured</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="outer_card animate__fadeInUp animate__animated wow">
-                    <a class="card_featured" href="{{url('products')}}">
-                        <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
-                        <div class="txt_featured">
-                            <h3>Le Fix</h3>
-                            <h5>45 Newman Street</h5>
-                            <p>
-                                <span class="one_star"><i class="fas fa-star"></i></span>
-                                <span class="bold">4.8 Great</span>
-                                <span class="grey">97 rating</span>
-                            </p>
-                            <div class="badge_f">Featured</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="outer_card animate__fadeInUp animate__animated wow">
-                    <a class="card_featured" href="{{url('products')}}">
-                        <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
-                        <div class="txt_featured">
-                            <h3>Le Fix</h3>
-                            <h5>45 Newman Street</h5>
-                            <p>
-                                <span class="one_star"><i class="fas fa-star"></i></span>
-                                <span class="bold">4.8 Great</span>
-                                <span class="grey">97 rating</span>
-                            </p>
-                            <div class="badge_f">Featured</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="outer_card animate__fadeInUp animate__animated wow">
-                    <a class="card_featured" href="{{url('products')}}">
-                        <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
-                        <div class="txt_featured">
-                            <h3>Le Fix</h3>
-                            <h5>45 Newman Street</h5>
-                            <p>
-                                <span class="one_star"><i class="fas fa-star"></i></span>
-                                <span class="bold">4.8 Great</span>
-                                <span class="grey">97 rating</span>
-                            </p>
-                            <div class="badge_f">Featured</div>
-                        </div>
-                    </a>
-                </div>
-        </div>
-        <a href="{{url('categories')}}" class="btn-hvr view_more"><span class="z-span">See More</span></a>
-    </div>
-</section>
-<!---//////////// End Recently Viewed Section //////////////////------------>
 @endsection
 @section('scripts')
 <script src="{{asset('website/dist/js/owl.carousel.min.js')}}"></script>

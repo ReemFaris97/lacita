@@ -7,10 +7,16 @@
 <link rel="stylesheet" href="{{asset('website/scss/profile.css')}}">
 <link rel="stylesheet" href="{{asset('website/scss/login-pages.css')}}">
 <style>
-   .navbar,
-   .footer,
-   .copyright {
+   .navbar, .footer, #scroll-top, .footer ~ .copyright {
       display: block !important;
+   }
+   @media (max-width: 767px){
+   .the_icons{
+      display: flex !important;
+   }
+   .hidden-xs, .footer {
+    display: none !important;
+}
    }
 </style>
 @endsection

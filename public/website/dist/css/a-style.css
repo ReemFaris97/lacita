@@ -157,8 +157,8 @@ h3.titlebread {
 	display: inline-block;
 	width: 200px;
 	height: 150px;
-	background: -webkit-gradient(linear, right top, left bottom, from(#309900), to(#005600));
 	background: -o-linear-gradient(top right, #309900, #005600);
+	background: -webkit-gradient(linear, right top, left bottom, from(#309900), to(#005600));
 	background: linear-gradient(to bottom left, #309900, #005600);
 	-webkit-transform: skew(-20deg);
 	    -ms-transform: skew(-20deg);
@@ -191,8 +191,8 @@ h3.titlebread {
 	border-bottom: 1px solid #222;
 	border-right: 0px solid #222;
 	border-left: 1px solid #222;
-	background: -webkit-gradient(linear, right top, left top, from(rgba(0, 100, 0, 1)), to(#005600));
 	background: -o-linear-gradient(right, rgba(0, 100, 0, 1), #005600);
+	background: -webkit-gradient(linear, right top, left top, from(rgba(0, 100, 0, 1)), to(#005600));
 	background: linear-gradient(to left, rgba(0, 100, 0, 1), #005600);
 	z-index: 1;
 }
@@ -200,8 +200,8 @@ h3.titlebread {
 	content: '';
 	height: 125px;
 	width: 10px;
-	background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, .15)), to(rgba(0, 0, 0, 0)));
 	background: -o-linear-gradient(right, rgba(0, 0, 0, .15), rgba(0, 0, 0, 0));
+	background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, .15)), to(rgba(0, 0, 0, 0)));
 	background: linear-gradient(to left, rgba(0, 0, 0, .15), rgba(0, 0, 0, 0));
 	display: block;
 	-webkit-transform: rotate(-125deg);
@@ -305,18 +305,18 @@ h3.titlebread {
 	-webkit-animation-delay: 3s;
 }
 #leaves i:nth-of-type(n) {
-	background: -webkit-gradient(linear, right top, left bottom, from(#309900), to(#005600));
 	background: -o-linear-gradient(top right, #309900, #005600);
+	background: -webkit-gradient(linear, right top, left bottom, from(#309900), to(#005600));
 	background: linear-gradient(to bottom left, #309900, #005600);
 }
 #leaves i:nth-of-type(2n+2) {
-	background: -webkit-gradient(linear, right top, left bottom, from(#5e9900), to(#2b5600));
 	background: -o-linear-gradient(top right, #5e9900, #2b5600);
+	background: -webkit-gradient(linear, right top, left bottom, from(#5e9900), to(#2b5600));
 	background: linear-gradient(to bottom left, #5e9900, #2b5600);
 }
 #leaves i:nth-of-type(4n+1) {
-	background: -webkit-gradient(linear, right top, left bottom, from(#990), to(#564500));
 	background: -o-linear-gradient(top right, #990, #564500);
+	background: -webkit-gradient(linear, right top, left bottom, from(#990), to(#564500));
 	background: linear-gradient(to bottom left, #990, #564500);
 }
 #leaves i:nth-of-type(n) {
@@ -468,7 +468,8 @@ p.smllheader {
 .contentimg {
 	width: 75px;
 	background-color: #fff;
-	box-shadow: rgba(16, 25, 40, 0.08) 0px 4px 8px 0px;
+	-webkit-box-shadow: rgba(16, 25, 40, 0.08) 0px 4px 8px 0px;
+	        box-shadow: rgba(16, 25, 40, 0.08) 0px 4px 8px 0px;
 	height: 75px;
 	border-radius: 50%;
 	display: -webkit-box;
@@ -496,7 +497,8 @@ p.smllheader {
 	background-color: #fafafa;
 	border: 0;
 	border: 1px solid #fafafa;
-	box-shadow: 0 0 black;
+	-webkit-box-shadow: 0 0 black;
+	        box-shadow: 0 0 black;
 }
 .formContact select {
 	height: 45px;
@@ -507,17 +509,6 @@ p.smllheader {
 	color: #757575;
 	font-size: 17px;
 	padding: 6px 12px;
-}
-textarea.form-control {
-	border-radius: 4px;
-	height: 160px;
-	overflow-y: initial;
-	resize: none;
-	color: #757575;
-	font-size: 17px;
-	background-color: #fafafa;
-	border: 1px solid #fafafa;
-	box-shadow: 0 0 black;
 }
 input.form-control.inputspn:focus {
 	border-color: #037AFF;
