@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
     <!-- /////////////////////|||||||Start Layout |||||||||||||||||||| -->
     <meta charset="UTF-8" lang="ar">
@@ -587,11 +588,12 @@
 
     <!-- /////////////////////||||||||||||||||||||||||||||| Start Bottom Icons |||||||||||||||||||||||||||| -->
     <ul class="the_icons">
-        <li><a href="{{url('/')}}"><b><i class="fas fa-home"></i></b><p>Explore</p></a></li>
+        <li><a href="{{url('/')}}"><b><i class="fas fa-search"></i></b><p>Explore</p></a></li>
         <li><a href="{{url('my_favourites')}}"><b><i class="far fa-heart"></i></b><p>Saved</p></a></li>
-        <li><a href="{{url('search_map')}}"><b><i class="fas fa-map-marked-alt"></i></b><p>Search</p></a></li>
         <li><a href="{{url('my_orders')}}"><b><i class="far fa-calendar"></i></b><p>Orders</p></a></li>
-        <li><a href="{{url('editprofile')}}"><b><i class="far fa-user"></i></b><p>Profile</p></a></li>
+        <!-- <li><a href="{{url('search_map')}}"><b><i class="fas fa-map-marked-alt"></i></b><p>Search</p></a></li> -->
+        <li><a href="{{url('inbox')}}"><b><i class="far fa-comment-alt"></i></b><p>Inbox</p></a></li>
+        <li><a href="javascript:void(0)"><b><i class="fas fa-ellipsis-h"></i></b><p>More</p></a></li>
     </ul>
     <!-- /////////////////////||||||||||||||||||||||||||||| End Bottom Icons |||||||||||||||||||||||||||| -->
 

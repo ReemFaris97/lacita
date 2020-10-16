@@ -847,6 +847,9 @@ footer li a:hover , footer li a:focus , .copyright a:hover, .copyright a:focus{
     z-index: 99;
     border-top: 1px solid #e7e8e9;
 }
+.the_icons li{
+    flex: 1 1 0;
+}
 .the_icons a {
     display: flex;
     flex-direction: column;
@@ -869,7 +872,10 @@ footer li a:hover , footer li a:focus , .copyright a:hover, .copyright a:focus{
     top: 25%;
     width: 2px;
     background-color: rgb(189 189 189 / .6);
-    right: -30%;
+    right: 0;
+}
+.the_icons li:last-child a{
+    color: #B0413E;
 }
 .the_icons li:last-child a::before{
     display: none;
@@ -1144,6 +1150,9 @@ width: 130px;
         position: relative;
         padding: 3px 12px;
         border-bottom: 1px solid rgb(231, 232, 233);
+        }
+        .menu_mob.fixed-r.custom_more > li:nth-child(3) , .menu_mob.fixed-r.custom_more > li:nth-child(4),.menu_mob.fixed-r.custom_more > li:nth-child(5){
+            display: none;
         }
         .menu_mob.fixed-r > .pro_li{
             padding: 0 0 20px 0;

@@ -232,25 +232,19 @@
          <div class="row">
             <!------ nav tabs -------->
             <div class="col-md-3 col-sm-4 col-xs-12">
-               <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                  <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home
-                     <span class="badge">4</span>
-                  </a>
-                  <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile
-                     <span class="badge">5</span>
-                  </a>
-                  <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages
-                     <span class="badge">5</span>
-                  </a>
-                  <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings
-                     <span class="badge">5</span>
-                  </a>
-               </div>
+            <ul class="nav nav-pills">
+  <li class="nav-li active"><a data-toggle="pill" href="#home">Home<span class="badge">4</span></a></li>
+  <li class="nav-li"><a data-toggle="pill" href="#menu1">Menu 1<span class="badge">4</span></a></li>
+  <li class="nav-li"><a data-toggle="pill" href="#menu2">Menu 2<span class="badge">4</span></a></li>
+  <li class="nav-li"><a data-toggle="pill" href="#menu3">Menu 3<span class="badge">4</span></a></li>
+</ul>
+
+               
             </div>
             <!------ tabs content -------->
             <div class="col-md-9 col-sm-8 col-xs-12">
-               <div class="tab-content" id="v-pills-tabContent">
-                  <div class="tab-pane fade active in" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+               <div class="tab-content">
+                  <div class="tab-pane fade in active" id="home">
                      <ul>
                         <li class="serve1">
                            <div>
@@ -294,7 +288,7 @@
                         </li>
                      </ul>
                   </div>
-                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                  <div class="tab-pane fade" id="menu1">
                      <ul>
                         <li class="serve1">
                            <div>
@@ -338,7 +332,7 @@
                         </li>
                      </ul>
                   </div>
-                  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                  <div class="tab-pane fade" id="menu2">
                      <ul>
                         <li class="serve1">
                            <div>
@@ -382,7 +376,7 @@
                         </li>
                      </ul>
                   </div>
-                  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                  <div class="tab-pane fade" id="menu3">
                      <ul>
                         <li class="serve1">
                            <div>

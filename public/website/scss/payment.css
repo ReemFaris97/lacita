@@ -9,11 +9,11 @@
   text-overflow: ellipsis;
 }
 
-.my-header .head-txt h3, .nav-link.active {
+.my-header .head-txt h3, .nav-pills .nav-li.active {
   font-family: "Almarai-ExtraBold";
 }
 
-.head-title h2, .card_categ .txt_categ, p .bold, .txt_featured h3, .txt_featured .badge_f, .filtering .select2-container .select2-selection--single .select2-selection__rendered, .book_now .booking_in h4, .timing .filter-two ul li.active, .voucher1 .voucher1_in .voucher_title b, .voucher1 .voucher1_in .voucher_body .voucher_left b, .nav-link, .serve1 > div:first-of-type h3, .serve1 h4, .staff .staff_cd .stf_name, .reviews .review_check h4, .step_hdr .step_flex > div > div h3, .tab-content h4 {
+.head-title h2, .card_categ .txt_categ, p .bold, .txt_featured h3, .txt_featured .badge_f, .filtering .select2-container .select2-selection--single .select2-selection__rendered, .book_now .booking_in h4, .timing .filter-two ul li.active, .voucher1 .voucher1_in .voucher_title b, .voucher1 .voucher1_in .voucher_body .voucher_left b, .nav-pills .nav-li, .serve1 > div:first-of-type h3, .serve1 h4, .staff .staff_cd .stf_name, .reviews .review_check h4, .step_hdr .step_flex > div > div h3, .tab-content h4 {
   font-family: "Almarai-Bold";
 }
 
@@ -962,7 +962,7 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
 
 /********* End Vouchers Section ***********/
 /********* Start product services Section***********/
-.nav-link {
+.nav-pills .nav-li {
   display: block;
   font-size: 17px;
   margin: 0 0 10px 0;
@@ -970,32 +970,40 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
   border-radius: 8px;
 }
 
-.nav-link .badge {
+.nav-pills .nav-li .badge {
   background-color: #f2f2f7;
   color: #101928;
   font-size: 17px;
   margin-left: 10px;
 }
 
-.nav-link.active {
+.nav-pills .nav-li a {
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+
+.nav-pills .nav-li.active {
   background-color: #f2f2f7;
 }
 
-.nav-link.active .badge {
+.nav-pills .nav-li.active .badge {
   background-color: #fff;
 }
 
-.nav-link:last-child {
+.nav-pills .nav-li.active a, .nav-pills .nav-li.active a:focus, .nav-pills .nav-li.active :hover {
+  color: #101928 !important;
+  background-color: transparent !important;
+  border: 0 !important;
+}
+
+.nav-pills .nav-li:last-child {
   margin: 0;
 }
 
 /**tabs content**/
 .tab-content .tab-pane {
   font-size: 17px;
-}
-
-.tab-content .tab-pane.fade.show {
-  opacity: 1;
 }
 
 .serve1 {
@@ -1524,7 +1532,7 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
     margin: 0;
   }
   /********* Product Services Section ***********/
-  .nav.flex-column {
+  .nav.nav-pills {
     margin-bottom: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1544,10 +1552,10 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .nav.flex-column .nav-link {
+  .nav.nav-pills .nav-li {
     font-size: 14px;
   }
-  .nav.flex-column .nav-link .badge {
+  .nav.nav-pills .nav-li .badge {
     font-size: 14px;
     margin-left: 3px;
   }

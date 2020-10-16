@@ -66,8 +66,8 @@
         }
         .log_anchors.flex-r {
             -webkit-box-pack: justify;
-                -ms-flex-pack: justify;
-                    justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
             .btn-hvr {
                 margin: 0 auto;
             }
@@ -167,22 +167,24 @@ table.dataTable > tbody > tr.child ul.dtr-details {
                 &::after {
                     background-color: $grey-color;
                 }
-                &:hover ,&:focus{
+                &:hover,
+                &:focus {
                     border-color: $primary-color;
                 }
             }
             .andCancel {
                 border-color: #a94442;
-                &::after{
+                &::after {
                     background-color: #a94442;
                 }
-                &:hover , &:focus{
+                &:hover,
+                &:focus {
                     background-color: $primary-color;
                     border-color: $primary-color;
                 }
             }
+        }
     }
-}
 }
 /********** End My Orders.blade ********/
 /******************Start Edit Profile.blade****************/
@@ -362,11 +364,11 @@ textarea.form-control.input-lg {
     margin: 10px 0 0 10px;
     border-radius: 0 2px 2px 0;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     -moz-box-sizing: border-box;
     outline: none;
     -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     background-color: #fff;
     font-family: "Almarai-Bold";
 }
@@ -391,7 +393,7 @@ textarea.form-control.input-lg {
     margin-right: 12px;
     padding: 0 13px 0 11px;
     -o-text-overflow: ellipsis;
-       text-overflow: ellipsis;
+    text-overflow: ellipsis;
     width: 400px;
     &:focus {
         border-color: $third-color;
@@ -407,8 +409,8 @@ textarea.form-control.input-lg {
 #target {
     width: 345px;
 }
-.pac-container{
-    border:0 !important;
+.pac-container {
+    border: 0 !important;
 }
 /******************End my_adress.blade****************/
 /******************Start my_wallet.blade****************/
@@ -501,7 +503,6 @@ textarea.form-control.input-lg {
         border-bottom: 1px solid #eaeaea;
         position: relative;
         padding: 12px 10px;
-        border-radius: 4px;
         &:last-child {
             border: 0;
         }
@@ -514,6 +515,9 @@ textarea.form-control.input-lg {
             &:focus > p {
                 color: $primary-color;
             }
+        }
+        h4 {
+            font-family: "Almarai-Bold";
         }
         p {
             font-family: "Almarai-Bold";
@@ -567,6 +571,29 @@ textarea.form-control.input-lg {
         }
     }
 }
+.notification {
+    .notifi1 {
+        .chat1 {
+            display: flex !important;
+            align-items: center;
+            .chat_user {
+                width: 46px;
+                height: 46px;
+                border-radius: 50%;
+                @include objectFit(cover);
+                margin-right: 10px;
+            }
+            .msg_body {
+                width: calc(100% - 60px);
+                p {
+                    max-width: unset;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
 /******************End Notification.blade****************/
 /************* Responsive ***********/
 @media (max-width: 991px) {
@@ -613,13 +640,20 @@ textarea.form-control.input-lg {
             }
             .log_anchors.flex-r {
                 -webkit-box-pack: justify;
-                    -ms-flex-pack: justify;
-                        justify-content: space-between;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
                 .btn-hvr {
                     min-width: 120px;
                     font-size: 13px;
                 }
             }
         }
+    }
+    .notification {
+        margin: 10px 0 0 0;
+        max-height: unset;
+        overflow-y: unset;
+        overflow-x: unset;
+        border: 0;
     }
 }

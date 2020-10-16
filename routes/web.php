@@ -62,7 +62,7 @@ Route::get('/sub-sections', function () {
 Route::get('/products', function () {
     return view('site.products');
 }); /// منتجات القسم الفرعى
-Route::get('/single_product', function () {
+Route::get('/single-product', function () {
     return view('site.single-product');
 }); /// تفاصيل المنتج
 Route::get('/search_map', function () {
@@ -81,8 +81,8 @@ Route::get('/my_orders', function () {
     return view('site.my_orders');
 });
 /* notifications */
-Route::get('/notifications', function () {
-    return view('site.notifications');
+Route::get('/inbox', function () {
+    return view('site.inbox');
 });
 /**** cart***/
 Route::get('/select_service', function () {

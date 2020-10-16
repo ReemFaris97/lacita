@@ -905,7 +905,8 @@ body > section:nth-child(even) .view_more {
 }
 /********* End Vouchers Section ***********/
 /********* Start product services Section***********/
-.nav-link {
+.nav-pills{
+.nav-li {
     display: block;
     font-size: 17px;
     margin: 0 0 10px 0;
@@ -918,24 +919,32 @@ body > section:nth-child(even) .view_more {
         font-size: 17px;
         margin-left: 10px;
     }
+    a{
+        margin: 0 !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+    }
     &.active {
         background-color: #f2f2f7;
         @extend %bold;
         .badge {
             background-color: #fff;
         }
+        a, a:focus,:hover {
+            color: $primary-color !important;
+            background-color: transparent !important;
+            border: 0 !important;
+        }
     }
     &:last-child {
         margin: 0;
     }
 }
+}
 /**tabs content**/
 .tab-content {
     .tab-pane {
         font-size: 17px;
-        &.fade.show {
-            opacity: 1;
-        }
     }
 }
 .serve1 {
@@ -1377,11 +1386,11 @@ body > section:nth-child(even) .view_more {
         }
     }
     /********* Product Services Section ***********/
-    .nav.flex-column {
+    .nav.nav-pills {
         margin-bottom: 10px;
         @include overfollow_scroll;
         justify-content: space-between;
-        .nav-link {
+        .nav-li {
             font-size: 14px;
             .badge {
                 font-size: 14px;

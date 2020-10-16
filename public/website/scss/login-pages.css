@@ -9,11 +9,11 @@
   text-overflow: ellipsis;
 }
 
-.my-header .head-txt h3, .nav-link.active {
+.my-header .head-txt h3, .nav-pills .nav-li.active {
   font-family: "Almarai-ExtraBold";
 }
 
-.head-title h2, .card_categ .txt_categ, .txt_featured h3, .txt_featured p .bold, .txt_featured .badge_f, .filtering .select2-container .select2-selection--single .select2-selection__rendered, .book_now .booking_in h4, .timing .filter-two ul li.active, .vouchers .vouchers_scroll .voucher1 .voucher1_in .voucher_title b, .vouchers .vouchers_scroll .voucher1 .voucher1_in .voucher_body .voucher_left b, .nav-link, .tab-content .tab-pane .serve1 > div:first-of-type h3, .tab-content .tab-pane .serve1 h4, .staff .staff_cd .stf_name {
+.head-title h2, .card_categ .txt_categ, p .bold, .txt_featured h3, .txt_featured .badge_f, .filtering .select2-container .select2-selection--single .select2-selection__rendered, .book_now .booking_in h4, .timing .filter-two ul li.active, .voucher1 .voucher1_in .voucher_title b, .voucher1 .voucher1_in .voucher_body .voucher_left b, .nav-pills .nav-li, .serve1 > div:first-of-type h3, .serve1 h4, .staff .staff_cd .stf_name, .reviews .review_check h4 {
   font-family: "Almarai-Bold";
 }
 
@@ -263,6 +263,14 @@
 
 /******* End categories Section *************/
 /******* Start Featured Categories Section *************/
+p .bold {
+  color: #101928;
+}
+
+p .grey {
+  color: #7c7e7c;
+}
+
 .txt_featured h3 {
   text-transform: capitalize;
 }
@@ -278,14 +286,6 @@
 
 .txt_featured p .one_star {
   color: #ffc830;
-}
-
-.txt_featured p .bold {
-  color: #101928;
-}
-
-.txt_featured p .grey {
-  color: #7c7e7c;
 }
 
 .txt_featured .badge_f {
@@ -842,7 +842,7 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
       flex-shrink: 0;
 }
 
-.vouchers .vouchers_scroll .voucher1 {
+.voucher1 {
   position: relative;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -850,7 +850,7 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
   width: calc(33.3333% - 16px);
 }
 
-.vouchers .vouchers_scroll .voucher1::before, .vouchers .vouchers_scroll .voucher1::after {
+.voucher1::before, .voucher1::after {
   background: #ffffff;
   z-index: 9;
   content: " ";
@@ -863,17 +863,17 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
           transform: translate(0%, -50%);
 }
 
-.vouchers .vouchers_scroll .voucher1::before {
+.voucher1::before {
   left: 0;
   border-radius: 0 10px 10px 0;
 }
 
-.vouchers .vouchers_scroll .voucher1::after {
+.voucher1::after {
   right: 0;
   border-radius: 10px 0 0 10px;
 }
 
-.vouchers .vouchers_scroll .voucher1 .voucher1_in {
+.voucher1 .voucher1_in {
   max-width: 100%;
   background: linear-gradient(-45deg, #00a69c 0%, #00a36d 100%);
   color: #ffffff;
@@ -892,35 +892,35 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
   position: relative;
 }
 
-.vouchers .vouchers_scroll .voucher1 .voucher1_in .voucher_title {
+.voucher1 .voucher1_in .voucher_title {
   text-align: center;
   padding-bottom: 24px;
 }
 
-.vouchers .vouchers_scroll .voucher1 .voucher1_in .voucher_title p {
+.voucher1 .voucher1_in .voucher_title p {
   font-size: 15px;
   font-weight: 400;
   line-height: 21px;
 }
 
-.vouchers .vouchers_scroll .voucher1 .voucher1_in .voucher_title b {
+.voucher1 .voucher1_in .voucher_title b {
   font-size: 28px;
   font-weight: 800;
   line-height: 36px;
   margin-top: 2px;
 }
 
-.vouchers .vouchers_scroll .voucher1 .voucher1_in .voucher_body {
+.voucher1 .voucher1_in .voucher_body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.vouchers .vouchers_scroll .voucher1 .voucher1_in .voucher_body .voucher_left {
+.voucher1 .voucher1_in .voucher_body .voucher_left {
   width: 65%;
 }
 
-.vouchers .vouchers_scroll .voucher1 .voucher1_in .voucher_body .voucher_left b {
+.voucher1 .voucher1_in .voucher_body .voucher_left b {
   font-size: 17px;
   line-height: 24px;
   -webkit-line-clamp: 2;
@@ -930,14 +930,14 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
   margin-bottom: 8px;
 }
 
-.vouchers .vouchers_scroll .voucher1 .voucher1_in .voucher_body .voucher_left p {
+.voucher1 .voucher1_in .voucher_body .voucher_left p {
   font-size: 15px;
   font-weight: 400;
   line-height: 21px;
   margin: 0 0 4px 0;
 }
 
-.vouchers .vouchers_scroll .voucher1 .voucher1_in .voucher_body .voucher_right {
+.voucher1 .voucher1_in .voucher_body .voucher_right {
   text-align: right;
   width: 35%;
   padding-left: 8px;
@@ -953,7 +953,7 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
           align-items: flex-end;
 }
 
-.vouchers .vouchers_scroll .voucher1 .voucher1_in .voucher_body .voucher_right b ._9t1fKU5Y._3k0k2YbN {
+.voucher1 .voucher1_in .voucher_body .voucher_right b ._9t1fKU5Y._3k0k2YbN {
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
@@ -962,7 +962,7 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
 
 /********* End Vouchers Section ***********/
 /********* Start product services Section***********/
-.nav-link {
+.nav-pills .nav-li {
   display: block;
   font-size: 17px;
   margin: 0 0 10px 0;
@@ -970,22 +970,34 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
   border-radius: 8px;
 }
 
-.nav-link .badge {
+.nav-pills .nav-li .badge {
   background-color: #f2f2f7;
   color: #101928;
   font-size: 17px;
   margin-left: 10px;
 }
 
-.nav-link.active {
+.nav-pills .nav-li a {
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+
+.nav-pills .nav-li.active {
   background-color: #f2f2f7;
 }
 
-.nav-link.active .badge {
+.nav-pills .nav-li.active .badge {
   background-color: #fff;
 }
 
-.nav-link:last-child {
+.nav-pills .nav-li.active a, .nav-pills .nav-li.active a:focus, .nav-pills .nav-li.active :hover {
+  color: #101928 !important;
+  background-color: transparent !important;
+  border: 0 !important;
+}
+
+.nav-pills .nav-li:last-child {
   margin: 0;
 }
 
@@ -994,11 +1006,7 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
   font-size: 17px;
 }
 
-.tab-content .tab-pane.fade.show {
-  opacity: 1;
-}
-
-.tab-content .tab-pane .serve1 {
+.serve1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1008,11 +1016,11 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
   margin-bottom: 10px;
 }
 
-.tab-content .tab-pane .serve1:last-child {
+.serve1:last-child {
   margin-bottom: 0;
 }
 
-.tab-content .tab-pane .serve1 > div:first-of-type {
+.serve1 > div:first-of-type {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1024,22 +1032,22 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
           flex: 1 1 0;
 }
 
-.tab-content .tab-pane .serve1 > div:first-of-type h3 {
+.serve1 > div:first-of-type h3 {
   margin-top: 0;
   margin-bottom: 0;
   text-transform: capitalize;
   font-size: 18px;
 }
 
-.tab-content .tab-pane .serve1 > div:first-of-type > div {
+.serve1 > div:first-of-type > div {
   max-width: calc(100% - 50px);
 }
 
-.tab-content .tab-pane .serve1 h4 {
+.serve1 h4 {
   margin: 0;
 }
 
-.tab-content .tab-pane .serve1 .to_cart {
+.serve1 .to_cart {
   width: 36px;
   height: 36px;
   line-height: 36px;
@@ -1054,17 +1062,17 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
   transition: all 0.3s ease-in-out;
 }
 
-.tab-content .tab-pane .serve1 .to_cart:hover, .tab-content .tab-pane .serve1 .to_cart:focus {
+.serve1 .to_cart:hover, .serve1 .to_cart:focus {
   opacity: 0.8;
 }
 
-.tab-content .tab-pane .serve1 .to_cart.added_cart {
+.serve1 .to_cart.added_cart {
   position: relative;
   overflow: hidden;
   border-color: #fbd74d;
 }
 
-.tab-content .tab-pane .serve1 .to_cart.added_cart::before {
+.serve1 .to_cart.added_cart::before {
   content: "\f00c";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -1225,10 +1233,150 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
 /*********End book with staff***********/
 /*********Start related Products section ***********/
 .related_sec {
-  background-color: #F2F2F7;
+  background-color: #f2f2f7;
 }
 
 /*********End related Products section ***********/
+/********* Start Reviews Section ***********/
+.reviews {
+  /***********review_check left*********/
+}
+
+.reviews .review_check {
+  border-radius: 8px;
+  background: #fff;
+  padding: 32px;
+  margin-bottom: 24px;
+  -webkit-box-shadow: rgba(16, 25, 40, 0.08) 0px 4px 8px 0px;
+  -o-box-shadow: rgba(16, 25, 40, 0.08) 0px 4px 8px 0px;
+  -ms-box-shadow: rgba(16, 25, 40, 0.08) 0px 4px 8px 0px;
+  box-shadow: rgba(16, 25, 40, 0.08) 0px 4px 8px 0px;
+  /***********rate_filter*********/
+}
+
+.reviews .review_check .lg_stars {
+  margin-bottom: 10px;
+}
+
+.reviews .review_check .lg_stars h3 {
+  color: #ffc830;
+  display: inline-block;
+  margin: 0;
+  margin-right: 2px;
+}
+
+.reviews .review_check .lg_stars h3:last-child {
+  margin: 0;
+}
+
+.reviews .review_check p {
+  margin-bottom: 26px;
+  font-size: 16px;
+}
+
+.reviews .review_check p span:first-child {
+  margin-right: 10px;
+}
+
+.reviews .review_check h4 {
+  margin-bottom: 20px;
+}
+
+.reviews .review_check .rate_filter > li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.reviews .review_check .rate_filter > li:last-child {
+  margin: 0;
+}
+
+.reviews .review_check .rate_filter > li > a {
+  display: block;
+}
+
+.reviews .review_check .rate_filter > li > a [type="checkbox"] + label:before {
+  border-color: #dbdce1;
+}
+
+.reviews .review_check .rate_filter > li > a label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews .review_check .rate_filter > li > a label ul li {
+  color: #dbdce1;
+}
+
+.reviews .review_check .rate_filter > li > a label ul li.active {
+  color: #ffc830;
+}
+
+.reviews .review_check .rate_filter > li > a label .progress {
+  width: 100px;
+  height: 14px;
+  border-radius: 14px;
+  background-color: #dbdce1;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 0;
+}
+
+.reviews .review_check .rate_filter > li > a label .progress .progress-bar {
+  background-color: #ffc830;
+  line-height: 14px;
+}
+
+.reviews .review_check .rate_filter > li > a label b {
+  color: #7c7e7c;
+  font-size: 15px;
+}
+
+/***********review_content right*********/
+.rv_inner > li {
+  display: block;
+  margin: 0 0 30px 0;
+}
+
+.rv_inner > li:last-of-type {
+  margin: 0;
+}
+
+.rv_inner > li .serve1 > div:first-of-type {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.rv_inner > li .serve1 .person {
+  width: 66px;
+  height: 66px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  line-height: 66px;
+  text-align: center;
+  border-radius: 50%;
+  background: #e5f1ff;
+  margin: 0 10px 0 0;
+}
+
+.rv_inner > li .serve1 h4 .active {
+  color: #ffc830;
+}
+
+.rv_inner > li h3 {
+  font-size: 16px;
+  margin: 0;
+}
+
+/********* End Reviews Section ***********/
 /************* End Single Product .blade ************/
 /*********** Responsive ****************/
 @media (max-width: 991px) {
@@ -1359,6 +1507,10 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
     -ms-flex-align: center;
     align-items: center;
     height: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
   }
   .book_now .booking_in div h4 {
     margin-right: 4px;
@@ -1380,7 +1532,7 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
     margin: 0;
   }
   /********* Product Services Section ***********/
-  .nav.flex-column {
+  .nav.nav-pills {
     margin-bottom: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1400,14 +1552,14 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .nav.flex-column .nav-link {
+  .nav.nav-pills .nav-li {
     font-size: 14px;
   }
-  .nav.flex-column .nav-link .badge {
+  .nav.nav-pills .nav-li .badge {
     font-size: 14px;
     margin-left: 3px;
   }
-  .tab-content .tab-pane .serve1 > div:first-of-type h3 {
+  .serve1 > div:first-of-type h3 {
     font-size: 16px;
   }
   /********* Related Products Section ***********/
