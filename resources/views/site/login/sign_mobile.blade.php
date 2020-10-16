@@ -32,7 +32,7 @@
                             <input type="text" class="form-control" placeholder="Your last name">
                         </div>
                     </div>
-                    <div class="col-xs-6">
+                    <div class="col-sm-6 col-xs-12">
                         <div class="form-group">
                             <label>mobile number</label>
                             <input type="number" class="form-control padd_left">
@@ -48,13 +48,26 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-6">
+                    <div class="col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label>password</label>
                         <input type="password" id="txtPassword" class="form-control" placeholder="create a password">
                         <button type="button" id="btnToggle" class="toggle"><i class="fas fa-eye"></i></button>
                     </div>
                     </div>
+                    <div class="col-xs-12">
+                     <div class="form-group">
+                        <label>Gender</label>
+                        <label class="my_rad"><span><i class="fas fa-venus"></i></span>Female
+                           <input type="radio" name="radio">
+                           <span class="checkmark"></span>
+                        </label>
+                        <label class="my_rad"><span><i class="fas fa-mars"></i></span>Male
+                           <input type="radio" checked="checked" name="radio">
+                           <span class="checkmark"></span>
+                        </label>
+                     </div>
+                  </div>
                     <div class="col-xs-12">
                     <div class="m-b-15">
                         <!--- local storage remember me -->

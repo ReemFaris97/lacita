@@ -1,7 +1,9 @@
 @import "first";
 .navbar,
 .footer,
-#scroll-top , .the_icons , .footer ~ .copyright {
+#scroll-top,
+.the_icons,
+.footer ~ .copyright {
     display: none !important;
 }
 .modal-backdrop {
@@ -94,7 +96,8 @@
             max-width: 340px;
             width: 100%;
             text-align: center;
-            &:first-of-type:hover , &:first-of-type:focus{
+            &:first-of-type:hover,
+            &:first-of-type:focus {
                 background-color: $third-color;
             }
         }
@@ -111,27 +114,30 @@
                 float: left;
                 border-radius: 6px 0 0 6px;
             }
-            &:hover , &:focus{
+            &:hover,
+            &:focus {
                 box-shadow: rgb(255, 255, 255) 0px 4px 6px 0px;
             }
         }
-        
-        &:nth-last-of-type(2){
+
+        &:nth-last-of-type(2) {
             text-align: center;
-            .have_ac{
+            .have_ac {
                 font-size: 16px;
             }
         }
     }
-    .have_ac{
+    .have_ac {
         text-align: center;
         font-size: 15px;
-        p{
+        p {
             color: $grey-color;
         }
-        a , .forgot{
+        a,
+        .forgot {
             color: $third-color;
-            &:hover , &:focus{
+            &:hover,
+            &:focus {
                 color: $primary-color;
             }
         }
@@ -142,46 +148,48 @@
     .form-group {
         margin: 1.3em auto;
         position: relative;
-    label{
-        font-family: 'Almarai-Bold';
-        text-transform: capitalize;
-        font-size: 15px;
-        display: block;
-    }
-    .form-control{
-        border: 1px solid #d5d7da;
-        box-shadow: none;
-        height: 50px;
-        line-height: 50px;
-        &:focus{
-            border-color: $third-color;
+        label {
+            font-family: "Almarai-Bold";
+            text-transform: capitalize;
+            font-size: 15px;
+            display: block;
         }
-        &::-webkit-input-placeholder { /* Edge */
-            color: $grey-color;
-            text-transform: capitalize;
-          }
-          &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-            color: $grey-color;
-            text-transform: capitalize;
-          }
-          &::placeholder {
-            color: $grey-color;
-            text-transform: capitalize;
-          }
+        .form-control {
+            border: 1px solid #d5d7da;
+            box-shadow: none;
+            height: 50px;
+            line-height: 50px;
+            &:focus {
+                border-color: $third-color;
+            }
+            &::-webkit-input-placeholder {
+                /* Edge */
+                color: $grey-color;
+                text-transform: capitalize;
+            }
+            &:-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                color: $grey-color;
+                text-transform: capitalize;
+            }
+            &::placeholder {
+                color: $grey-color;
+                text-transform: capitalize;
+            }
+        }
+        .toggle {
+            background: none;
+            border: none;
+            font-weight: 600;
+            position: absolute;
+            right: 0.75em;
+            top: 2.25em;
+            z-index: 9;
+            background-color: transparent;
+            font-size: 18px;
+            color: $primary-color;
+        }
     }
-    .toggle {
-        background: none;
-        border: none;
-        font-weight: 600;
-        position: absolute;
-        right: .75em;
-        top: 2.25em;
-        z-index: 9;
-        background-color: transparent;
-        font-size: 18px;
-        color: $primary-color;
-      }
-}
 }
 
 /****/
@@ -195,24 +203,34 @@
     }
 }
 /******* sign up with mobile number ********/
-.logForm .form-group .slct_n{
+.logForm .form-group .slct_n {
     position: absolute;
     right: auto;
     left: 0;
     bottom: 0;
     top: auto;
 }
-label .forgot{
+.logForm
+    .form-group
+    .slct_n
+    .select2-container--default
+    .select2-selection--single {
+    background-color: transparent !important;
+    border-left: 0 !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+}
+label .forgot {
     color: $third-color;
 }
-.m-b-15{
+.m-b-15 {
     margin-bottom: 15px;
 }
-.padd_left{
+.padd_left {
     padding-left: 52px;
 }
 /************ confirm code .blade****************/
-.grey_p{
+.grey_p {
     color: $grey-color;
     font-size: 15px;
 }
@@ -242,15 +260,70 @@ $in-w: $n-char * ($char-w + $gap);
         color: $third-color;
     }
 }
+/************* start custom radio button ************/
+.logForm .form-group .my_rad {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    margin-right: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    span {
+        margin-right: 5px;
+    }
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #eee;
+        border-radius: 50%;
+    }
+    &:hover input ~ .checkmark {
+        background-color: #ccc;
+    }
+    .checkmark::after {
+        content: "";
+        position: absolute;
+        display: none;
+        top: calc(50% - 4px);
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: white;
+    }
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        &:checked {
+            & ~ .checkmark:after {
+                display: block;
+            }
+            & ~ .checkmark {
+                background-color: $third-color;
+            }
+        }
+    }
+}
+/************* end custom radio button ************/
 /************* Responsive ***********/
 @media (max-width: 991px) {
     .login_inner {
         position: relative;
-        .box_outer .box-top{
-            .login-logo{
+        .box_outer .box-top {
+            .login-logo {
                 display: none;
             }
-            .to_site{
+            .to_site {
                 position: absolute;
                 left: 20px;
             }
@@ -258,38 +331,38 @@ $in-w: $n-char * ($char-w + $gap);
     }
 }
 @media (max-width: 767px) {
-    .copyright{
+    .copyright {
         padding: 0;
     }
     .login_inner {
         background-color: #fff;
-         .box_outer {
+        .box_outer {
             max-width: unset;
             .box-top {
                 .to_site {
                     top: 4px;
                 }
             }
-        .form-box {
-            padding: 20px;
-            box-shadow: none;
-            background-color: transparent;
-            border-radius: 0;
-            margin: 0 auto;
-            .big_btn{
-                margin: 0 auto 16px auto;
-            }
-            &:nth-last-of-type(2){
-                border-top: 1px solid rgb(231, 232, 233);
-            }
-            h2 {
-                font-size: 20px;
+            .form-box {
+                padding: 20px;
+                box-shadow: none;
+                background-color: transparent;
+                border-radius: 0;
+                margin: 0 auto;
+                .big_btn {
+                    margin: 0 auto 16px auto;
+                }
+                &:nth-last-of-type(2) {
+                    border-top: 1px solid rgb(231, 232, 233);
+                }
+                h2 {
+                    font-size: 20px;
+                }
             }
         }
     }
-    }
     .logForm {
-      .form-group.flex-r{
+        .form-group.flex-r {
             display: block;
             .forgot {
                 margin: 14px auto 0 auto;
@@ -300,7 +373,8 @@ $in-w: $n-char * ($char-w + $gap);
             font-size: 13px;
         }
     }
-    .logForm .col-xs-6, .logForm .col-xs-12 {
+    .logForm .col-xs-6,
+    .logForm .col-xs-12 {
         padding: 0 4px;
     }
     .logForm .form-group {

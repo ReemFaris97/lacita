@@ -52,7 +52,7 @@
             <div class="owl-carousel owl-theme owl_product">
                <div class="card_product">
                   <!-- start like button--->
-                  <button type="button" class="likerr"><i class="far fa-heart"></i></button>
+                  <button type="button" class="likerr"><i class="fas fa-heart"></i></button>
                   <!-- end like button--->
                   <a class="img_product" data-fancybox="gallery" href="{{asset('website/dist/img/category1.jpg')}}">
                      <img src="{{asset('website/dist/img/category1.jpg')}}">
@@ -60,7 +60,7 @@
                </div>
                <div class="card_product">
                   <!-- start like button--->
-                  <button type="button" class="likerr i_liked"><i class="far fa-heart"></i></button>
+                  <button type="button" class="likerr i_liked"><i class="fas fa-heart"></i></button>
                   <!-- end like button--->
                   <a class="img_product" data-fancybox="gallery" href="{{asset('website/dist/img/category2.jpg')}}">
                      <img src="{{asset('website/dist/img/category2.jpg')}}">
@@ -68,7 +68,7 @@
                </div>
                <div class="card_product">
                   <!-- start like button--->
-                  <button type="button" class="likerr"><i class="far fa-heart"></i></button>
+                  <button type="button" class="likerr"><i class="fas fa-heart"></i></button>
                   <!-- end like button--->
                   <a class="img_product" data-fancybox="gallery" href="{{asset('website/dist/img/category3.jpg')}}">
                      <img src="{{asset('website/dist/img/category3.jpg')}}">
@@ -232,14 +232,14 @@
          <div class="row">
             <!------ nav tabs -------->
             <div class="col-md-3 col-sm-4 col-xs-12">
-            <ul class="nav nav-pills">
-  <li class="nav-li active"><a data-toggle="pill" href="#home">Home<span class="badge">4</span></a></li>
-  <li class="nav-li"><a data-toggle="pill" href="#menu1">Menu 1<span class="badge">4</span></a></li>
-  <li class="nav-li"><a data-toggle="pill" href="#menu2">Menu 2<span class="badge">4</span></a></li>
-  <li class="nav-li"><a data-toggle="pill" href="#menu3">Menu 3<span class="badge">4</span></a></li>
-</ul>
+               <ul class="nav nav-pills">
+                  <li class="nav-li active"><a data-toggle="pill" href="#home">Home<span class="badge">4</span></a></li>
+                  <li class="nav-li"><a data-toggle="pill" href="#menu1">Menu 1<span class="badge">4</span></a></li>
+                  <li class="nav-li"><a data-toggle="pill" href="#menu2">Menu 2<span class="badge">4</span></a></li>
+                  <li class="nav-li"><a data-toggle="pill" href="#menu3">Menu 3<span class="badge">4</span></a></li>
+               </ul>
 
-               
+
             </div>
             <!------ tabs content -------->
             <div class="col-md-9 col-sm-8 col-xs-12">
@@ -707,79 +707,80 @@
 <section class="featured_sec related_sec">
    <div class="container">
       <div class="head-title">
-         <h2>Venues near Apple & Eve</h2>
+         <h2>Venues near Apple & Eve<a href="{{url('categories')}}" class="view_more"><i class="fas fa-long-arrow-alt-right"></i></a></h2>
       </div>
-      <div class="row">
-         <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="outer_card animate__fadeInUp animate__animated wow">
-               <a class="card_featured" href="{{url('products')}}">
-                  <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
-                  <div class="txt_featured">
-                     <h3>Le Fix</h3>
-                     <h5>45 Newman Street</h5>
-                     <p>
-                        <span class="one_star"><i class="fas fa-star"></i></span>
-                        <span class="bold">4.8 Great</span>
-                        <span class="grey">97 rating</span>
-                     </p>
-                     <div class="badge_f">Featured</div>
-                  </div>
-               </a>
+      <div class="allProducts">
+         <div class="row">
+            <div class="col-lg-3 col-md-4 col-xs-6">
+               <div class="outer_card animate__fadeInUp animate__animated wow">
+                  <a class="card_featured" href="{{url('products')}}">
+                     <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
+                     <div class="txt_featured">
+                        <h3>Le Fix</h3>
+                        <h5>45 Newman Street</h5>
+                        <p>
+                           <span class="one_star"><i class="fas fa-star"></i></span>
+                           <span class="bold">4.8 Great</span>
+                           <span class="grey">97 rating</span>
+                        </p>
+                        <div class="badge_f">Featured</div>
+                     </div>
+                  </a>
+               </div>
             </div>
-         </div>
-         <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="outer_card animate__fadeInUp animate__animated wow">
-               <a class="card_featured" href="{{url('products')}}">
-                  <div class="img_featured"><img src="{{asset('website/dist/img/salon2.jpg')}}"></div>
-                  <div class="txt_featured">
-                     <h3>The Barbery</h3>
-                     <h5>29 Webber Street</h5>
-                     <p>
-                        <span class="one_star"><i class="fas fa-star"></i></span>
-                        <span class="bold">4.8 Great</span>
-                        <span class="grey">97 rating</span>
-                     </p>
-                     <div class="badge_f">Featured</div>
-                  </div>
-               </a>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+               <div class="outer_card animate__fadeInUp animate__animated wow">
+                  <a class="card_featured" href="{{url('products')}}">
+                     <div class="img_featured"><img src="{{asset('website/dist/img/salon2.jpg')}}"></div>
+                     <div class="txt_featured">
+                        <h3>The Barbery</h3>
+                        <h5>29 Webber Street</h5>
+                        <p>
+                           <span class="one_star"><i class="fas fa-star"></i></span>
+                           <span class="bold">4.8 Great</span>
+                           <span class="grey">97 rating</span>
+                        </p>
+                        <div class="badge_f">Featured</div>
+                     </div>
+                  </a>
+               </div>
             </div>
-         </div>
-         <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="outer_card animate__fadeInUp animate__animated wow">
-               <a class="card_featured" href="{{url('products')}}">
-                  <div class="img_featured"><img src="{{asset('website/dist/img/salon3.jpg')}}"></div>
-                  <div class="txt_featured">
-                     <h3>Balance Massage & Wellness</h3>
-                     <h5>45 Newman Street</h5>
-                     <p>
-                        <span class="one_star"><i class="fas fa-star"></i></span>
-                        <span class="bold">4.8 Great</span>
-                        <span class="grey">97 rating</span>
-                     </p>
-                     <div class="badge_f">Featured</div>
-                  </div>
-               </a>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+               <div class="outer_card animate__fadeInUp animate__animated wow">
+                  <a class="card_featured" href="{{url('products')}}">
+                     <div class="img_featured"><img src="{{asset('website/dist/img/salon3.jpg')}}"></div>
+                     <div class="txt_featured">
+                        <h3>Balance Massage & Wellness</h3>
+                        <h5>45 Newman Street</h5>
+                        <p>
+                           <span class="one_star"><i class="fas fa-star"></i></span>
+                           <span class="bold">4.8 Great</span>
+                           <span class="grey">97 rating</span>
+                        </p>
+                        <div class="badge_f">Featured</div>
+                     </div>
+                  </a>
+               </div>
             </div>
-         </div>
-         <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="outer_card animate__fadeInUp animate__animated wow">
-               <a class="card_featured" href="{{url('products')}}">
-                  <div class="img_featured"><img src="{{asset('website/dist/img/salon4.jpg')}}"></div>
-                  <div class="txt_featured">
-                     <h3>ELP Barbershop</h3>
-                     <h5>45 Newman Street</h5>
-                     <p>
-                        <span class="one_star"><i class="fas fa-star"></i></span>
-                        <span class="bold">4.8 Great</span>
-                        <span class="grey">97 rating</span>
-                     </p>
-                     <div class="badge_f">Featured</div>
-                  </div>
-               </a>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+               <div class="outer_card animate__fadeInUp animate__animated wow">
+                  <a class="card_featured" href="{{url('products')}}">
+                     <div class="img_featured"><img src="{{asset('website/dist/img/salon4.jpg')}}"></div>
+                     <div class="txt_featured">
+                        <h3>ELP Barbershop</h3>
+                        <h5>45 Newman Street</h5>
+                        <p>
+                           <span class="one_star"><i class="fas fa-star"></i></span>
+                           <span class="bold">4.8 Great</span>
+                           <span class="grey">97 rating</span>
+                        </p>
+                        <div class="badge_f">Featured</div>
+                     </div>
+                  </a>
+               </div>
             </div>
          </div>
       </div>
-      <a href="{{url('categories')}}" class="btn-hvr view_more"><span class="z-span">See More</span></a>
    </div>
 </section>
 <!---//////////// End Related Products Section //////////////////------------>

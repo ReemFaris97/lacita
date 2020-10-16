@@ -585,6 +585,9 @@ ul[role="listbox"] li[role="option"] {
     color: #101928;
     text-transform: capitalize;
 }
+#icon_close2{
+    display: none ;
+}
 /******* start profile li ********/
 .logged_crt{
     display: -webkit-box;
@@ -642,6 +645,9 @@ ul[role="listbox"] li[role="option"] {
 .link_i{
     margin-right: 10px;
     opacity: .8;
+}
+.logout a{
+    color: #db5338 !important;
 }
 .flexx{
     display: -webkit-box;
@@ -1192,7 +1198,10 @@ width: 130px;
     #icon_close{
         display: block;
     }
-    .nav_mob.back-nav #icon_close {
+    li.dropdown.view_box.open_box.more_box .hidden_more{
+        display: none;
+    }
+    .nav_mob.back-nav #icon_close , li.dropdown.view_box.open_box.more_box #icon_close2{
         position: fixed;
         z-index: 99999999999999999999999999999999;
         top: 0;

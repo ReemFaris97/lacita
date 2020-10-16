@@ -1,19 +1,19 @@
 @extends('site.layout')
-@section('title' , 'La Cita || Notifications')
+@section('title' , 'La Cita || Inbox')
 @section('styles')
 <link rel="stylesheet" href="{{asset('website/scss/profile.css')}}">
 @endsection
 @section('content')
-<!-- /////////////////////||||||||||| start sections |||||||||||||||||||| -->
+<!-- /////////////////////||||||||||| start BreadCrumbs |||||||||||||||||||| -->
 <section class="bread_crumbs">
     <div class="container">
         <div class="head-title">
-            <h2>notification</h2>
+            <h2>Inbox</h2>
         </div>
     </div>
 </section>
-<!-- /////////////////////|||||||||||End sections |||||||||||||||||||| -->
-<!-- /////////////////////||||||||||| Start  |||||||||||||||||||| -->
+<!-- /////////////////////|||||||||||End BreadCrumbs |||||||||||||||||||| -->
+<!-- /////////////////////||||||||||| Start Inbox Section |||||||||||||||||||| -->
 <section class="inboxx">
     <div class="container">
         <ul class="nav nav-pills">
@@ -181,7 +181,7 @@
         </div>
     </div>
 </section>
-<!-- /////////////////////|||||||||||End sections |||||||||||||||||||| -->
+<!-- /////////////////////|||||||||||End Inbox Section |||||||||||||||||||| -->
 @endsection
 @section('scripts')
 <!-- Notification read and unread -->

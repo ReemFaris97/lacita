@@ -7,15 +7,15 @@ $(document).ready(function () {
     (function($) {
         function mediaSize() {
             if (window.matchMedia("(max-width: 767px)").matches) {
-                $(".icon_mob , #icon_close").click(function () {
+                $(".icon_mob , #icon_close ").click(function () {
                     $(this).find("#nav-icon1").toggleClass("open"), 
                     $(this).parents(".dropdown.view_box").toggleClass("open_box"), 
                     $(this).parents(".view_box").find(".nav_mob").toggleClass("back-nav"),
                     $(this).parents(".view_box").find(".menu_mob").toggleClass("fixed-r"), 
                     $("body").toggleClass("body-mob")
                 })
-                $(".the_icons li:last-child a").click(function () {
-                    $(".dropdown.view_box").toggleClass("open_box"), 
+                $(".the_icons li:last-child a, #icon_close2").click(function () {
+                    $(".dropdown.view_box").toggleClass("open_box more_box"), 
                     $(".dropdown.view_box").find(".nav_mob").toggleClass("back-nav"),
                     $(".dropdown.view_box").find(".menu_mob").toggleClass("fixed-r custom_more"), 
                     $("body").toggleClass("body-mob")

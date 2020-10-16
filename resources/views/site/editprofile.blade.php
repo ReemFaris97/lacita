@@ -7,16 +7,22 @@
 <link rel="stylesheet" href="{{asset('website/scss/profile.css')}}">
 <link rel="stylesheet" href="{{asset('website/scss/login-pages.css')}}">
 <style>
-   .navbar, .footer, #scroll-top, .footer ~ .copyright {
+   .navbar,
+   .footer,
+   #scroll-top,
+   .footer~.copyright {
       display: block !important;
    }
-   @media (max-width: 767px){
-   .the_icons{
-      display: flex !important;
-   }
-   .hidden-xs, .footer {
-    display: none !important;
-}
+
+   @media (max-width: 767px) {
+      .the_icons {
+         display: flex !important;
+      }
+
+      .hidden-xs,
+      .footer {
+         display: none !important;
+      }
    }
 </style>
 @endsection
@@ -44,9 +50,9 @@
             <form class="logForm" action="{{url('/')}}">
                <div class="row">
                   <div class="col-xs-12">
-                  <div class="edit-profile">
-                     <input type="file" class="filepond" name="filepond" accept="image/png, image/jpeg, image/gif" id="imginput" />
-                  </div>
+                     <div class="edit-profile">
+                        <input type="file" class="filepond" name="filepond" accept="image/png, image/jpeg, image/gif" id="imginput" />
+                     </div>
                   </div>
                   <div class="col-xs-12">
                      <div class="form-group">
@@ -80,6 +86,19 @@
                      <div class="form-group">
                         <label>Email address</label>
                         <input type="email" class="form-control" placeholder="Your Email address" value="reem@admin.com">
+                     </div>
+                  </div>
+                  <div class="col-xs-12">
+                     <div class="form-group">
+                        <label>Gender</label>
+                        <label class="my_rad"><span><i class="fas fa-venus"></i></span>Female
+                           <input type="radio" name="radio">
+                           <span class="checkmark"></span>
+                        </label>
+                        <label class="my_rad"><span><i class="fas fa-mars"></i></span>Male
+                           <input type="radio" checked="checked" name="radio">
+                           <span class="checkmark"></span>
+                        </label>
                      </div>
                   </div>
                </div>

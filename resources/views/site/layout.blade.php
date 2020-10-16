@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-
-
 <head>
     <!-- /////////////////////|||||||Start Layout |||||||||||||||||||| -->
     <meta charset="UTF-8" lang="ar">
@@ -37,7 +35,6 @@
     @yield('styles')
     <!-- /////////////////////|||||||End Layout |||||||||||||||||||| -->
 </head>
-
 <body>
     <!-- Start Loading-Page -->
     <div class="loader">
@@ -49,12 +46,10 @@
         </svg>
     </div>
     <!-- End Loading-Page -->
-
     <!-- /////////////////////|||||| Start Navbar |||||||||||||||||||||||||||| -->
     <div class="navbar">
         <div class="container-fluid">
             <div class="row">
-
                 <div class="col-md-2 col-sm-2 col-xs-6">
                     <div class="nav_logo">
                         <a href="{{url('/')}}" class="logo-nav">
@@ -62,7 +57,6 @@
                         </a>
                     </div>
                 </div>
-
                 <div class="col-md-6 col-sm-5 col-xs-2">
                     <div class="center_nav view_box new_btn">
                         <a href="javascript:void(0)" class="icon_mob">
@@ -441,9 +435,7 @@
                         <!-- /////////////////////||||||||||| End Searchbar |||||||||||||||||||| -->
                     </div>
                 </div>
-
                 <div class="col-md-4 col-sm-5 col-xs-4">
-
                     <ul class="nav-tools">
                         <!----------------********************** show these links if user NOT logged in ***************------------------------------>
                         <!-- /////////////////////||||||||||| Start Sign up/In Links  |||||||||||||||||||| -->
@@ -453,6 +445,10 @@
                         <!--------->
                         <!----------------********************** show these links if user logged in ***************------------------------------>
                         <li class="dropdown view_box">
+                        <!-- <b class="display_more" id="icon_close"><i class="fas fa-ellipsis-h"></i></b> -->
+                        <a href="javascript:void(0)" id="icon_close2">
+                                <i class="fas fa-times"></i>
+                            </a>
                             <a href="javascript:void(0)" id="mob_view" class="icon_mob">
                                 <!----------------********************** show id="nav-icon1" if user NOT logged in ***************------------------------------>
                                 <!-- <div id="nav-icon1">
@@ -462,8 +458,10 @@
                                 </div> -->
                                 <!----------------********************** show class="logged_crt" if user logged in ***************------------------------------>
                                 <div class="logged_crt">
+                                    <div class="hidden_more">
                                     <img src="{{asset('website/dist/img/user.png')}}">
                                     <span class="caret"></span>
+                                    </div>
                                 </div>
                             </a>
                             <div class="nav_mob">
@@ -478,8 +476,6 @@
                                             <span class="blue">Edit profile</span>
                                         </a>
                                     </li>
-                                    <li><a href="{{url('search_map')}}"><span class="link_i"><i class="fas fa-map-marked-alt"></i></span>Map Search</a></li>
-
                                     <li><a href="{{url('my_orders')}}"><span class="link_i"><i class="far fa-calendar-alt"></i></span>my appointments</a></li>
                                     <li><a href="{{url('my_favourites')}}"><span class="link_i"><i class="far fa-heart"></i></span>my favourites</a></li>
                                     <li><a href="{{url('categories')}}" class="display-xs"><span class="link_i"><i class="fas fa-list-ul"></i></span>categories</a></li>
@@ -497,12 +493,12 @@
                                     <!------------- End settings links ul ----------------->
                                 </li>
                                     <!----------------********************** show these links if user NOT logged in ***************------------------------------>
-                                    <li><a href="{{url('sign-up')}}" class="display-xs"><span class="link_i"><i class="fas fa-user-plus"></i></span>sign up</a></li>
                                     <li><a href="{{url('sign-in')}}" class="display-xs"><span class="link_i"><i class="far fa-user"></i></span>sign in</a></li>
                                     <li><a href="#" class="display-xs"><span class="link_i"><i class="far fa-handshake"></i></span>For Partners</a></li>
                                     <!----------------********************** end if views ***************------------------------------>
                                     <li><a href="{{url('contact-us')}}"><span class="link_i"><i class="far fa-life-ring"></i></span>customer support</a></li>
                                     <li><a href="#"><span class="link_i"><i class="fas fa-globe"></i></span>عربى</a></li>
+                                    <li class="logout"><a href="#"><span class="link_i"><i class="fas fa-sign-out-alt"></i></span>Log Out</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -512,12 +508,8 @@
             </div>
         </div>
     </div>
-
     <!-- /////////////////////|||||| End Navbar |||||||||||||||||||||||||||| -->
     <!---////////////  //////////////////------------>
-
-
-
     <!---////////////  //////////////////------------>
     @yield('content')
     <!-- /////////////////////||||||||||||||||||||||||||||| Start Footer |||||||||||||||||||||||||||| -->
@@ -532,8 +524,8 @@
                             <ul class="social">
                                 <!-- <li><a href="www.facebook.com" target="_blank" class="icon-f"><i class="fab fa-facebook"></i></a></li>
                                 <li><a href="www.twitter.com" target="_blank" class="icon-tw"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="www.linkedin.com" target="_blank" class="icon-in"><i class="fab fa-linkedin"></i></a></li>
-                                <li><a href="www.instagram.com" target="_blank" class="icon-ig"><i class="fab fa-instagram"></i></a></li> -->
+                                <li><a href="www.linkedin.com" target="_blank" class="icon-in"><i class="fab fa-linkedin"></i></a></li> -->
+                                <li><a href="https://www.instagram.com/lacita.sa/" target="_blank" class="icon-ig"><i class="fab fa-instagram"></i></a></li>
                                 <li><a href="www.snapchat.com" target="_blank" class="icon-snap"><i class="fab fa-snapchat-ghost"></i></a></li>
                             </ul>
                         </div>
@@ -562,7 +554,6 @@
                                 <li><a href="{{url('privacy')}}">privacy policy</a></li>
                                 <li><a href="{{url('polices_rules')}}">website terms</a></li>
                                 <li>
-
                                 </li>
                             </ul>
                         </div>
@@ -584,19 +575,15 @@
             </div>
     </footer>
     <!-- /////////////////////||||||||||||||||||||||||||||| End Footer |||||||||||||||||||||||||||| -->
-
-
     <!-- /////////////////////||||||||||||||||||||||||||||| Start Bottom Icons |||||||||||||||||||||||||||| -->
     <ul class="the_icons">
         <li><a href="{{url('/')}}"><b><i class="fas fa-search"></i></b><p>Explore</p></a></li>
         <li><a href="{{url('my_favourites')}}"><b><i class="far fa-heart"></i></b><p>Saved</p></a></li>
         <li><a href="{{url('my_orders')}}"><b><i class="far fa-calendar"></i></b><p>Orders</p></a></li>
-        <!-- <li><a href="{{url('search_map')}}"><b><i class="fas fa-map-marked-alt"></i></b><p>Search</p></a></li> -->
         <li><a href="{{url('inbox')}}"><b><i class="far fa-comment-alt"></i></b><p>Inbox</p></a></li>
         <li><a href="javascript:void(0)"><b><i class="fas fa-ellipsis-h"></i></b><p>More</p></a></li>
     </ul>
     <!-- /////////////////////||||||||||||||||||||||||||||| End Bottom Icons |||||||||||||||||||||||||||| -->
-
     <!-- /////////////////////||||||||||||||||||||||||||||| Start copyright |||||||||||||||||||||||||||| -->
     <div class="copyright">
         <div class="container">
@@ -608,11 +595,6 @@
         <i class="fa fa-angle-up"></i>
         <p>top</p>
     </div>
-
-
-
-
-
     <!-- /////////////////////||||||||||||||||||||||||||||| Start Script |||||||||||||||||||||||||||| -->
     <script src="{{asset('website/dist/js/jquery-2.1.4.min.js')}}"></script>
     <script src="{{asset('website/dist/js/bootstrap.min.js')}}"></script>
@@ -646,5 +628,4 @@
     @yield('scripts')
     <!-- /////////////////////||||||||||||||||||||||||||||| End Script |||||||||||||||||||||||||||| -->
 </body>
-
 </html>
