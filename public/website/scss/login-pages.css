@@ -1528,6 +1528,7 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
   border-radius: 50%;
   background: #e5f1ff;
   margin: 0 10px 0 0;
+  padding: 10px;
 }
 
 .rv_inner > li .serve1 h4 .active {
@@ -2286,6 +2287,9 @@ label .forgot {
 }
 
 @media (max-width: 767px) {
+  .padd_left {
+    padding-left: 66px;
+  }
   .copyright {
     padding: 0;
   }

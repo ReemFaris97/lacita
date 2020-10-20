@@ -331,6 +331,9 @@ $in-w: $n-char * ($char-w + $gap);
     }
 }
 @media (max-width: 767px) {
+    .padd_left {
+        padding-left: 66px;
+    }
     .copyright {
         padding: 0;
     }
