@@ -529,13 +529,14 @@ p {
 .view_more {
     text-align: center;
     font-size: 24px;
-    background-color: rgba(231 ,232 ,233 ,.3);
+    background-color: rgba(231, 232, 233, 0.3);
     color: $primary-color;
     width: 50px;
     height: 50px;
     line-height: 50px;
     @include boxShadowOne(rgba(16, 25, 40, 0.08) 0px 4px 8px 0px);
-    &:hover , &:focus{
+    &:hover,
+    &:focus {
         @include boxShadowOne(rgba(16, 25, 40, 0.16) 0px 8px 16px 0px);
         color: #fff;
     }
@@ -720,9 +721,9 @@ body > section:nth-child(even) .view_more {
             transition: 0.2s all;
         }
     }
-    &:checked{
+    &:checked {
         & + label::before {
-            background-color: #39B374;
+            background-color: #39b374;
         }
         & + label::after {
             margin-left: calc(2.375rem * 0.8);
@@ -740,8 +741,8 @@ body > section:nth-child(even) .view_more {
         }
     }
 }
-.custom_cols{
-    .col-lg-3.col-md-4.col-xs-6{
+.custom_cols {
+    .col-lg-3.col-md-4.col-xs-6 {
         width: 100%;
     }
 }
@@ -1330,6 +1331,7 @@ body > section:nth-child(even) .view_more {
                 border-radius: 50%;
                 background: #e5f1ff;
                 margin: 0 10px 0 0;
+                padding: 10px;
             }
             h4 {
                 .active {
@@ -1345,6 +1347,50 @@ body > section:nth-child(even) .view_more {
 }
 /********* End Reviews Section ***********/
 /************* End Single Product .blade ************/
+
+/************* Start My Orders .blade ************/
+.card_featured.flex_card {
+    @include dis-flex;
+    @include flex-col-center;
+    padding: 0;
+    justify-content: space-between;
+    @include boxShadowOne(0px 2px 5px 0px rgba(230,230,230,.5));
+    &>a , &>div{
+        flex: 1 1 0;
+    }
+    .img_featured {
+        border-radius: 8px 0 0 8px;
+        max-width: 33.33%;
+    }
+    .txt_featured {
+        padding: 0 6px;
+        max-width: 46.66%;
+        a {
+            color: $third-color;
+        }
+        h5{
+            margin: 0 0 10px 0;
+            font-size: 15px;
+            white-space: unset;
+            text-transform: capitalize;
+        }
+    }
+    .price {
+        text-align: center;
+        max-width: 20%;
+        @extend %bold;
+        p{
+            overflow-wrap: break-word;
+            margin: 0;
+            line-height: 2;
+            text-transform: capitalize;
+        }
+    }
+}
+.col-sm-6.col-xs-12 .outer_card{
+    margin-bottom: 16px;
+}
+/************* End My Orders .blade ************/
 
 /*********** Responsive ****************/
 @media (max-width: 991px) {
@@ -1449,6 +1495,12 @@ body > section:nth-child(even) .view_more {
         .owl-next {
             right: -8px;
         }
+        .owl-stage-outer {
+            padding: 0 4px 0 4px;
+        }
+    }
+    .categories-r {
+        padding: 20px 0;
     }
     /******** Featured Categories Section**********/
     .card_featured {
@@ -1468,9 +1520,6 @@ body > section:nth-child(even) .view_more {
     }
     /******** single product .blade **********/
     .book_now {
-        &.fixed_book {
-            bottom: 50px;
-        }
         .booking_in {
             @include flex-dir-column;
             align-items: baseline;
@@ -1518,7 +1567,7 @@ body > section:nth-child(even) .view_more {
         justify-content: space-between;
         .nav-li {
             font-size: 14px;
-            a{
+            a {
                 text-align: center;
             }
             .badge {
@@ -1530,18 +1579,8 @@ body > section:nth-child(even) .view_more {
     .serve1 > div:first-of-type h3 {
         font-size: 16px;
     }
-    /********* Related Products Section ***********/
-    .allProducts {
-        &>.row {
-            @include overfollow_scroll;
-            justify-content: space-between;
-            &>.col-xs-6 {
-                min-width: 60%;
-            }
-        }
-    }
     /************** map search ***************/
-    .reverse_xs.reverse_nw{
+    .reverse_xs.reverse_nw {
         @include dis-flex;
         flex-direction: column-reverse;
         flex-wrap: wrap;
@@ -1594,6 +1633,24 @@ body > section:nth-child(even) .view_more {
         }
     }
     /************* End Single Product .blade ************/
+}
+@media (max-width: 480px) {
+    .card_featured.flex_card{
+        .img_featured {
+            height: 120px;
+            img{
+                @include objectFit(contain);
+            }
+        }
+        .txt_featured{
+            h5{
+                font-size: 13px;
+            }
+        }
+        .price p{
+            font-size: 14px;
+        }
+    } 
 }
 @media (max-width: 375px) {
     /********Start Featured Categories Section**********/

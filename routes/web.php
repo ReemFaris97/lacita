@@ -112,3 +112,12 @@ Route::get('/print_gift', function () {
 Route::get('/email_gift', function () {
     return view('site.email_gift');
 });
+Route::get('/select_time', function () {
+    return view('site.select_time');
+});
+Route::get('/pay_methods', function () {
+    return view('site.pay_methods');
+});
+Route::get('/new_card', function () {
+    return view('site.new_card');
+});

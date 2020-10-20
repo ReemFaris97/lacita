@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <!-- /////////////////////|||||||Start Layout |||||||||||||||||||| -->
     <meta charset="UTF-8" lang="ar">
@@ -35,6 +36,7 @@
     @yield('styles')
     <!-- /////////////////////|||||||End Layout |||||||||||||||||||| -->
 </head>
+
 <body>
     <!-- Start Loading-Page -->
     <div class="loader">
@@ -57,7 +59,86 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-5 col-xs-2">
+                <div class="col-sm-8 col-xs-0">
+                    <ul class="navy">
+                        <li><a href="{{url('my_orders')}}">my appointments</a></li>
+                        <li><a href="{{url('my_favourites')}}">my favourites</a></li>
+                        <li><a href="{{url('categories')}}">categories</a></li>
+                        <li><a href="{{url('sign-in')}}">sign in</a></li>
+                        <!----------------********************** show these links if user NOT logged in ***************------------------------------>
+                        <li><a href="#">For Partners</a></li>
+                        <li><a href="{{url('contact-us')}}">customer support</a></li>
+                        <!----------------********************** end if views ***************------------------------------>
+                    </ul>
+                </div>
+                <div class="col-sm-2 col-xs-0">
+                    <ul class="nav-tools">
+                        <!----------------********************** show these links if user logged in ***************------------------------------>
+                        <li class="dropdown view_box">
+                            <!-- <b class="display_more" id="icon_close"><i class="fas fa-ellipsis-h"></i></b> -->
+                            <a href="javascript:void(0)" id="icon_close2">
+                                <i class="fas fa-times"></i>
+                            </a>
+                            <a href="javascript:void(0)" id="mob_view" class="icon_mob">
+                                <!----------------********************** show id="nav-icon1" if user NOT logged in ***************------------------------------>
+                                <!-- <div id="nav-icon1">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div> -->
+                                <!----------------********************** show class="logged_crt" if user logged in ***************------------------------------>
+                                <div class="logged_crt">
+                                    <div class="hidden_more">
+                                        <img src="{{asset('website/dist/img/user.png')}}">
+                                        <span class="caret"></span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="nav_mob">
+                                <ul class="dropdown-menu menu_mob">
+                                    <!----------------********************** show these links if user logged in ***************------------------------------>
+                                    <li class="pro_li">
+                                        <a href="{{url('editprofile')}}">
+                                            <div class="img_in display-xs">
+                                                <img src="{{asset('website/dist/img/user.png')}}">
+                                            </div>
+                                            <h3 class="ellipsis">reem faris</h3>
+                                            <span class="blue">Edit profile</span>
+                                        </a>
+                                    </li>
+                                    <li class="display-xs"><a href="{{url('my_orders')}}"><span class="link_i"><i class="far fa-calendar-alt"></i></span>my appointments</a></li>
+                                    <li class="display-xs"><a href="{{url('my_favourites')}}"><span class="link_i"><i class="far fa-heart"></i></span>my favourites</a></li>
+                                    <li class="display-xs"><a href="{{url('categories')}}"><span class="link_i"><i class="fas fa-list-ul"></i></span>categories</a></li>
+                                    <li><a href="{{url('pay_methods')}}"><span class="link_i"><i class="fas fa-credit-card"></i></span>payment methods</a></li>
+                                    <li class="dropdown sett_li"><a href="javascript:void(0)" id="new_list"><span class="link_i"><i class="fas fa-cog"></i></span>settings</a>
+                                        <!------------- Start settings links ul ----------------->
+                                        <div class="nav_mob2">
+                                            <ul class="dropdown-menu menu_mob2">
+                                                <li><a href="#" target="_blank">For Partners</a></li>
+                                                <li><a href="{{url('use_policy')}}" target="_blank">Booking Terms</a></li>
+                                                <li><a href="{{url('privacy')}}" target="_blank">privacy policy</a></li>
+                                                <li><a href="{{url('polices_rules')}}" target="_blank">website terms</a></li>
+                                                <li><a href="{{url('about')}}" target="_blank">about us</a></li>
+                                            </ul>
+                                        </div>
+                                        <!------------- End settings links ul ----------------->
+                                    </li>
+                                    <!----------------********************** show these links if user NOT logged in ***************------------------------------>
+                                    <li class="display-xs"><a href="{{url('sign-in')}}" class="display-xs"><span class="link_i"><i class="far fa-user"></i></span>sign in</a></li>
+                                    <li class="display-xs"><a href="#" class="display-xs"><span class="link_i"><i class="far fa-handshake"></i></span>For Partners</a></li>
+                                    <!----------------********************** end if views ***************------------------------------>
+                                    <li class="display-xs"><a href="{{url('contact-us')}}"><span class="link_i"><i class="far fa-life-ring"></i></span>customer support</a></li>
+                                    <li><a href="#"><span class="link_i"><i class="fas fa-globe"></i></span>عربى</a></li>
+                                    <li class="logout"><a href="#"><span class="link_i"><i class="fas fa-sign-out-alt"></i></span>Log Out</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- /////////////////////||||||||||| End Sign up/In Links  |||||||||||||||||||| -->
+                    </ul>
+                </div>
+
+                <!---- search --->
+                <div class="col-md-8 col-sm-8 col-xs-6">
                     <div class="center_nav view_box new_btn">
                         <a href="javascript:void(0)" class="icon_mob">
                             <i class="fas fa-search"></i>
@@ -435,76 +516,7 @@
                         <!-- /////////////////////||||||||||| End Searchbar |||||||||||||||||||| -->
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-5 col-xs-4">
-                    <ul class="nav-tools">
-                        <!----------------********************** show these links if user NOT logged in ***************------------------------------>
-                        <!-- /////////////////////||||||||||| Start Sign up/In Links  |||||||||||||||||||| -->
-                        <!-- <li class="hidden-xs"><a href="#">For Partners</a></li>
-                        <li class="hidden-xs"><a href="{{url('sign-up')}}">sign up</a></li>
-                        <li class="hidden-xs"><a href="{{url('sign-in')}}">sign in</a></li> -->
-                        <!--------->
-                        <!----------------********************** show these links if user logged in ***************------------------------------>
-                        <li class="dropdown view_box">
-                        <!-- <b class="display_more" id="icon_close"><i class="fas fa-ellipsis-h"></i></b> -->
-                        <a href="javascript:void(0)" id="icon_close2">
-                                <i class="fas fa-times"></i>
-                            </a>
-                            <a href="javascript:void(0)" id="mob_view" class="icon_mob">
-                                <!----------------********************** show id="nav-icon1" if user NOT logged in ***************------------------------------>
-                                <!-- <div id="nav-icon1">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div> -->
-                                <!----------------********************** show class="logged_crt" if user logged in ***************------------------------------>
-                                <div class="logged_crt">
-                                    <div class="hidden_more">
-                                    <img src="{{asset('website/dist/img/user.png')}}">
-                                    <span class="caret"></span>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="nav_mob">
-                                <ul class="dropdown-menu menu_mob">
-                                    <!----------------********************** show these links if user logged in ***************------------------------------>
-                                    <li class="pro_li">
-                                        <a href="{{url('editprofile')}}">
-                                            <div class="img_in display-xs">
-                                                <img src="{{asset('website/dist/img/user.png')}}">
-                                            </div>
-                                            <h3 class="ellipsis">reem faris</h3>
-                                            <span class="blue">Edit profile</span>
-                                        </a>
-                                    </li>
-                                    <li><a href="{{url('my_orders')}}"><span class="link_i"><i class="far fa-calendar-alt"></i></span>my appointments</a></li>
-                                    <li><a href="{{url('my_favourites')}}"><span class="link_i"><i class="far fa-heart"></i></span>my favourites</a></li>
-                                    <li><a href="{{url('categories')}}" class="display-xs"><span class="link_i"><i class="fas fa-list-ul"></i></span>categories</a></li>
-                                    <li class="dropdown sett_li"><a href="javascript:void(0)" id="new_list"><span class="link_i"><i class="fas fa-cog"></i></span>settings</a>
-                                    <!------------- Start settings links ul ----------------->
-                                    <div class="nav_mob2">
-                                <ul class="dropdown-menu menu_mob2">
-                                <li><a href="#" target="_blank">For Partners</a></li>
-                                <li><a href="{{url('use_policy')}}" target="_blank">Booking Terms</a></li>
-                                <li><a href="{{url('privacy')}}" target="_blank">privacy policy</a></li>
-                                <li><a href="{{url('polices_rules')}}" target="_blank">website terms</a></li>
-                                <li><a href="{{url('about')}}" target="_blank">about us</a></li>
-                                </ul>
-                                    </div>
-                                    <!------------- End settings links ul ----------------->
-                                </li>
-                                    <!----------------********************** show these links if user NOT logged in ***************------------------------------>
-                                    <li><a href="{{url('sign-in')}}" class="display-xs"><span class="link_i"><i class="far fa-user"></i></span>sign in</a></li>
-                                    <li><a href="#" class="display-xs"><span class="link_i"><i class="far fa-handshake"></i></span>For Partners</a></li>
-                                    <!----------------********************** end if views ***************------------------------------>
-                                    <li><a href="{{url('contact-us')}}"><span class="link_i"><i class="far fa-life-ring"></i></span>customer support</a></li>
-                                    <li><a href="#"><span class="link_i"><i class="fas fa-globe"></i></span>عربى</a></li>
-                                    <li class="logout"><a href="#"><span class="link_i"><i class="fas fa-sign-out-alt"></i></span>Log Out</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- /////////////////////||||||||||| End Sign up/In Links  |||||||||||||||||||| -->
-                    </ul>
-                </div>
+
             </div>
         </div>
     </div>
@@ -514,74 +526,84 @@
     @yield('content')
     <!-- /////////////////////||||||||||||||||||||||||||||| Start Footer |||||||||||||||||||||||||||| -->
     <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                        <div class="foot1">
-                            <a href="{{url('/')}}" class="foot-logo">
-                                <img src="{{asset('website/dist/img/logo.png')}}">
-                            </a>
-                            <ul class="social">
-                                <!-- <li><a href="www.facebook.com" target="_blank" class="icon-f"><i class="fab fa-facebook"></i></a></li>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                    <div class="foot1">
+                        <a href="{{url('/')}}" class="foot-logo">
+                            <img src="{{asset('website/dist/img/logo.png')}}">
+                        </a>
+                        <ul class="social">
+                            <!-- <li><a href="www.facebook.com" target="_blank" class="icon-f"><i class="fab fa-facebook"></i></a></li>
                                 <li><a href="www.twitter.com" target="_blank" class="icon-tw"><i class="fab fa-twitter"></i></a></li>
                                 <li><a href="www.linkedin.com" target="_blank" class="icon-in"><i class="fab fa-linkedin"></i></a></li> -->
-                                <li><a href="https://www.instagram.com/lacita.sa/" target="_blank" class="icon-ig"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="www.snapchat.com" target="_blank" class="icon-snap"><i class="fab fa-snapchat-ghost"></i></a></li>
-                            </ul>
-                        </div>
+                            <li><a href="https://www.instagram.com/lacita.sa/" target="_blank" class="icon-ig"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="www.snapchat.com" target="_blank" class="icon-snap"><i class="fab fa-snapchat-ghost"></i></a></li>
+                        </ul>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="foot1">
-                            <h3 class="f-title">About la cita</h3>
-                            <ul>
-                                <li><a href="{{url('contact-us')}}">customer support</a></li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <div class="foot1">
+                        <h3 class="f-title">About la cita</h3>
+                        <ul>
+                            <li><a href="{{url('contact-us')}}">customer support</a></li>
+                        </ul>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="foot1">
-                            <h3 class="f-title">for business</h3>
-                            <ul>
-                                <li><a href="#">for partners</a></li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <div class="foot1">
+                        <h3 class="f-title">for business</h3>
+                        <ul>
+                            <li><a href="#">for partners</a></li>
+                        </ul>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="foot1">
-                            <h3 class="f-title">legal</h3>
-                            <ul>
-                                <li><a href="{{url('use_policy')}}">booking terms</a></li>
-                                <li><a href="{{url('privacy')}}">privacy policy</a></li>
-                                <li><a href="{{url('polices_rules')}}">website terms</a></li>
-                                <li>
-                                </li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <div class="foot1">
+                        <h3 class="f-title">legal</h3>
+                        <ul>
+                            <li><a href="{{url('use_policy')}}">booking terms</a></li>
+                            <li><a href="{{url('privacy')}}">privacy policy</a></li>
+                            <li><a href="{{url('polices_rules')}}">website terms</a></li>
+                            <li>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-8 col-xs-12">
-                        <div class="foot1">
-                            <h3 class="f-title">Free mobile app</h3>
-                            <div class="flex-r flex_down">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-8 col-xs-12">
+                    <div class="foot1">
+                        <h3 class="f-title">Free mobile app</h3>
+                        <div class="flex-r flex_down">
                             <a href="#" target="_blank" class="down_app wow animate__animated animate__slideInUp">
                                 <img src="{{asset('website/dist/img/app_store.png')}}">
                             </a>
                             <a href="#" target="_blank" class="down_app wow animate__animated animate__slideIUp">
                                 <img src="{{asset('website/dist/img/google.png')}}">
                             </a>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </footer>
     <!-- /////////////////////||||||||||||||||||||||||||||| End Footer |||||||||||||||||||||||||||| -->
     <!-- /////////////////////||||||||||||||||||||||||||||| Start Bottom Icons |||||||||||||||||||||||||||| -->
     <ul class="the_icons">
-        <li><a href="{{url('/')}}"><b><i class="fas fa-search"></i></b><p>Explore</p></a></li>
-        <li><a href="{{url('my_favourites')}}"><b><i class="far fa-heart"></i></b><p>Saved</p></a></li>
-        <li><a href="{{url('my_orders')}}"><b><i class="far fa-calendar"></i></b><p>Orders</p></a></li>
-        <li><a href="{{url('inbox')}}"><b><i class="far fa-comment-alt"></i></b><p>Inbox</p></a></li>
-        <li><a href="javascript:void(0)"><b><i class="fas fa-ellipsis-h"></i></b><p>More</p></a></li>
+        <li><a href="{{url('/')}}"><b><i class="fas fa-search"></i></b>
+                <p>Explore</p>
+            </a></li>
+        <li><a href="{{url('my_favourites')}}"><b><i class="far fa-heart"></i></b>
+                <p>Saved</p>
+            </a></li>
+        <li><a href="{{url('my_orders')}}"><b><i class="far fa-calendar"></i></b>
+                <p>Orders</p>
+            </a></li>
+        <li><a href="{{url('inbox')}}"><b><i class="far fa-comment-alt"></i></b>
+                <p>Inbox</p>
+            </a></li>
+        <li><a href="javascript:void(0)" id="more_list"><b><i class="fas fa-ellipsis-h"></i></b>
+                <p>More</p>
+            </a></li>
     </ul>
     <!-- /////////////////////||||||||||||||||||||||||||||| End Bottom Icons |||||||||||||||||||||||||||| -->
     <!-- /////////////////////||||||||||||||||||||||||||||| Start copyright |||||||||||||||||||||||||||| -->
@@ -628,4 +650,5 @@
     @yield('scripts')
     <!-- /////////////////////||||||||||||||||||||||||||||| End Script |||||||||||||||||||||||||||| -->
 </body>
+
 </html>

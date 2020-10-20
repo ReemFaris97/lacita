@@ -1,0 +1,33 @@
+@mixin dis-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+@mixin overfollow_scroll {
+    @include dis-flex;
+    scroll-snap-type: initial;
+    scroll-behavior: auto;
+    white-space: nowrap;
+    width: 100%;
+    max-width: none;
+    overflow: hidden;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    flex-wrap: nowrap;
+}
+.navbar {
+    position: fixed;
+}
+
+@media (max-width: 767px) {
+    .allProducts {
+        & > .row {
+            @include overfollow_scroll;
+            justify-content: space-between;
+            & > .col-xs-6 {
+                min-width: 60%;
+            }
+        }
+    }
+}

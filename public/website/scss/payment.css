@@ -9,7 +9,7 @@
   text-overflow: ellipsis;
 }
 
-.my-header .head-txt h3, .nav-pills .nav-li.active {
+.my-header .head-txt h3, .nav-pills .nav-li.active, .card_featured.flex_card .price {
   font-family: "Almarai-ExtraBold";
 }
 
@@ -722,7 +722,7 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
 }
 
 .switch input:checked + label::before {
-  background-color: #39B374;
+  background-color: #39b374;
 }
 
 .switch input:checked + label::after {
@@ -1541,6 +1541,68 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
 
 /********* End Reviews Section ***********/
 /************* End Single Product .blade ************/
+/************* Start My Orders .blade ************/
+.card_featured.flex_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(230, 230, 230, 0.5);
+  -o-box-shadow: 0px 2px 5px 0px rgba(230, 230, 230, 0.5);
+  -ms-box-shadow: 0px 2px 5px 0px rgba(230, 230, 230, 0.5);
+  box-shadow: 0px 2px 5px 0px rgba(230, 230, 230, 0.5);
+}
+
+.card_featured.flex_card > a, .card_featured.flex_card > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+}
+
+.card_featured.flex_card .img_featured {
+  border-radius: 8px 0 0 8px;
+  max-width: 33.33%;
+}
+
+.card_featured.flex_card .txt_featured {
+  padding: 0 6px;
+  max-width: 46.66%;
+}
+
+.card_featured.flex_card .txt_featured a {
+  color: #037aff;
+}
+
+.card_featured.flex_card .txt_featured h5 {
+  margin: 0 0 10px 0;
+  font-size: 15px;
+  white-space: unset;
+  text-transform: capitalize;
+}
+
+.card_featured.flex_card .price {
+  text-align: center;
+  max-width: 20%;
+}
+
+.card_featured.flex_card .price p {
+  overflow-wrap: break-word;
+  margin: 0;
+  line-height: 2;
+  text-transform: capitalize;
+}
+
+.col-sm-6.col-xs-12 .outer_card {
+  margin-bottom: 16px;
+}
+
+/************* End My Orders .blade ************/
 /*********** Responsive ****************/
 @media (max-width: 991px) {
   .btn-flex {
@@ -1639,6 +1701,13 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
   .owl-theme.owl_sm .owl-next {
     right: -8px;
   }
+  .owl-theme.owl_categ .owl-stage-outer,
+  .owl-theme.owl_sm .owl-stage-outer {
+    padding: 0 4px 0 4px;
+  }
+  .categories-r {
+    padding: 20px 0;
+  }
   /******** Featured Categories Section**********/
   .card_featured .txt_featured h3 {
     font-size: 17px;
@@ -1652,9 +1721,6 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
     font-size: 11px;
   }
   /******** single product .blade **********/
-  .book_now.fixed_book {
-    bottom: 50px;
-  }
   .book_now .booking_in {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1735,31 +1801,6 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
   .serve1 > div:first-of-type h3 {
     font-size: 16px;
   }
-  /********* Related Products Section ***********/
-  .allProducts > .row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-scroll-snap-type: initial;
-        scroll-snap-type: initial;
-    scroll-behavior: auto;
-    white-space: nowrap;
-    width: 100%;
-    max-width: none;
-    overflow: hidden;
-    overflow-x: auto;
-    -ms-scroll-snap-type: x mandatory;
-        scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .allProducts > .row > .col-xs-6 {
-    min-width: 60%;
-  }
   /************** map search ***************/
   .reverse_xs.reverse_nw {
     display: -webkit-box;
@@ -1825,6 +1866,22 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
     font-size: 14px;
   }
   /************* End Single Product .blade ************/
+}
+
+@media (max-width: 480px) {
+  .card_featured.flex_card .img_featured {
+    height: 120px;
+  }
+  .card_featured.flex_card .img_featured img {
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+  .card_featured.flex_card .txt_featured h5 {
+    font-size: 13px;
+  }
+  .card_featured.flex_card .price p {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -2345,7 +2402,7 @@ body {
 }
 
 /******** choose services left ********/
-.nav.flex-column {
+.nav.nav-pills {
   margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2375,7 +2432,7 @@ body {
   background-color: #fff;
 }
 
-.nav.flex-column .nav-link {
+.nav.nav-pills .nav-link {
   font-size: 14px;
 }
 

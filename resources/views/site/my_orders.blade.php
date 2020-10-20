@@ -24,112 +24,84 @@
         </ul>
         <div class="tab-content">
             <div id="upcoming" class="tab-pane fade in active">
-                <div class="allProducts">
+            <div class="allProducts">
                     <div class="row">
-                        <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="col-sm-6 col-xs-12">
                             <div class="outer_card animate__fadeInUp animate__animated wow">
-                                <!-- start like button--->
-                                <button type="button" class="likerr i_liked"><i class="fas fa-heart"></i></button>
-                                <!-- end like button--->
-                                <a class="card_featured" href="{{url('single-product')}}">
-                                    <div class="img_featured">
+                                <div class="card_featured flex_card">
+                                    <a class="img_featured" href="{{url('single-product')}}">
                                         <img src="{{asset('website/dist/img/salon1.jpg')}}">
-                                    </div>
+                                    </a>
                                     <div class="txt_featured">
-                                        <h3>Le Fix</h3>
-                                        <h5>45 Newman Street</h5>
-                                        <div class="badge_f">Featured</div>
+                                        <a href="{{url('single-product')}}"><h3>Le Fix Le Fix Le Fix Le Fix</h3></a>
+                                        <h5>Reservation number: 463555</h5>
+                                        <h5>Date: 20/10/2020 - 7:10 PM</h5>
                                     </div>
-                                </a>
+                                    <div class="price"><p>147</p><p>SAR</p></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="col-sm-6 col-xs-12">
                             <div class="outer_card animate__fadeInUp animate__animated wow">
-                                <!-- start like button--->
-                                <button type="button" class="likerr i_liked"><i class="fas fa-heart"></i></button>
-                                <!-- end like button--->
-                                <a class="card_featured" href="{{url('single-product')}}">
-                                    <div class="img_featured">
+                                <div class="card_featured flex_card">
+                                    <a class="img_featured" href="{{url('single-product')}}">
                                         <img src="{{asset('website/dist/img/salon1.jpg')}}">
-                                    </div>
+                                    </a>
                                     <div class="txt_featured">
-                                        <h3>Le Fix</h3>
-                                        <h5>45 Newman Street</h5>
-                                        <div class="badge_f">Featured</div>
+                                        <a href="{{url('single-product')}}"><h3>Le Fix Le Fix Le Fix Le Fix</h3></a>
+                                        <h5>Reservation number: 463555</h5>
+                                        <h5>Date: 20/10/2020 - 7:10 PM</h5>
                                     </div>
-                                </a>
+                                    <div class="price"><p>147</p><p>SAR</p></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="col-sm-6 col-xs-12">
                             <div class="outer_card animate__fadeInUp animate__animated wow">
-                                <!-- start like button--->
-                                <button type="button" class="likerr i_liked"><i class="fas fa-heart"></i></button>
-                                <!-- end like button--->
-                                <a class="card_featured" href="{{url('single-product')}}">
-                                    <div class="img_featured">
+                                <div class="card_featured flex_card">
+                                    <a class="img_featured" href="{{url('single-product')}}">
                                         <img src="{{asset('website/dist/img/salon1.jpg')}}">
-                                    </div>
+                                    </a>
                                     <div class="txt_featured">
-                                        <h3>Le Fix</h3>
-                                        <h5>45 Newman Street</h5>
-                                        <div class="badge_f">Featured</div>
+                                        <a href="{{url('single-product')}}"><h3>Le Fix Le Fix Le Fix Le Fix</h3></a>
+                                        <h5>Reservation number: 463555</h5>
+                                        <h5>Date: 20/10/2020 - 7:10 PM</h5>
                                     </div>
-                                </a>
+                                    <div class="price"><p>147</p><p>SAR</p></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="col-sm-6 col-xs-12">
                             <div class="outer_card animate__fadeInUp animate__animated wow">
-                                <!-- start like button--->
-                                <button type="button" class="likerr i_liked"><i class="fas fa-heart"></i></button>
-                                <!-- end like button--->
-                                <a class="card_featured" href="{{url('single-product')}}">
-                                    <div class="img_featured">
+                                <div class="card_featured flex_card">
+                                    <a class="img_featured" href="{{url('single-product')}}">
                                         <img src="{{asset('website/dist/img/salon1.jpg')}}">
-                                    </div>
+                                    </a>
                                     <div class="txt_featured">
-                                        <h3>Le Fix</h3>
-                                        <h5>45 Newman Street</h5>
-                                        <div class="badge_f">Featured</div>
+                                        <a href="{{url('single-product')}}"><h3>Le Fix Le Fix Le Fix Le Fix</h3></a>
+                                        <h5>Reservation number: 463555</h5>
+                                        <h5>Date: 20/10/2020 - 7:10 PM</h5>
                                     </div>
-                                </a>
+                                    <div class="price"><p>147</p><p>SAR</p></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="col-sm-6 col-xs-12">
                             <div class="outer_card animate__fadeInUp animate__animated wow">
-                                <!-- start like button--->
-                                <button type="button" class="likerr i_liked"><i class="fas fa-heart"></i></button>
-                                <!-- end like button--->
-                                <a class="card_featured" href="{{url('single-product')}}">
-                                    <div class="img_featured">
+                                <div class="card_featured flex_card">
+                                    <a class="img_featured" href="{{url('single-product')}}">
                                         <img src="{{asset('website/dist/img/salon1.jpg')}}">
-                                    </div>
+                                    </a>
                                     <div class="txt_featured">
-                                        <h3>Le Fix</h3>
-                                        <h5>45 Newman Street</h5>
-                                        <div class="badge_f">Featured</div>
+                                        <a href="{{url('single-product')}}"><h3>Le Fix Le Fix Le Fix Le Fix</h3></a>
+                                        <h5>Reservation number: 463555</h5>
+                                        <h5>Date: 20/10/2020 - 7:10 PM</h5>
                                     </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6">
-                            <div class="outer_card animate__fadeInUp animate__animated wow">
-                                <!-- start like button--->
-                                <button type="button" class="likerr i_liked"><i class="fas fa-heart"></i></button>
-                                <!-- end like button--->
-                                <a class="card_featured" href="{{url('single-product')}}">
-                                    <div class="img_featured">
-                                        <img src="{{asset('website/dist/img/salon1.jpg')}}">
-                                    </div>
-                                    <div class="txt_featured">
-                                        <h3>Le Fix</h3>
-                                        <h5>45 Newman Street</h5>
-                                        <div class="badge_f">Featured</div>
-                                    </div>
-                                </a>
+                                    <div class="price"><p>147</p><p>SAR</p></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 <!----- Pagination ----->
                 <ul class="pagination">
                     <li class="previous"><a href="#"><i class="fas fa-chevron-left"></i></a></li>
@@ -140,114 +112,87 @@
                     <li><a href="#">5</a></li>
                     <li class="next"><a href="#"><i class="fas fa-chevron-right"></i></a></li>
                 </ul>
+            </div>
             </div>
             <div id="past" class="tab-pane fade">
-      <div class="allProducts">
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="outer_card animate__fadeInUp animate__animated wow">
-                            <!-- start like button--->
-                            <button type="button" class="likerr i_liked"><i class="fas fa-heart"></i></button>
-                            <!-- end like button--->
-                            <a class="card_featured" href="{{url('single-product')}}">
-                                <div class="img_featured">
-                                    <img src="{{asset('website/dist/img/salon1.jpg')}}">
+            <div class="allProducts">
+            <div class="row">
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="outer_card animate__fadeInUp animate__animated wow">
+                                <div class="card_featured flex_card">
+                                    <a class="img_featured" href="{{url('single-product')}}">
+                                        <img src="{{asset('website/dist/img/salon1.jpg')}}">
+                                    </a>
+                                    <div class="txt_featured">
+                                        <a href="{{url('single-product')}}"><h3>Le Fix Le Fix Le Fix Le Fix</h3></a>
+                                        <h5>Reservation number: 463555</h5>
+                                        <h5>Date: 20/10/2020 - 7:10 PM</h5>
+                                    </div>
+                                    <div class="price"><p>147</p><p>SAR</p></div>
                                 </div>
-                                <div class="txt_featured">
-                                    <h3>Le Fix</h3>
-                                    <h5>45 Newman Street</h5>
-                                    <div class="badge_f">Featured</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="outer_card animate__fadeInUp animate__animated wow">
+                                <div class="card_featured flex_card">
+                                    <a class="img_featured" href="{{url('single-product')}}">
+                                        <img src="{{asset('website/dist/img/salon1.jpg')}}">
+                                    </a>
+                                    <div class="txt_featured">
+                                        <a href="{{url('single-product')}}"><h3>Le Fix Le Fix Le Fix Le Fix</h3></a>
+                                        <h5>Reservation number: 463555</h5>
+                                        <h5>Date: 20/10/2020 - 7:10 PM</h5>
+                                    </div>
+                                    <div class="price"><p>147</p><p>SAR</p></div>
                                 </div>
-                            </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="outer_card animate__fadeInUp animate__animated wow">
+                                <div class="card_featured flex_card">
+                                    <a class="img_featured" href="{{url('single-product')}}">
+                                        <img src="{{asset('website/dist/img/salon1.jpg')}}">
+                                    </a>
+                                    <div class="txt_featured">
+                                        <a href="{{url('single-product')}}"><h3>Le Fix Le Fix Le Fix Le Fix</h3></a>
+                                        <h5>Reservation number: 463555</h5>
+                                        <h5>Date: 20/10/2020 - 7:10 PM</h5>
+                                    </div>
+                                    <div class="price"><p>147</p><p>SAR</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="outer_card animate__fadeInUp animate__animated wow">
+                                <div class="card_featured flex_card">
+                                    <a class="img_featured" href="{{url('single-product')}}">
+                                        <img src="{{asset('website/dist/img/salon1.jpg')}}">
+                                    </a>
+                                    <div class="txt_featured">
+                                        <a href="{{url('single-product')}}"><h3>Le Fix Le Fix Le Fix Le Fix</h3></a>
+                                        <h5>Reservation number: 463555</h5>
+                                        <h5>Date: 20/10/2020 - 7:10 PM</h5>
+                                    </div>
+                                    <div class="price"><p>147</p><p>SAR</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="outer_card animate__fadeInUp animate__animated wow">
+                                <div class="card_featured flex_card">
+                                    <a class="img_featured" href="{{url('single-product')}}">
+                                        <img src="{{asset('website/dist/img/salon1.jpg')}}">
+                                    </a>
+                                    <div class="txt_featured">
+                                        <a href="{{url('single-product')}}"><h3>Le Fix Le Fix Le Fix Le Fix</h3></a>
+                                        <h5>Reservation number: 463555</h5>
+                                        <h5>Date: 20/10/2020 - 7:10 PM</h5>
+                                    </div>
+                                    <div class="price"><p>147</p><p>SAR</p></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="outer_card animate__fadeInUp animate__animated wow">
-                            <!-- start like button--->
-                            <button type="button" class="likerr i_liked"><i class="fas fa-heart"></i></button>
-                            <!-- end like button--->
-                            <a class="card_featured" href="{{url('single-product')}}">
-                                <div class="img_featured">
-                                    <img src="{{asset('website/dist/img/salon1.jpg')}}">
-                                </div>
-                                <div class="txt_featured">
-                                    <h3>Le Fix</h3>
-                                    <h5>45 Newman Street</h5>
-                                    <div class="badge_f">Featured</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="outer_card animate__fadeInUp animate__animated wow">
-                            <!-- start like button--->
-                            <button type="button" class="likerr i_liked"><i class="fas fa-heart"></i></button>
-                            <!-- end like button--->
-                            <a class="card_featured" href="{{url('single-product')}}">
-                                <div class="img_featured">
-                                    <img src="{{asset('website/dist/img/salon1.jpg')}}">
-                                </div>
-                                <div class="txt_featured">
-                                    <h3>Le Fix</h3>
-                                    <h5>45 Newman Street</h5>
-                                    <div class="badge_f">Featured</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="outer_card animate__fadeInUp animate__animated wow">
-                            <!-- start like button--->
-                            <button type="button" class="likerr i_liked"><i class="fas fa-heart"></i></button>
-                            <!-- end like button--->
-                            <a class="card_featured" href="{{url('single-product')}}">
-                                <div class="img_featured">
-                                    <img src="{{asset('website/dist/img/salon1.jpg')}}">
-                                </div>
-                                <div class="txt_featured">
-                                    <h3>Le Fix</h3>
-                                    <h5>45 Newman Street</h5>
-                                    <div class="badge_f">Featured</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="outer_card animate__fadeInUp animate__animated wow">
-                            <!-- start like button--->
-                            <button type="button" class="likerr i_liked"><i class="fas fa-heart"></i></button>
-                            <!-- end like button--->
-                            <a class="card_featured" href="{{url('single-product')}}">
-                                <div class="img_featured">
-                                    <img src="{{asset('website/dist/img/salon1.jpg')}}">
-                                </div>
-                                <div class="txt_featured">
-                                    <h3>Le Fix</h3>
-                                    <h5>45 Newman Street</h5>
-                                    <div class="badge_f">Featured</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="outer_card animate__fadeInUp animate__animated wow">
-                            <!-- start like button--->
-                            <button type="button" class="likerr i_liked"><i class="fas fa-heart"></i></button>
-                            <!-- end like button--->
-                            <a class="card_featured" href="{{url('single-product')}}">
-                                <div class="img_featured">
-                                    <img src="{{asset('website/dist/img/salon1.jpg')}}">
-                                </div>
-                                <div class="txt_featured">
-                                    <h3>Le Fix</h3>
-                                    <h5>45 Newman Street</h5>
-                                    <div class="badge_f">Featured</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                </div>
                 <!----- Pagination ----->
                 <ul class="pagination">
                     <li class="previous"><a href="#"><i class="fas fa-chevron-left"></i></a></li>
@@ -259,113 +204,86 @@
                     <li class="next"><a href="#"><i class="fas fa-chevron-right"></i></a></li>
                 </ul>
             </div>
+            </div>
             <div id="cancelled" class="tab-pane fade">
-      <div class="allProducts">
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="outer_card animate__fadeInUp animate__animated wow">
-                            <!-- start like button--->
-                            <button type="button" class="likerr i_liked"><i class="fas fa-heart"></i></button>
-                            <!-- end like button--->
-                            <a class="card_featured" href="{{url('single-product')}}">
-                                <div class="img_featured">
-                                    <img src="{{asset('website/dist/img/salon1.jpg')}}">
+            <div class="allProducts">
+            <div class="row">
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="outer_card animate__fadeInUp animate__animated wow">
+                                <div class="card_featured flex_card">
+                                    <a class="img_featured" href="{{url('single-product')}}">
+                                        <img src="{{asset('website/dist/img/salon1.jpg')}}">
+                                    </a>
+                                    <div class="txt_featured">
+                                        <a href="{{url('single-product')}}"><h3>Le Fix Le Fix Le Fix Le Fix</h3></a>
+                                        <h5>Reservation number: 463555</h5>
+                                        <h5>Date: 20/10/2020 - 7:10 PM</h5>
+                                    </div>
+                                    <div class="price"><p>147</p><p>SAR</p></div>
                                 </div>
-                                <div class="txt_featured">
-                                    <h3>Le Fix</h3>
-                                    <h5>45 Newman Street</h5>
-                                    <div class="badge_f">Featured</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="outer_card animate__fadeInUp animate__animated wow">
+                                <div class="card_featured flex_card">
+                                    <a class="img_featured" href="{{url('single-product')}}">
+                                        <img src="{{asset('website/dist/img/salon1.jpg')}}">
+                                    </a>
+                                    <div class="txt_featured">
+                                        <a href="{{url('single-product')}}"><h3>Le Fix Le Fix Le Fix Le Fix</h3></a>
+                                        <h5>Reservation number: 463555</h5>
+                                        <h5>Date: 20/10/2020 - 7:10 PM</h5>
+                                    </div>
+                                    <div class="price"><p>147</p><p>SAR</p></div>
                                 </div>
-                            </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="outer_card animate__fadeInUp animate__animated wow">
+                                <div class="card_featured flex_card">
+                                    <a class="img_featured" href="{{url('single-product')}}">
+                                        <img src="{{asset('website/dist/img/salon1.jpg')}}">
+                                    </a>
+                                    <div class="txt_featured">
+                                        <a href="{{url('single-product')}}"><h3>Le Fix Le Fix Le Fix Le Fix</h3></a>
+                                        <h5>Reservation number: 463555</h5>
+                                        <h5>Date: 20/10/2020 - 7:10 PM</h5>
+                                    </div>
+                                    <div class="price"><p>147</p><p>SAR</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="outer_card animate__fadeInUp animate__animated wow">
+                                <div class="card_featured flex_card">
+                                    <a class="img_featured" href="{{url('single-product')}}">
+                                        <img src="{{asset('website/dist/img/salon1.jpg')}}">
+                                    </a>
+                                    <div class="txt_featured">
+                                        <a href="{{url('single-product')}}"><h3>Le Fix Le Fix Le Fix Le Fix</h3></a>
+                                        <h5>Reservation number: 463555</h5>
+                                        <h5>Date: 20/10/2020 - 7:10 PM</h5>
+                                    </div>
+                                    <div class="price"><p>147</p><p>SAR</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="outer_card animate__fadeInUp animate__animated wow">
+                                <div class="card_featured flex_card">
+                                    <a class="img_featured" href="{{url('single-product')}}">
+                                        <img src="{{asset('website/dist/img/salon1.jpg')}}">
+                                    </a>
+                                    <div class="txt_featured">
+                                        <a href="{{url('single-product')}}"><h3>Le Fix Le Fix Le Fix Le Fix</h3></a>
+                                        <h5>Reservation number: 463555</h5>
+                                        <h5>Date: 20/10/2020 - 7:10 PM</h5>
+                                    </div>
+                                    <div class="price"><p>147</p><p>SAR</p></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="outer_card animate__fadeInUp animate__animated wow">
-                            <!-- start like button--->
-                            <button type="button" class="likerr i_liked"><i class="fas fa-heart"></i></button>
-                            <!-- end like button--->
-                            <a class="card_featured" href="{{url('single-product')}}">
-                                <div class="img_featured">
-                                    <img src="{{asset('website/dist/img/salon1.jpg')}}">
-                                </div>
-                                <div class="txt_featured">
-                                    <h3>Le Fix</h3>
-                                    <h5>45 Newman Street</h5>
-                                    <div class="badge_f">Featured</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="outer_card animate__fadeInUp animate__animated wow">
-                            <!-- start like button--->
-                            <button type="button" class="likerr i_liked"><i class="fas fa-heart"></i></button>
-                            <!-- end like button--->
-                            <a class="card_featured" href="{{url('single-product')}}">
-                                <div class="img_featured">
-                                    <img src="{{asset('website/dist/img/salon1.jpg')}}">
-                                </div>
-                                <div class="txt_featured">
-                                    <h3>Le Fix</h3>
-                                    <h5>45 Newman Street</h5>
-                                    <div class="badge_f">Featured</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="outer_card animate__fadeInUp animate__animated wow">
-                            <!-- start like button--->
-                            <button type="button" class="likerr i_liked"><i class="fas fa-heart"></i></button>
-                            <!-- end like button--->
-                            <a class="card_featured" href="{{url('single-product')}}">
-                                <div class="img_featured">
-                                    <img src="{{asset('website/dist/img/salon1.jpg')}}">
-                                </div>
-                                <div class="txt_featured">
-                                    <h3>Le Fix</h3>
-                                    <h5>45 Newman Street</h5>
-                                    <div class="badge_f">Featured</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="outer_card animate__fadeInUp animate__animated wow">
-                            <!-- start like button--->
-                            <button type="button" class="likerr i_liked"><i class="fas fa-heart"></i></button>
-                            <!-- end like button--->
-                            <a class="card_featured" href="{{url('single-product')}}">
-                                <div class="img_featured">
-                                    <img src="{{asset('website/dist/img/salon1.jpg')}}">
-                                </div>
-                                <div class="txt_featured">
-                                    <h3>Le Fix</h3>
-                                    <h5>45 Newman Street</h5>
-                                    <div class="badge_f">Featured</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="outer_card animate__fadeInUp animate__animated wow">
-                            <!-- start like button--->
-                            <button type="button" class="likerr i_liked"><i class="fas fa-heart"></i></button>
-                            <!-- end like button--->
-                            <a class="card_featured" href="{{url('single-product')}}">
-                                <div class="img_featured">
-                                    <img src="{{asset('website/dist/img/salon1.jpg')}}">
-                                </div>
-                                <div class="txt_featured">
-                                    <h3>Le Fix</h3>
-                                    <h5>45 Newman Street</h5>
-                                    <div class="badge_f">Featured</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                </div>
                 <!----- Pagination ----->
                 <ul class="pagination">
                     <li class="previous"><a href="#"><i class="fas fa-chevron-left"></i></a></li>
@@ -376,6 +294,7 @@
                     <li><a href="#">5</a></li>
                     <li class="next"><a href="#"><i class="fas fa-chevron-right"></i></a></li>
                 </ul>
+            </div>
             </div>
         </div>
     </div>

@@ -54,7 +54,7 @@ body {
     margin-top: -30px;
 }
 /******** choose services left ********/
-.nav.flex-column {
+.nav.nav-pills {
     margin-bottom: 10px;
     @include overfollow_scroll;
     justify-content: space-between;

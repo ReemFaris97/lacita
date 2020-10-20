@@ -1,10 +1,28 @@
 @extends('site.layout')
-@section('title' , 'La Cita || Select Staff')
+@section('title' , 'La Cita || Select Time')
 @section('styles')
+<link rel="stylesheet"
+  href="https://rawgit.com/Eonasdan/bootstrap-datetimepicker/master/build/css/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" href="{{asset('website/scss/login-pages.css')}}">
 <link rel="stylesheet" href="{{asset('website/scss/payment.css')}}">
 @endsection
 
 @section('content')
+<!--------- Start fixed booking ------------------->
+<section class="book_now fixed_book">
+   <div class="container">
+      <div class="booking_in">
+         <h4>Apple & Eve</h4>
+         <div>
+            <h4>
+               172 services available
+            </h4>
+            <a href="{{url('payment_method')}}" class="btn-hvr"><span class="z-span">book now</span></a>
+         </div>
+      </div>
+   </div>
+</section>
+<!--------- End fixed booking ------------------->
 <!------- Start Steps Header Section -------->
 <section class="step_hdr">
     <div class="container">
@@ -13,7 +31,7 @@
                 <a href="javascript:history.back()" class="to_site"><i class="fas fa-arrow-left"></i></a>
                 <div>
                     <p>Step 1 of 4</p>
-                    <h3>Select Staff</h3>
+                    <h3>Select Time with Kira</h3>
                 </div>
             </div>
             <a href="{{url('single-product')}}" class="to_site"><i class="fas fa-times"></i></a>
@@ -28,58 +46,23 @@
         <div class="row">
             <!----- choose services left ----->
             <div class="col-md-7 col-sm-6 col-xs-12">
-            <div class="bg_white">
-                <!------ Select Staff -------->
-                <ul class="rv_inner">
-                  <li>
-                     <a href="{{url('select_staff_services')}}" class="serve1">
-                        <div>
-                           <img src="{{asset('website/dist/img/user.png')}}" alt="RF" class="person">
-                           <div>
-                              <h3>Reem Faris</h3>
-                              <p>Oct 3, 2020</p>
-                           </div>
-                        </div>
-                        <h4>
-                           <span class="active"><i class="fas fa-star"></i></span>
-                           <b>5.0</b>
-                           <b class="to_person"><i class="fas fa-chevron-right"></i></b>
-                        </h4>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="{{url('select_staff_services')}}" class="serve1">
-                        <div>
-                           <img src="{{asset('website/dist/img/user.png')}}" alt="RF" class="person">
-                           <div>
-                              <h3>Reem Faris</h3>
-                              <p>Oct 3, 2020</p>
-                           </div>
-                        </div>
-                        <h4>
-                           <span class="active"><i class="fas fa-star"></i></span>
-                           <b>5.0</b>
-                           <b class="to_person"><i class="fas fa-chevron-right"></i></b>
-                        </h4>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="{{url('select_staff_services')}}" class="serve1">
-                        <div>
-                           <img src="{{asset('website/dist/img/user.png')}}" alt="RF" class="person">
-                           <div>
-                              <h3>Reem Faris</h3>
-                              <p>Oct 3, 2020</p>
-                           </div>
-                        </div>
-                        <h4>
-                           <span class="active"><i class="fas fa-star"></i></span>
-                           <b>5.0</b>
-                           <b class="to_person"><i class="fas fa-chevron-right"></i></b>
-                        </h4>
-                     </a>
-                  </li>
-                </ul>
+                <!------ Datepicker -------->
+                <div class="bg_white">
+                    <h2>Choose date</h2>
+                    <div class="login_inner">
+                        <div class="form-box">
+                            <form class="logForm" action="{{url('payment_method')}}">
+                <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control"/>
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+                            </form>
+            </div>
+            </div>
             </div>
             </div>
             <!----- total right ----->
@@ -117,9 +100,20 @@
     </div>
 </section>
 <!------- End Serivces Section -------->
+
 @endsection
 
 @section('scripts')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+<script src="https://rawgit.com/Eonasdan/bootstrap-datetimepicker/master/build/js/bootstrap-datetimepicker.min.js"></script>
+<script>
+    $('#datetimepicker1').datetimepicker({
+    defaultDate: new Date(),
+    format: 'DD/MM/YYYY H:mm:ss',
+    sideBySide: true
+});
+
+</script>
 <script>
     /** Fixed Steps Header **/
     $(window).scroll(function() {
@@ -129,6 +123,10 @@
         } else {
             $(".step_hdr").removeClass('fixed_steps');
         }
+    });
+    /**********add to cart button  *********/
+    $(".to_cart").click(function() {
+        $(this).toggleClass("added_cart");
     });
 </script>
 @endsection

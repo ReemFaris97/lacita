@@ -14,11 +14,12 @@ $(document).ready(function () {
                     $(this).parents(".view_box").find(".menu_mob").toggleClass("fixed-r"), 
                     $("body").toggleClass("body-mob")
                 })
-                $(".the_icons li:last-child a, #icon_close2").click(function () {
+                $("#more_list, #icon_close2").click(function () {
                     $(".dropdown.view_box").toggleClass("open_box more_box"), 
                     $(".dropdown.view_box").find(".nav_mob").toggleClass("back-nav"),
                     $(".dropdown.view_box").find(".menu_mob").toggleClass("fixed-r custom_more"), 
-                    $("body").toggleClass("body-mob")
+                    $("body").toggleClass("body-mob"),
+                    $(".navbar .col-xs-0").toggleClass("display-xs")
                 })
                 $("#new_list").click(function () {
                     $(this).parents(".sett_li").find(".menu_mob2").toggleClass("fixed-r"),

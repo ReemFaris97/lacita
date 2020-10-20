@@ -4,15 +4,7 @@
 <link rel="stylesheet" href="{{asset('website/dist/css/owl.carousel.css')}}">
 <link rel="stylesheet" href="{{asset('website/dist/css/owl.theme.default.min.css')}}">
 <link rel="stylesheet" href="{{asset('website/scss/first.css')}}">
-<style>
-    .navbar {
-        position: fixed;
-    }
-
-    .center_nav {
-        display: none;
-    }
-</style>
+<link rel="stylesheet" href="{{asset('website/scss/home.css')}}">
 @endsection
 @section('content')
 <!---//////////// Start Header //////////////////------------>
@@ -298,144 +290,111 @@
         <div class="head-title">
             <h2>Featured venues in London<a href="{{url('categories')}}" class="view_more"><i class="fas fa-long-arrow-alt-right"></i></a></h2>
         </div>
-        <div class="allProducts">
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-xs-6">
-                    <div class="outer_card animate__fadeInUp animate__animated wow">
-                        <a class="card_featured" href="{{url('products')}}">
-                            <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
-                            <div class="txt_featured">
-                                <h3>Le Fix</h3>
-                                <h5>45 Newman Street</h5>
-                                <p>
-                                    <span class="one_star"><i class="fas fa-star"></i></span>
-                                    <span class="bold">4.8 Great</span>
-                                    <span class="grey">97 rating</span>
-                                </p>
-                                <div class="badge_f">Featured</div>
-                            </div>
-                        </a>
+        <div class="owl-carousel owl-theme owl_sm">
+            <div class="outer_card animate__fadeInUp animate__animated wow">
+                <a class="card_featured" href="{{url('products')}}">
+                    <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
+                    <div class="txt_featured">
+                        <h3>Le Fix</h3>
+                        <h5>45 Newman Street</h5>
+                        <p>
+                            <span class="one_star"><i class="fas fa-star"></i></span>
+                            <span class="bold">4.8 Great</span>
+                            <span class="grey">97 rating</span>
+                        </p>
+                        <div class="badge_f">Featured</div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6">
-                    <div class="outer_card animate__fadeInUp animate__animated wow">
-                        <a class="card_featured" href="{{url('products')}}">
-                            <div class="img_featured"><img src="{{asset('website/dist/img/salon2.jpg')}}"></div>
-                            <div class="txt_featured">
-                                <h3>The Barbery</h3>
-                                <h5>29 Webber Street</h5>
-                                <p>
-                                    <span class="one_star"><i class="fas fa-star"></i></span>
-                                    <span class="bold">4.8 Great</span>
-                                    <span class="grey">97 rating</span>
-                                </p>
-                                <div class="badge_f">Featured</div>
-                            </div>
-                        </a>
+                </a>
+            </div>
+            <div class="outer_card animate__fadeInUp animate__animated wow">
+                <a class="card_featured" href="{{url('products')}}">
+                    <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
+                    <div class="txt_featured">
+                        <h3>Le Fix</h3>
+                        <h5>45 Newman Street</h5>
+                        <p>
+                            <span class="one_star"><i class="fas fa-star"></i></span>
+                            <span class="bold">4.8 Great</span>
+                            <span class="grey">97 rating</span>
+                        </p>
+                        <div class="badge_f">Featured</div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6">
-                    <div class="outer_card animate__fadeInUp animate__animated wow">
-                        <a class="card_featured" href="{{url('products')}}">
-                            <div class="img_featured"><img src="{{asset('website/dist/img/salon3.jpg')}}"></div>
-                            <div class="txt_featured">
-                                <h3>Balance Massage & Wellness</h3>
-                                <h5>45 Newman Street</h5>
-                                <p>
-                                    <span class="one_star"><i class="fas fa-star"></i></span>
-                                    <span class="bold">4.8 Great</span>
-                                    <span class="grey">97 rating</span>
-                                </p>
-                                <div class="badge_f">Featured</div>
-                            </div>
-                        </a>
+                </a>
+            </div>
+            <div class="outer_card animate__fadeInUp animate__animated wow">
+                <a class="card_featured" href="{{url('products')}}">
+                    <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
+                    <div class="txt_featured">
+                        <h3>Le Fix</h3>
+                        <h5>45 Newman Street</h5>
+                        <p>
+                            <span class="one_star"><i class="fas fa-star"></i></span>
+                            <span class="bold">4.8 Great</span>
+                            <span class="grey">97 rating</span>
+                        </p>
+                        <div class="badge_f">Featured</div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6">
-                    <div class="outer_card animate__fadeInUp animate__animated wow">
-                        <a class="card_featured" href="{{url('products')}}">
-                            <div class="img_featured"><img src="{{asset('website/dist/img/salon4.jpg')}}"></div>
-                            <div class="txt_featured">
-                                <h3>ELP Barbershop</h3>
-                                <h5>45 Newman Street</h5>
-                                <p>
-                                    <span class="one_star"><i class="fas fa-star"></i></span>
-                                    <span class="bold">4.8 Great</span>
-                                    <span class="grey">97 rating</span>
-                                </p>
-                                <div class="badge_f">Featured</div>
-                            </div>
-                        </a>
+                </a>
+            </div>
+            <div class="outer_card animate__fadeInUp animate__animated wow">
+                <a class="card_featured" href="{{url('products')}}">
+                    <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
+                    <div class="txt_featured">
+                        <h3>Le Fix</h3>
+                        <h5>45 Newman Street</h5>
+                        <p>
+                            <span class="one_star"><i class="fas fa-star"></i></span>
+                            <span class="bold">4.8 Great</span>
+                            <span class="grey">97 rating</span>
+                        </p>
+                        <div class="badge_f">Featured</div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6">
-                    <div class="outer_card animate__fadeInUp animate__animated wow">
-                        <a class="card_featured" href="{{url('products')}}">
-                            <div class="img_featured"><img src="{{asset('website/dist/img/salon5.jpg')}}"></div>
-                            <div class="txt_featured">
-                                <h3>douce</h3>
-                                <h5>45 Newman Street</h5>
-                                <p>
-                                    <span class="one_star"><i class="fas fa-star"></i></span>
-                                    <span class="bold">4.8 Great</span>
-                                    <span class="grey">97 rating</span>
-                                </p>
-                                <div class="badge_f">Featured</div>
-                            </div>
-                        </a>
+                </a>
+            </div>
+            <div class="outer_card animate__fadeInUp animate__animated wow">
+                <a class="card_featured" href="{{url('products')}}">
+                    <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
+                    <div class="txt_featured">
+                        <h3>Le Fix</h3>
+                        <h5>45 Newman Street</h5>
+                        <p>
+                            <span class="one_star"><i class="fas fa-star"></i></span>
+                            <span class="bold">4.8 Great</span>
+                            <span class="grey">97 rating</span>
+                        </p>
+                        <div class="badge_f">Featured</div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6">
-                    <div class="outer_card animate__fadeInUp animate__animated wow">
-                        <a class="card_featured" href="{{url('products')}}">
-                            <div class="img_featured"><img src="{{asset('website/dist/img/salon6.jpg')}}"></div>
-                            <div class="txt_featured">
-                                <h3>Karda Hair & Beauty</h3>
-                                <h5>45 Newman Street</h5>
-                                <p>
-                                    <span class="one_star"><i class="fas fa-star"></i></span>
-                                    <span class="bold">4.8 Great</span>
-                                    <span class="grey">97 rating</span>
-                                </p>
-                                <div class="badge_f">Featured</div>
-                            </div>
-                        </a>
+                </a>
+            </div>
+            <div class="outer_card animate__fadeInUp animate__animated wow">
+                <a class="card_featured" href="{{url('products')}}">
+                    <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
+                    <div class="txt_featured">
+                        <h3>Le Fix</h3>
+                        <h5>45 Newman Street</h5>
+                        <p>
+                            <span class="one_star"><i class="fas fa-star"></i></span>
+                            <span class="bold">4.8 Great</span>
+                            <span class="grey">97 rating</span>
+                        </p>
+                        <div class="badge_f">Featured</div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6">
-                    <div class="outer_card animate__fadeInUp animate__animated wow">
-                        <a class="card_featured" href="{{url('products')}}">
-                            <div class="img_featured"><img src="{{asset('website/dist/img/salon7.jpg')}}"></div>
-                            <div class="txt_featured">
-                                <h3>The Nail Lounge</h3>
-                                <h5>45 Newman Street</h5>
-                                <p>
-                                    <span class="one_star"><i class="fas fa-star"></i></span>
-                                    <span class="bold">4.8 Great</span>
-                                    <span class="grey">97 rating</span>
-                                </p>
-                                <div class="badge_f">Featured</div>
-                            </div>
-                        </a>
+                </a>
+            </div>
+            <div class="outer_card animate__fadeInUp animate__animated wow">
+                <a class="card_featured" href="{{url('products')}}">
+                    <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
+                    <div class="txt_featured">
+                        <h3>Le Fix</h3>
+                        <h5>45 Newman Street</h5>
+                        <p>
+                            <span class="one_star"><i class="fas fa-star"></i></span>
+                            <span class="bold">4.8 Great</span>
+                            <span class="grey">97 rating</span>
+                        </p>
+                        <div class="badge_f">Featured</div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6">
-                    <div class="outer_card animate__fadeInUp animate__animated wow">
-                        <a class="card_featured" href="{{url('products')}}">
-                            <div class="img_featured"><img src="{{asset('website/dist/img/salon8.jpg')}}"></div>
-                            <div class="txt_featured">
-                                <h3>Beauty Bars</h3>
-                                <h5>45 Newman Street</h5>
-                                <p>
-                                    <span class="one_star"><i class="fas fa-star"></i></span>
-                                    <span class="bold">4.8 Great</span>
-                                    <span class="grey">97 rating</span>
-                                </p>
-                                <div class="badge_f">Featured</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>

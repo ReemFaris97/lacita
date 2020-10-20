@@ -5,6 +5,21 @@
 @endsection
 
 @section('content')
+<!--------- Start fixed booking ------------------->
+<section class="book_now fixed_book">
+   <div class="container">
+      <div class="booking_in">
+         <h4>Apple & Eve</h4>
+         <div>
+            <h4>
+               172 services available
+            </h4>
+            <a href="{{url('select_staff')}}" class="btn-hvr"><span class="z-span">book now</span></a>
+         </div>
+      </div>
+   </div>
+</section>
+<!--------- End fixed booking ------------------->
 <!------- Start Steps Header Section -------->
 <section class="step_hdr">
     <div class="container">
@@ -29,20 +44,15 @@
             <!----- choose services left ----->
             <div class="col-md-7 col-sm-6 col-xs-12">
                 <!------ nav tabs -------->
-                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home
-                    </a>
-                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile
-                    </a>
-                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages
-                    </a>
-                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings
-                    </a>
-                </div>
-
+            <ul class="nav nav-pills">
+                  <li class="nav-li active"><a data-toggle="pill" href="#home">Home</a></li>
+                  <li class="nav-li"><a data-toggle="pill" href="#menu1">Menu 1</a></li>
+                  <li class="nav-li"><a data-toggle="pill" href="#menu2">Menu 2</a></li>
+                  <li class="nav-li"><a data-toggle="pill" href="#menu3">Menu 3</a></li>
+               </ul>
                 <!------ tabs content -------->
-                <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade active in" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <div class="tab-content">
+                      <div class="tab-pane fade in active" id="home">
                         <h4>Featured</h4>
                         <ul>
                             <li class="serve1">
@@ -87,7 +97,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <div class="tab-pane fade" id="menu1">
                         <h4>Featured</h4>
                         <ul>
                             <li class="serve1">
@@ -132,7 +142,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    <div class="tab-pane fade" id="menu2">
                         <h4>Featured</h4>
                         <ul>
                             <li class="serve1">
@@ -177,7 +187,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                    <div class="tab-pane fade" id="menu3">
                         <h4>Featured</h4>
                         <ul>
                             <li class="serve1">
@@ -276,6 +286,7 @@
         }
     });
 
+    
     /**********add to cart button  *********/
     $(".to_cart").click(function() {
         $(this).toggleClass("added_cart");
