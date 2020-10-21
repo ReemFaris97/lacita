@@ -245,15 +245,15 @@
 </script>
 <!------------- map-------------->
 <script>
-   $(".map_search").hide();
+   $(".map_div").hide();
    $(function () {
         $("#switch-id").change(function () {
             if ($(this).is(":checked")) {
-                $(".map_search").show().toggleClass("col-md-8 col-sm-6 col-xs-12");
+                $(".map_div").show().toggleClass("col-md-8 col-sm-6 col-xs-12");
                 $(".search_div").toggleClass("col-md-4 col-sm-6 col-xs-12 custom_cols");
                 $(".reverse_xs").toggleClass("reverse_nw");
             } else {
-                $(".map_search").hide().toggleClass("col-md-8 col-sm-6 col-xs-12");
+                $(".map_div").hide().toggleClass("col-md-8 col-sm-6 col-xs-12");
                 $(".search_div").toggleClass("col-md-4 col-sm-6 col-xs-12 custom_cols");
                 $(".reverse_xs").toggleClass("reverse_nw");
             }

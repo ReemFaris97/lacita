@@ -744,8 +744,11 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
   background-color: #e9ecef;
 }
 
-.custom_cols .col-lg-3.col-md-4.col-xs-6 {
+.custom_cols .allProducts > .row > div {
   width: 100%;
+  -webkit-box-flex: unset;
+      -ms-flex: unset;
+          flex: unset;
 }
 
 /************* End Search Map.blade ************/
@@ -1817,7 +1820,7 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
   .custom_cols {
     margin-top: 20px;
   }
-  .custom_cols .col-lg-3.col-md-4.col-xs-6 {
+  .custom_cols .allProducts > .row > div {
     width: 50%;
   }
   /*** view more ****/

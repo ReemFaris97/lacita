@@ -742,8 +742,9 @@ body > section:nth-child(even) .view_more {
     }
 }
 .custom_cols {
-    .col-lg-3.col-md-4.col-xs-6 {
+    .allProducts > .row > div {
         width: 100%;
+        flex: unset;
     }
 }
 /************* End Search Map.blade ************/
@@ -1587,9 +1588,6 @@ body > section:nth-child(even) .view_more {
     }
     .custom_cols {
         margin-top: 20px;
-        .col-lg-3.col-md-4.col-xs-6 {
-            width: 50%;
-        }
     }
     /*** view more ****/
     .view_more {
