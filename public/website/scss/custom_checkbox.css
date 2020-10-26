@@ -745,7 +745,7 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
   background-color: #e9ecef;
 }
 
-.custom_cols .allProducts > .row > .div {
+.custom_cols .allProducts > .row > div {
   width: 100%;
   -webkit-box-flex: unset;
       -ms-flex: unset;
@@ -1820,9 +1820,6 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
   }
   .custom_cols {
     margin-top: 20px;
-  }
-  .custom_cols .allProducts > .row > .div {
-    width: 50%;
   }
   /*** view more ****/
   .view_more {

@@ -9,10 +9,11 @@
    body {
       padding-bottom: 70px !important;
    }
-   @media (max-width: 767px){
+
+   @media (max-width: 767px) {
       .book_now.fixed_book {
-    bottom: 50px;
-}
+         bottom: 50px;
+      }
    }
 </style>
 @endsection
@@ -233,197 +234,405 @@
       <div class="head-title">
          <h2>Services</h2>
       </div>
-      <div class="prod_servs">
-         <div class="row">
-            <!------ nav tabs -------->
-            <div class="col-md-3 col-sm-4 col-xs-12">
-               <ul class="nav nav-pills">
-                  <li class="nav-li active"><a data-toggle="pill" href="#home">Home<span class="badge">4</span></a></li>
-                  <li class="nav-li"><a data-toggle="pill" href="#menu1">Menu 1<span class="badge">4</span></a></li>
-                  <li class="nav-li"><a data-toggle="pill" href="#menu2">Menu 2<span class="badge">4</span></a></li>
-                  <li class="nav-li"><a data-toggle="pill" href="#menu3">Menu 3<span class="badge">4</span></a></li>
-               </ul>
-
-
+      <div class="lg_servs">
+         <ul class="nav nav-pills">
+            <li class="nav-li active"><a data-toggle="pill" href="#athome">
+                  <span class="nav_s"><i class="fas fa-home"></i></span> At Home
+               </a></li>
+            <li class="nav-li"><a data-toggle="pill" href="#atstore">
+                  <span class="nav_s"><i class="fas fa-store-alt"></i></span> At Store
+               </a></li>
+         </ul>
+      </div>
+      <div class="tab-content">
+         <div class="tab-pane fade in active" id="athome">
+            <div class="prod_servs">
+               <div class="row">
+                  <!------ nav tabs -------->
+                  <div class="col-md-3 col-sm-4 col-xs-12">
+                     <ul class="nav nav-pills">
+                        <li class="nav-li active"><a data-toggle="pill" href="#home">Section 1<span class="badge">4</span></a></li>
+                        <li class="nav-li"><a data-toggle="pill" href="#menu1">Section 1<span class="badge">4</span></a></li>
+                        <li class="nav-li"><a data-toggle="pill" href="#menu2">Section 2<span class="badge">4</span></a></li>
+                        <li class="nav-li"><a data-toggle="pill" href="#menu3">Section 3<span class="badge">4</span></a></li>
+                     </ul>
+                  </div>
+                  <!------ tabs content -------->
+                  <div class="col-md-9 col-sm-8 col-xs-12">
+                     <div class="tab-content">
+                        <div class="tab-pane fade in active" id="home">
+                           <ul>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="tab-pane fade" id="menu1">
+                           <ul>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="tab-pane fade" id="menu2">
+                           <ul>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="tab-pane fade" id="menu3">
+                           <ul>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <!------ tabs content -------->
-            <div class="col-md-9 col-sm-8 col-xs-12">
-               <div class="tab-content">
-                  <div class="tab-pane fade in active" id="home">
-                     <ul>
-                        <li class="serve1">
-                           <div>
-                              <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
-                              <div>
-                                 <h3>service 1 details</h3>
-                                 <p>30 min</p>
-                              </div>
-                           </div>
-                           <h4>40$</h4>
-                        </li>
-                        <li class="serve1">
-                           <div>
-                              <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
-                              <div>
-                                 <h3>service 1 details</h3>
-                                 <p>30 min</p>
-                              </div>
-                           </div>
-                           <h4>40$</h4>
-                        </li>
-                        <li class="serve1">
-                           <div>
-                              <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
-                              <div>
-                                 <h3>service 1 details</h3>
-                                 <p>30 min</p>
-                              </div>
-                           </div>
-                           <h4>40$</h4>
-                        </li>
-                        <li class="serve1">
-                           <div>
-                              <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
-                              <div>
-                                 <h3>service 1 details</h3>
-                                 <p>30 min</p>
-                              </div>
-                           </div>
-                           <h4>40$</h4>
-                        </li>
+         </div>
+         <div class="tab-pane fade" id="atstore">
+            <div class="prod_servs">
+               <div class="row">
+                  <!------ nav tabs -------->
+                  <div class="col-md-3 col-sm-4 col-xs-12">
+                     <ul class="nav nav-pills">
+                        <li class="nav-li active"><a data-toggle="pill" href="#home">Section 1<span class="badge">4</span></a></li>
+                        <li class="nav-li"><a data-toggle="pill" href="#menu1">Section 1<span class="badge">4</span></a></li>
+                        <li class="nav-li"><a data-toggle="pill" href="#menu2">Section 2<span class="badge">4</span></a></li>
+                        <li class="nav-li"><a data-toggle="pill" href="#menu3">Section 3<span class="badge">4</span></a></li>
                      </ul>
                   </div>
-                  <div class="tab-pane fade" id="menu1">
-                     <ul>
-                        <li class="serve1">
-                           <div>
-                              <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
-                              <div>
-                                 <h3>service 1 details</h3>
-                                 <p>30 min</p>
-                              </div>
-                           </div>
-                           <h4>40$</h4>
-                        </li>
-                        <li class="serve1">
-                           <div>
-                              <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
-                              <div>
-                                 <h3>service 1 details</h3>
-                                 <p>30 min</p>
-                              </div>
-                           </div>
-                           <h4>40$</h4>
-                        </li>
-                        <li class="serve1">
-                           <div>
-                              <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
-                              <div>
-                                 <h3>service 1 details</h3>
-                                 <p>30 min</p>
-                              </div>
-                           </div>
-                           <h4>40$</h4>
-                        </li>
-                        <li class="serve1">
-                           <div>
-                              <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
-                              <div>
-                                 <h3>service 1 details</h3>
-                                 <p>30 min</p>
-                              </div>
-                           </div>
-                           <h4>40$</h4>
-                        </li>
-                     </ul>
-                  </div>
-                  <div class="tab-pane fade" id="menu2">
-                     <ul>
-                        <li class="serve1">
-                           <div>
-                              <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
-                              <div>
-                                 <h3>service 1 details</h3>
-                                 <p>30 min</p>
-                              </div>
-                           </div>
-                           <h4>40$</h4>
-                        </li>
-                        <li class="serve1">
-                           <div>
-                              <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
-                              <div>
-                                 <h3>service 1 details</h3>
-                                 <p>30 min</p>
-                              </div>
-                           </div>
-                           <h4>40$</h4>
-                        </li>
-                        <li class="serve1">
-                           <div>
-                              <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
-                              <div>
-                                 <h3>service 1 details</h3>
-                                 <p>30 min</p>
-                              </div>
-                           </div>
-                           <h4>40$</h4>
-                        </li>
-                        <li class="serve1">
-                           <div>
-                              <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
-                              <div>
-                                 <h3>service 1 details</h3>
-                                 <p>30 min</p>
-                              </div>
-                           </div>
-                           <h4>40$</h4>
-                        </li>
-                     </ul>
-                  </div>
-                  <div class="tab-pane fade" id="menu3">
-                     <ul>
-                        <li class="serve1">
-                           <div>
-                              <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
-                              <div>
-                                 <h3>service 1 details</h3>
-                                 <p>30 min</p>
-                              </div>
-                           </div>
-                           <h4>40$</h4>
-                        </li>
-                        <li class="serve1">
-                           <div>
-                              <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
-                              <div>
-                                 <h3>service 1 details</h3>
-                                 <p>30 min</p>
-                              </div>
-                           </div>
-                           <h4>40$</h4>
-                        </li>
-                        <li class="serve1">
-                           <div>
-                              <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
-                              <div>
-                                 <h3>service 1 details</h3>
-                                 <p>30 min</p>
-                              </div>
-                           </div>
-                           <h4>40$</h4>
-                        </li>
-                        <li class="serve1">
-                           <div>
-                              <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
-                              <div>
-                                 <h3>service 1 details</h3>
-                                 <p>30 min</p>
-                              </div>
-                           </div>
-                           <h4>40$</h4>
-                        </li>
-                     </ul>
+                  <!------ tabs content -------->
+                  <div class="col-md-9 col-sm-8 col-xs-12">
+                     <div class="tab-content">
+                        <div class="tab-pane fade in active" id="home">
+                           <ul>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="tab-pane fade" id="menu1">
+                           <ul>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="tab-pane fade" id="menu2">
+                           <ul>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="tab-pane fade" id="menu3">
+                           <ul>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                              <li class="serve1">
+                                 <div>
+                                    <button type="button" class="to_cart"><i class="fas fa-cart-plus"></i></button>
+                                    <div>
+                                       <h3>service 1 details</h3>
+                                       <p>30 min</p>
+                                    </div>
+                                 </div>
+                                 <h4>40$</h4>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
@@ -715,112 +924,112 @@
          <h2>Venues near Apple & Eve<a href="{{url('categories')}}" class="view_more"><i class="fas fa-long-arrow-alt-right"></i></a></h2>
       </div>
       <div class="owl-carousel owl-theme owl_sm">
-            <div class="outer_card animate__fadeInUp animate__animated wow">
-                <a class="card_featured" href="{{url('products')}}">
-                    <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
-                    <div class="txt_featured">
-                        <h3>Le Fix</h3>
-                        <h5>45 Newman Street</h5>
-                        <p>
-                            <span class="one_star"><i class="fas fa-star"></i></span>
-                            <span class="bold">4.8 Great</span>
-                            <span class="grey">97 rating</span>
-                        </p>
-                        <div class="badge_f">Featured</div>
-                    </div>
-                </a>
-            </div>
-            <div class="outer_card animate__fadeInUp animate__animated wow">
-                <a class="card_featured" href="{{url('products')}}">
-                    <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
-                    <div class="txt_featured">
-                        <h3>Le Fix</h3>
-                        <h5>45 Newman Street</h5>
-                        <p>
-                            <span class="one_star"><i class="fas fa-star"></i></span>
-                            <span class="bold">4.8 Great</span>
-                            <span class="grey">97 rating</span>
-                        </p>
-                        <div class="badge_f">Featured</div>
-                    </div>
-                </a>
-            </div>
-            <div class="outer_card animate__fadeInUp animate__animated wow">
-                <a class="card_featured" href="{{url('products')}}">
-                    <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
-                    <div class="txt_featured">
-                        <h3>Le Fix</h3>
-                        <h5>45 Newman Street</h5>
-                        <p>
-                            <span class="one_star"><i class="fas fa-star"></i></span>
-                            <span class="bold">4.8 Great</span>
-                            <span class="grey">97 rating</span>
-                        </p>
-                        <div class="badge_f">Featured</div>
-                    </div>
-                </a>
-            </div>
-            <div class="outer_card animate__fadeInUp animate__animated wow">
-                <a class="card_featured" href="{{url('products')}}">
-                    <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
-                    <div class="txt_featured">
-                        <h3>Le Fix</h3>
-                        <h5>45 Newman Street</h5>
-                        <p>
-                            <span class="one_star"><i class="fas fa-star"></i></span>
-                            <span class="bold">4.8 Great</span>
-                            <span class="grey">97 rating</span>
-                        </p>
-                        <div class="badge_f">Featured</div>
-                    </div>
-                </a>
-            </div>
-            <div class="outer_card animate__fadeInUp animate__animated wow">
-                <a class="card_featured" href="{{url('products')}}">
-                    <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
-                    <div class="txt_featured">
-                        <h3>Le Fix</h3>
-                        <h5>45 Newman Street</h5>
-                        <p>
-                            <span class="one_star"><i class="fas fa-star"></i></span>
-                            <span class="bold">4.8 Great</span>
-                            <span class="grey">97 rating</span>
-                        </p>
-                        <div class="badge_f">Featured</div>
-                    </div>
-                </a>
-            </div>
-            <div class="outer_card animate__fadeInUp animate__animated wow">
-                <a class="card_featured" href="{{url('products')}}">
-                    <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
-                    <div class="txt_featured">
-                        <h3>Le Fix</h3>
-                        <h5>45 Newman Street</h5>
-                        <p>
-                            <span class="one_star"><i class="fas fa-star"></i></span>
-                            <span class="bold">4.8 Great</span>
-                            <span class="grey">97 rating</span>
-                        </p>
-                        <div class="badge_f">Featured</div>
-                    </div>
-                </a>
-            </div>
-            <div class="outer_card animate__fadeInUp animate__animated wow">
-                <a class="card_featured" href="{{url('products')}}">
-                    <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
-                    <div class="txt_featured">
-                        <h3>Le Fix</h3>
-                        <h5>45 Newman Street</h5>
-                        <p>
-                            <span class="one_star"><i class="fas fa-star"></i></span>
-                            <span class="bold">4.8 Great</span>
-                            <span class="grey">97 rating</span>
-                        </p>
-                        <div class="badge_f">Featured</div>
-                    </div>
-                </a>
-            </div>
-        </div>
+         <div class="outer_card animate__fadeInUp animate__animated wow">
+            <a class="card_featured" href="{{url('products')}}">
+               <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
+               <div class="txt_featured">
+                  <h3>Le Fix</h3>
+                  <h5>45 Newman Street</h5>
+                  <p>
+                     <span class="one_star"><i class="fas fa-star"></i></span>
+                     <span class="bold">4.8 Great</span>
+                     <span class="grey">97 rating</span>
+                  </p>
+                  <div class="badge_f">Featured</div>
+               </div>
+            </a>
+         </div>
+         <div class="outer_card animate__fadeInUp animate__animated wow">
+            <a class="card_featured" href="{{url('products')}}">
+               <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
+               <div class="txt_featured">
+                  <h3>Le Fix</h3>
+                  <h5>45 Newman Street</h5>
+                  <p>
+                     <span class="one_star"><i class="fas fa-star"></i></span>
+                     <span class="bold">4.8 Great</span>
+                     <span class="grey">97 rating</span>
+                  </p>
+                  <div class="badge_f">Featured</div>
+               </div>
+            </a>
+         </div>
+         <div class="outer_card animate__fadeInUp animate__animated wow">
+            <a class="card_featured" href="{{url('products')}}">
+               <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
+               <div class="txt_featured">
+                  <h3>Le Fix</h3>
+                  <h5>45 Newman Street</h5>
+                  <p>
+                     <span class="one_star"><i class="fas fa-star"></i></span>
+                     <span class="bold">4.8 Great</span>
+                     <span class="grey">97 rating</span>
+                  </p>
+                  <div class="badge_f">Featured</div>
+               </div>
+            </a>
+         </div>
+         <div class="outer_card animate__fadeInUp animate__animated wow">
+            <a class="card_featured" href="{{url('products')}}">
+               <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
+               <div class="txt_featured">
+                  <h3>Le Fix</h3>
+                  <h5>45 Newman Street</h5>
+                  <p>
+                     <span class="one_star"><i class="fas fa-star"></i></span>
+                     <span class="bold">4.8 Great</span>
+                     <span class="grey">97 rating</span>
+                  </p>
+                  <div class="badge_f">Featured</div>
+               </div>
+            </a>
+         </div>
+         <div class="outer_card animate__fadeInUp animate__animated wow">
+            <a class="card_featured" href="{{url('products')}}">
+               <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
+               <div class="txt_featured">
+                  <h3>Le Fix</h3>
+                  <h5>45 Newman Street</h5>
+                  <p>
+                     <span class="one_star"><i class="fas fa-star"></i></span>
+                     <span class="bold">4.8 Great</span>
+                     <span class="grey">97 rating</span>
+                  </p>
+                  <div class="badge_f">Featured</div>
+               </div>
+            </a>
+         </div>
+         <div class="outer_card animate__fadeInUp animate__animated wow">
+            <a class="card_featured" href="{{url('products')}}">
+               <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
+               <div class="txt_featured">
+                  <h3>Le Fix</h3>
+                  <h5>45 Newman Street</h5>
+                  <p>
+                     <span class="one_star"><i class="fas fa-star"></i></span>
+                     <span class="bold">4.8 Great</span>
+                     <span class="grey">97 rating</span>
+                  </p>
+                  <div class="badge_f">Featured</div>
+               </div>
+            </a>
+         </div>
+         <div class="outer_card animate__fadeInUp animate__animated wow">
+            <a class="card_featured" href="{{url('products')}}">
+               <div class="img_featured"><img src="{{asset('website/dist/img/salon1.jpg')}}"></div>
+               <div class="txt_featured">
+                  <h3>Le Fix</h3>
+                  <h5>45 Newman Street</h5>
+                  <p>
+                     <span class="one_star"><i class="fas fa-star"></i></span>
+                     <span class="bold">4.8 Great</span>
+                     <span class="grey">97 rating</span>
+                  </p>
+                  <div class="badge_f">Featured</div>
+               </div>
+            </a>
+         </div>
+      </div>
    </div>
 </section>
 <!---//////////// End Related Products Section //////////////////------------>
@@ -860,34 +1069,34 @@
       },
    });
    $('.owl_sm').owlCarousel({
-        loop: true,
-        margin: 10,
-        autoplay: false,
-        smartSpeed: 2000,
-        dragEndSpeed: 2000,
-        animateOut: 'fadeOut',
-        animateIn: 'fadeIn',
-        dots: false,
-        nav: true,
-        navText: [
-            '<i class="fas fa-chevron-left"></i>',
-            '<i class="fas fa-chevron-right"></i>'
-        ],
-        responsive: {
-            0: {
-                items: 2
-            },
-            500: {
-                items: 2
-            },
-            768: {
-                items: 3
-            },
-            1000: {
-                items: 4
-            }
-        }
-    });
+      loop: true,
+      margin: 10,
+      autoplay: false,
+      smartSpeed: 2000,
+      dragEndSpeed: 2000,
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn',
+      dots: false,
+      nav: true,
+      navText: [
+         '<i class="fas fa-chevron-left"></i>',
+         '<i class="fas fa-chevron-right"></i>'
+      ],
+      responsive: {
+         0: {
+            items: 2
+         },
+         500: {
+            items: 2
+         },
+         768: {
+            items: 3
+         },
+         1000: {
+            items: 4
+         }
+      }
+   });
 </script>
 <script>
    $(".likerr").click(function() {

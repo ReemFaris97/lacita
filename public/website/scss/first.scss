@@ -1347,6 +1347,14 @@ body > section:nth-child(even) .view_more {
     }
 }
 /********* End Reviews Section ***********/
+.lg_servs{
+    .nav-pills .nav-li.active a, .nav-pills .nav-li.active a:focus, .nav-pills .nav-li.active:hover{
+        color: $third-color !important;
+    }
+}
+.nav_s{
+
+}
 /************* End Single Product .blade ************/
 
 /************* Start My Orders .blade ************/

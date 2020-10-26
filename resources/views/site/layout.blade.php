@@ -61,9 +61,6 @@
                 </div>
                 <div class="col-sm-8 col-xs-0">
                     <ul class="navy">
-                        <li><a href="{{url('my_orders')}}">my appointments</a></li>
-                        <li><a href="{{url('my_favourites')}}">my favourites</a></li>
-                        <li><a href="{{url('categories')}}">categories</a></li>
                         <li><a href="{{url('sign-in')}}">sign in</a></li>
                         <!----------------********************** show these links if user NOT logged in ***************------------------------------>
                         <li><a href="#">For Partners</a></li>
