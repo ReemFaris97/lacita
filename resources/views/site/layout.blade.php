@@ -61,6 +61,8 @@
                 </div>
                 <div class="col-sm-8 col-xs-0">
                     <ul class="navy">
+                         <li class="hidden-xs"><a href="{{url('my_orders')}}">my appointments</a></li>
+                        <li class="hidden-xs"><a href="{{url('my_favourites')}}">my favourites</a></li>
                         <li><a href="{{url('sign-in')}}">sign in</a></li>
                         <!----------------********************** show these links if user NOT logged in ***************------------------------------>
                         <li><a href="#">For Partners</a></li>
@@ -103,9 +105,9 @@
                                             <span class="blue">Edit profile</span>
                                         </a>
                                     </li>
-                                    <li class="display-xs"><a href="{{url('my_orders')}}"><span class="link_i"><i class="far fa-calendar-alt"></i></span>my appointments</a></li>
+                                    <!-- <li class="display-xs"><a href="{{url('my_orders')}}"><span class="link_i"><i class="far fa-calendar-alt"></i></span>my appointments</a></li>
                                     <li class="display-xs"><a href="{{url('my_favourites')}}"><span class="link_i"><i class="far fa-heart"></i></span>my favourites</a></li>
-                                    <li class="display-xs"><a href="{{url('categories')}}"><span class="link_i"><i class="fas fa-list-ul"></i></span>categories</a></li>
+                                    <li class="display-xs"><a href="{{url('categories')}}"><span class="link_i"><i class="fas fa-list-ul"></i></span>categories</a></li> -->
                                     <li><a href="{{url('pay_methods')}}"><span class="link_i"><i class="fas fa-credit-card"></i></span>payment methods</a></li>
                                     <li class="dropdown sett_li"><a href="javascript:void(0)" id="new_list"><span class="link_i"><i class="fas fa-cog"></i></span>settings</a>
                                         <!------------- Start settings links ul ----------------->

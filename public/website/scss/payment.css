@@ -1544,6 +1544,10 @@ body > section:nth-child(even) .view_more:hover, body > section:nth-child(even) 
 }
 
 /********* End Reviews Section ***********/
+.lg_servs .nav-pills .nav-li.active a, .lg_servs .nav-pills .nav-li.active a:focus, .lg_servs .nav-pills .nav-li.active:hover {
+  color: #037aff !important;
+}
+
 /************* End Single Product .blade ************/
 /************* Start My Orders .blade ************/
 .card_featured.flex_card {
