@@ -56,6 +56,8 @@
                     <div class="nav_logo">
                         <a href="{{url('/')}}" class="logo-nav">
                             <img src="{{asset('website/dist/img/logo.png')}}">
+                            <!-- if arabic -->
+                            <!-- <img src="{{asset('website/dist/img/logo_ar.png')}}"> -->
                         </a>
                     </div>
                 </div>
@@ -531,6 +533,8 @@
                     <div class="foot1">
                         <a href="{{url('/')}}" class="foot-logo">
                             <img src="{{asset('website/dist/img/logo.png')}}">
+                            <!-- if arabic -->
+                            <!-- <img src="{{asset('website/dist/img/logo_ar.png')}}"> -->
                         </a>
                         <ul class="social">
                             <!-- <li><a href="www.facebook.com" target="_blank" class="icon-f"><i class="fab fa-facebook"></i></a></li>

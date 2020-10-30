@@ -90,7 +90,7 @@
 <!-- /////////////////////////////////////////////////////////////////// -->
 <section class="all-sections contactsec secall">
     <div class="contentimg">
-        <img src="{{asset('website/dist/img/favicon.png')}}" alt="La cita">
+        <img src="{{asset('website/dist/img/logo.png')}}" alt="La cita">
     </div>
     <div class="container">
         <div class="aligne-center relative9">
