@@ -444,7 +444,7 @@ input[type=number]::-webkit-outer-spin-button {
     text-align: center;
 }
 .logo-nav {
-    max-width: 100%;
+    max-width: 130px;
     display: inline-block;
     height: 80px;
     width: auto;
@@ -766,7 +766,7 @@ footer {
 }
 /********* footer content **************/
 .foot-logo{
-    max-width: 250px;
+    max-width: 180px;
     margin: 0 0 16px 0;
     display: block;
     width: 100%;
@@ -1085,6 +1085,7 @@ display: flex;
     .logo-nav {
     height: 57px;
     text-align: center;
+    max-width: 90px;
 }
     /***************/
     .fixed-r {
